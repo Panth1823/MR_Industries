@@ -1,12 +1,11 @@
 import React from "react";
 
-function Footerend() {
+const Footerend = ({ onLinkClick }) => {
   return (
     <footer>
       <div className="FooterMain">
         <div className="FooterMainRight">
-          <a href="">
-            {" "}
+          <a onClick={() => onLinkClick("Home")}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="161"
@@ -112,21 +111,28 @@ function Footerend() {
           </a>
         </div>
         <div className="FooterMainLeft">
-          <a href="">Home</a>
-          <a href="">About Us</a>
-          <a href="">Services</a>
-          <a href="">Contact Us</a>
+          <a onClick={() => onLinkClick("Home")}>Home</a>
+          <a onClick={() => onLinkClick("About Us")}>About Us</a>
+          <a onClick={() => onLinkClick("Services")}>Services</a>
+          <a onClick={() => onLinkClick("Contact Now")}>Contact Us</a>
           <a href="">Testimonial</a>
-          <a href="">Terms & Conditions</a>
-          <a href="">Privacy Policy</a>
+          <a onClick={() => onLinkClick("Terms & Conditions")}>
+            Terms & Conditions
+          </a>
+          <a onClick={() => onLinkClick("Privacy Policy")}>Privacy Policy</a>
         </div>
       </div>
       <div className="FooterEnd">
         <p>Copyrights 2024 . All Rights Reserved</p>
-        <a href="">Crafted by Koios Engineering Solutions</a>
+        <p>
+          Crafted by{" "}
+          <a href="https://koiosengg.com/" target="_blank">
+            Koios Engineering Solutions
+          </a>
+        </p>
       </div>
     </footer>
   );
-}
+};
 
 export default Footerend;

@@ -4,3 +4,128 @@
   box-sizing: border-box;
 }
 
+.p-contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 24px;
+  color: var(--Default-Text-Primary, #111);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+}
+
+.p-contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--Default-Text-Primary, #111);
+}
+
+.p-contact-form input,
+.p-contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border: 1px solid var(--Gray-300, #d0d5dd);
+  border-radius: 4px;
+  color: var(--Default-Text-Tertiary, rgba(17, 17, 17, 0.5));
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.p-contact-form button {
+  padding: 12px 24px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  background: var(--Blue-450, #355094);
+  color: var(--Default-white, #fff);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.p-contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.p-contact {
+  display: flex;
+  gap: 80px;
+  padding: 120px 160px 80px 160px;
+}
+.p-contact-text {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.p-contact-text h1 {
+  color: var(--Blue-600, #0e2662);
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0%;
+  text-align: center;
+}
+.p-contact-text p {
+  color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.7));
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0%;
+  padding-top: 12px;
+  text-align: center;
+}
+.p-contact-content {
+  width: 100%;
+}
+
+.p-name {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.p-phone-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.css-b62m3t-container {
+  width: 25%;
+}
+.css-13cymwt-control {
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border: 1px solid var(--Gray-300, #d0d5dd);
+  border-radius: 4px;
+  color: var(--Default-Text-Tertiary, rgba(17, 17, 17, 0.5));
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.p-selector {
+  display: flex;
+  flex-direction: row;
+}

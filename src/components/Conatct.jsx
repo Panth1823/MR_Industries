@@ -1,3 +1,4 @@
+import "../panth.css"; // Make sure to create and style this CSS file
 import { useState, useMemo } from "react";
 import Select from "react-select";
 import countryList from "react-select-country-list";

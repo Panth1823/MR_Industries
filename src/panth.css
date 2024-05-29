@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .p-contact-form {
   width: 50%;
@@ -114,6 +110,25 @@
   width: 25%;
 }
 .css-13cymwt-control {
+  border-color: white !important;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: var(--Default-Text-Tertiary, rgba(17, 17, 17, 0.5));
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.css-art2ul-ValueContainer2 {
+  padding-left: 0 !important;
+}
+
+.p-selector {
+  display: flex;
+  flex-direction: row;
+
   padding: 12px 16px;
   box-sizing: border-box;
   border: 1px solid var(--Gray-300, #d0d5dd);
@@ -125,7 +140,16 @@
   font-weight: 400;
   line-height: 20px;
 }
-.p-selector {
-  display: flex;
-  flex-direction: row;
+
+#phoneNumber {
+  padding: 0px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: var(--Default-Text-Tertiary, rgba(17, 17, 17, 0.5));
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }

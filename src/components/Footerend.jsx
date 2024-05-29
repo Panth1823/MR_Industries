@@ -40,7 +40,7 @@ const Footerend = ({ onLinkClick }) => {
               />
             </svg>
           </a>
-          <span>M R INDUSTRIES PRIVATE LIMITED</span>
+          <span>M R INDUSTRIES </span>
           <div className="FooterMainLinks">
             <a href="" className="FooterMainLinksSet">
               <svg

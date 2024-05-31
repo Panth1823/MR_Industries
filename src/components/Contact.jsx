@@ -2,6 +2,7 @@ import "../panth.css"; // Make sure to create and style this CSS file
 import { useState, useMemo } from "react";
 import Select from "react-select";
 import countryList from "react-select-country-list";
+
 const ContactForm = () => {
   const [value, setValue] = useState({ value: "india", label: "India" });
   const options = useMemo(() => countryList().getData(), []);
@@ -25,9 +26,11 @@ const ContactForm = () => {
       >
         <div className="p-name">
           <div style={{ width: "50%" }}>
-            <label htmlFor="firstName">First Name</label>
+            <label htmlFor="firstName">
+              First Name <span>*</span>
+            </label>
             <input
-              placeholder="First Name"
+              placeholder="John"
               type="text"
               id="firstName"
               name="firstName"
@@ -35,9 +38,11 @@ const ContactForm = () => {
             />
           </div>
           <div style={{ width: "50%" }}>
-            <label htmlFor="lastName">Last Name</label>
+            <label htmlFor="lastName">
+              Last Name <span>*</span>
+            </label>
             <input
-              placeholder="Last Name"
+              placeholder="Doe"
               type="text"
               id="lastName"
               name="lastName"
@@ -47,9 +52,11 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">
+            Email <span>*</span>
+          </label>
           <input
-            placeholder="mr@mail.com"
+            placeholder="you@company.com"
             type="email"
             id="email"
             name="email"
@@ -57,7 +64,9 @@ const ContactForm = () => {
           />
         </div>
         <div className="p-phone-number">
-          <label htmlFor="phoneNumber">Phone number</label>
+          <label htmlFor="phoneNumber">
+            Phone number <span>*</span>
+          </label>
 
           <div className="p-selector">
             <Select options={options} value={value} onChange={changeHandler} />

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import MainNavbar from "./components/MainNavbar.jsx";
 import Homepage from "./components/Homepage.jsx";
-import ContactForm from "./components/Conatct.jsx";
+import ContactForm from "./components/Contact.jsx";
 import Footerend from "./components/Footerend.jsx";
+import About from "./components/About.jsx";
 
 const App = () => {
   const [activeLink, setActiveLink] = useState("Home");
@@ -18,7 +19,7 @@ const App = () => {
       <div className="bodyMain">
         {activeLink === "Home" && <Homepage onLinkClick={handleLinkClick} />}
         {activeLink === "Services" && <p>Our Services</p>}
-        {activeLink === "About Us" && <p>About Us</p>}
+        {activeLink === "About Us" && <About/>}
         {activeLink === "Contact Now" && <ContactForm></ContactForm>}
         {activeLink === "Terms & Conditions" && <p>Terms & Conditions</p>}
         {activeLink === "Privacy Policy" && <p>Privacy Policy</p>}

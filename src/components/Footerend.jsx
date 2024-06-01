@@ -1,6 +1,21 @@
 import React from "react";
 
 const Footerend = ({ onLinkClick }) => {
+  const scrollToTestimony = () => {
+    const scrollPosition = window.scrollY;
+    onLinkClick("Home");
+
+    setTimeout(() => {
+      window.scrollTo({ bottom: scrollPosition });
+      setTimeout(() => {
+        const testimonyDiv = document.getElementById("testimony");
+        if (testimonyDiv) {
+          testimonyDiv.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 50);
+    }, 0);
+  };
+
   return (
     <footer>
       <div className="FooterMain">
@@ -115,7 +130,7 @@ const Footerend = ({ onLinkClick }) => {
           <a onClick={() => onLinkClick("About Us")}>About Us</a>
           <a onClick={() => onLinkClick("Services")}>Services</a>
           <a onClick={() => onLinkClick("Contact Now")}>Contact Us</a>
-          <a href="">Testimonial</a>
+          <a onClick={() => scrollToTestimony()}>Testimonial</a>
           <a onClick={() => onLinkClick("Terms & Conditions")}>
             Terms & Conditions
           </a>

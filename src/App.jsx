@@ -19,7 +19,7 @@ const App = () => {
       <div className="bodyMain">
         {activeLink === "Home" && <Homepage onLinkClick={handleLinkClick} />}
         {activeLink === "Services" && <p>Our Services</p>}
-        {activeLink === "About Us" && <About/>}
+        {activeLink === "About Us" && <About onLinkClick={handleLinkClick} />}
         {activeLink === "Contact Now" && <ContactForm></ContactForm>}
         {activeLink === "Terms & Conditions" && <p>Terms & Conditions</p>}
         {activeLink === "Privacy Policy" && <p>Privacy Policy</p>}

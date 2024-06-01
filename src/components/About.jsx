@@ -2,7 +2,7 @@ import MR_industries from "../assets/MR_industries.jpeg";
 import { useState } from "react";
 import productImg from "../assets/productImg.png";
 import TestImg from "../assets/TestImg.png";
-const About = () => {
+const About = ({ onLinkClick }) => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
     { img: productImg, text: "Lorem Ipsum1" },
@@ -31,10 +31,13 @@ const About = () => {
     <div className="p-aboutUs">
       <div className="p-aboutUs-banner-background">
         <div className="p-breadcrumb">
-          <a href="" className="p-breadcrumb-current">
+          <a
+            onClick={() => onLinkClick("Home")}
+            className="p-breadcrumb-current"
+          >
             Home<span style={{ color: "white", padding: "0 8px" }}>\</span>
           </a>
-          <a href="">About us</a>
+          <a>About us</a>
         </div>
         <div className="p-aboutUs-text">
           <h1>About Us</h1>

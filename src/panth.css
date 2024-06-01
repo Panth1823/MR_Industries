@@ -185,6 +185,7 @@ span {
   line-height: normal;
 }
 .p-breadcrumb-current {
+  cursor: pointer;
   font-weight: 400 !important;
 }
 .p-aboutUs-text {

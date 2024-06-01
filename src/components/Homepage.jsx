@@ -5,6 +5,8 @@ import ProductGallery from "./Productgallery.jsx";
 import HomeOurServices from "./HomeOurServices.jsx";
 import HomeProcess from "./HomeProcess.jsx";
 import Testimony from "./Testimony.jsx";
+import FAQ from "./FAQ.jsx";
+import HomeNeedHelp from "./HomeNeedHelp.jsx";
 
 const Homepage = ({ onLinkClick }) => {
   return (
@@ -15,6 +17,8 @@ const Homepage = ({ onLinkClick }) => {
       <HomeOurServices onLinkClick={onLinkClick} />
       <HomeProcess />
       <Testimony />
+      <FAQ />
+      <HomeNeedHelp />
     </div>
   );
 };

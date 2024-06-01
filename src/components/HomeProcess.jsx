@@ -29,9 +29,9 @@ function HomeProcess() {
           <path
             d="M5.5 5.8877L5.5 1204.02"
             stroke="url(#paint0_linear_11_876)"
-            stroke-opacity="0.8"
-            stroke-width="10"
-            stroke-linecap="round"
+            strokeOpacity="0.8"
+            strokeWidth="10"
+            strokeLinecap="round"
           />
           <defs>
             <linearGradient
@@ -42,9 +42,9 @@ function HomeProcess() {
               y2="1204.02"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#12307B" />
-              <stop offset="0.531" stop-color="#569DD0" />
-              <stop offset="0.926" stop-color="white" />
+              <stop stopColor="#12307B" />
+              <stop offset="0.531" stopColor="#569DD0" />
+              <stop offset="0.926" stopColor="white" />
             </linearGradient>
           </defs>
         </svg>

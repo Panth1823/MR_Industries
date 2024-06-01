@@ -3,7 +3,7 @@ import testimony from "../assets/testimony.jpg";
 
 function Testimony() {
   return (
-    <div className="s-testimony">
+    <div className="s-testimony" id="testimony">
       <div className="s-about-us-heading">
         <span>TESTIMONIALS</span>
         <p>Trust Their Experience</p>

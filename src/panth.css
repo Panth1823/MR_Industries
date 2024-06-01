@@ -160,16 +160,17 @@ span {
 /* AboutUs */
 
 .p-aboutUs-banner-background {
+  width: 100%;
   display: flex;
   padding: 80px 160px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   align-self: stretch;
-  /* background: url(./assets) lightgray 1.359px -262.647px / 109.673% 227.428%
+  /* background-image: url(./assets/aboutus_background_banner.jpeg) lightgray 1.359px -262.647px / 109.673% 227.428%
       no-repeat,
     linear-gradient(90deg, #12307b 0%, #569dd0 100%); */
-  background: black;
+  background: blue;
 }
 .p-breadcrumb {
   padding-bottom: 40px;
@@ -185,7 +186,6 @@ span {
   line-height: normal;
 }
 .p-breadcrumb-current {
-  cursor: pointer;
   font-weight: 400 !important;
 }
 .p-aboutUs-text {
@@ -241,7 +241,7 @@ span {
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
-  padding: 8px 0 24px;
+  padding: 0px 0 24px;
 }
 .p-mr-desc {
   align-self: stretch;
@@ -469,4 +469,68 @@ span {
   font-weight: 600;
   line-height: 140%;
   padding-bottom: 24px;
+}
+.p-certi-quali-divs {
+  display: flex;
+  padding: 24px 24px 40px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--Blue-50, #d3ddf8);
+  background: var(--Default-white, #fff);
+  width: 360px;
+}
+.p-certi-main {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.p-iso-title {
+  color: var(--Blue-450, var(--blue, #355094)) !important;
+  font-family: Montserrat !important;
+  font-size: 30px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 38px !important;
+}
+.p-top-half {
+  display: flex;
+  padding-bottom: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--Blue-100, #9cafdd);
+}
+.p-top-half p {
+  color: var(--Blue-300, #5770ac);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.p-btm-half {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.p-certi-qual-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.p-btm-half li {
+  align-self: stretch;
+  color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.7));
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }

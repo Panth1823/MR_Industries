@@ -2,7 +2,10 @@ import MR_industries from "../assets/MR_industries.jpeg";
 import { useState } from "react";
 import productImg from "../assets/productImg.png";
 import TestImg from "../assets/TestImg.png";
-const About = ({ onLinkClick }) => {
+import ISO9001 from "../assets/ISO 9001.png";
+import ISO14001 from "../assets/ISO 14001.png";
+import ISO45001 from "../assets/ISO 45001.png";
+const About = () => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
     { img: productImg, text: "Lorem Ipsum1" },
@@ -31,13 +34,10 @@ const About = ({ onLinkClick }) => {
     <div className="p-aboutUs">
       <div className="p-aboutUs-banner-background">
         <div className="p-breadcrumb">
-          <a
-            onClick={() => onLinkClick("Home")}
-            className="p-breadcrumb-current"
-          >
+          <a href="" className="p-breadcrumb-current">
             Home<span style={{ color: "white", padding: "0 8px" }}>\</span>
           </a>
-          <a>About us</a>
+          <a href="">About us</a>
         </div>
         <div className="p-aboutUs-text">
           <h1>About Us</h1>
@@ -76,9 +76,11 @@ const About = ({ onLinkClick }) => {
         </div>
       </div>
       <div className="p-what-we-do">
-        <div className="p-about-text">DELIVERING EXCELLENT SOLUTIONS IN</div>
-        <div className="p-mr-inds-text" style={{ paddingBottom: "0px" }}>
-          What we do
+        <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+          <div className="p-about-text">DELIVERING EXCELLENT SOLUTIONS IN</div>
+          <div className="p-mr-inds-text" style={{ paddingBottom: "0px" }}>
+            What we do
+          </div>
         </div>
         <div className="p-card-grid">
           <div className="p-card-row1">
@@ -281,7 +283,7 @@ const About = ({ onLinkClick }) => {
           <p className="p-where-we-work-desc">
             Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis
             quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg
-            hynm Lorem ipsum{" "}
+            hynm Lorem ipsum
           </p>
         </div>
         <div className="p-six-card-grid">
@@ -373,7 +375,65 @@ const About = ({ onLinkClick }) => {
         <div className="p-certi-quali-text">
           <p>Certifications & Qualifications</p>
         </div>
-        <div></div>
+        <div className="p-certi-main">
+          <div className="p-certi-quali-divs">
+            <div className="p-certi-qual-card">
+              <div className="p-top-half">
+                <img src={ISO9001} alt="ISO 9001 Logo" />
+                <p className="p-iso-title">ISO 9001:2015</p>
+                <p>Quality Objectives</p>
+              </div>
+              <div className="p-btm-half">
+                <li>Introducing new products to the market.</li>
+                <li>
+                  Eliminating errors and defects in products and services.
+                </li>
+                <li>
+                  Improving product delivery lead time and customer
+                  satisfaction.
+                </li>
+                <li>Reducing costs without compromising quality.</li>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-certi-quali-divs">
+            <div className="p-certi-qual-card">
+              <div className="p-top-half">
+                <img src={ISO14001} alt="ISO 14001 Logo" />
+                <p className="p-iso-title">ISO 14001:2015</p>
+                <p>Environmental Objectives</p>
+              </div>
+              <div className="p-btm-half">
+                <li>Conserving valuable energy resources.</li>
+                <li>Reducing, reusing, and recycling materials.</li>
+                <li>Minimizing significant environmental impacts.</li>
+                <li>Promoting sustainable business practices.</li>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-certi-quali-divs">
+            <div className="p-certi-qual-card">
+              <div className="p-top-half">
+                <img src={ISO45001} alt="ISO 45001 Logo" />
+                <p className="p-iso-title">ISO 45001:2018</p>
+                <p>Health & Safety Objectives</p>
+              </div>
+              <div className="p-btm-half">
+                <li>
+                  Improving ergonomic conditions in all production processes.
+                </li>
+                <li>
+                  Preventing work-related ill health issues.Preventing
+                  work-related ill health issues.
+                </li>
+                <li>Preventing workplace accidents effectively.</li>
+                <li>Enhancing overall employee well-being and safety.</li>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

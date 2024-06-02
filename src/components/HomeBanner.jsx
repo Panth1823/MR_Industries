@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import ISO from "../assets/iso.jpg";
 import BannerImg from "../assets/Banner-Image.png";
 import Logo1 from "../assets/imago.png";
@@ -7,7 +7,7 @@ import Logo3 from "../assets/Log9.png";
 import Logo4 from "../assets/HTL_group.png";
 import Logo5 from "../assets/CSE_power.png";
 
-const HomeBanner= ({ onLinkClick }) =>{
+const HomeBanner = ({ onLinkClick }) => {
   return (
     <div className="s-banner">
       <div className="s-banner-main">
@@ -94,6 +94,6 @@ const HomeBanner= ({ onLinkClick }) =>{
       </div>
     </div>
   );
-}
+};
 
-export default HomeBanner
+export default HomeBanner;

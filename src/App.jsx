@@ -5,6 +5,7 @@ import Services from "./components/Services.jsx";
 import ContactForm from "./components/Contact.jsx";
 import Footerend from "./components/Footerend.jsx";
 import About from "./components/About.jsx";
+import ServiceDetails from "./components/ServiceDetails.jsx";
 
 const App = () => {
   const [activeLink, setActiveLink] = useState("Home");
@@ -22,7 +23,7 @@ const App = () => {
         {activeLink === "Services" && (
           <Services onLinkClick={handleLinkClick} />
         )}
-        {activeLink === "Services1" && <p>Services1</p>}
+        {activeLink === "Services1" && <ServiceDetails />}
         {activeLink === "Services2" && <p>Services2</p>}
         {activeLink === "Services3" && <p>Services3</p>}
         {activeLink === "Services4" && <p>Services4</p>}

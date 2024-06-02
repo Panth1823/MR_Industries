@@ -5,7 +5,9 @@ import TestImg from "../assets/TestImg.png";
 import ISO9001 from "../assets/ISO 9001.png";
 import ISO14001 from "../assets/ISO 14001.png";
 import ISO45001 from "../assets/ISO 45001.png";
-const About = ({ onLinkClick }) => {
+import ReactCardFlip from "react-card-flip";
+
+const About = () => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
     { img: productImg, text: "Lorem Ipsum1" },
@@ -30,15 +32,21 @@ const About = ({ onLinkClick }) => {
       setStartIndex(startIndex - 1);
     }
   };
+
+
+// card flip logic
+
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  function flipcard() {
+    setIsFlipped(!isFlipped);
+  }
+
   return (
     <div className="p-aboutUs">
       <div className="p-aboutUs-banner-background">
         <div className="p-breadcrumb">
-          <a
-            onClick={() => onLinkClick("Home")}
-            style={{ cursor: "pointer" }}
-            className="p-breadcrumb-current"
-          >
+          <a href="" className="p-breadcrumb-current">
             Home<span style={{ color: "white", padding: "0 8px" }}>\</span>
           </a>
           <a href="">About us</a>
@@ -292,40 +300,154 @@ const About = ({ onLinkClick }) => {
         </div>
         <div className="p-six-card-grid">
           <div className="card-row-top">
-            <img
-              src={TestImg}
-              alt="TestImg"
-              style={{ width: "548px", height: "457px", borderRadius: "8px" }}
-            />
-            <img
-              src={TestImg}
-              alt="TestImg"
-              style={{ width: "548px", height: "457px", borderRadius: "8px" }}
-            />
+            <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+              <div className="front" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+              <div className="back" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+            </ReactCardFlip>
+            <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+              <div className="front" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+              <div className="back" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+            </ReactCardFlip>
           </div>
           <div className="card-row-mid">
-            <img
-              src={TestImg}
-              alt="TestImg"
-              style={{ width: "548px", height: "457px", borderRadius: "8px" }}
-            />
-            <img
-              src={TestImg}
-              alt="TestImg"
-              style={{ width: "548px", height: "457px", borderRadius: "8px" }}
-            />
+            <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+              <div className="front" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+              <div className="back" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+            </ReactCardFlip>
+            <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+              <div className="front" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+              <div className="back" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+            </ReactCardFlip>
           </div>
           <div className="card-row-btm">
-            <img
-              src={TestImg}
-              alt="TestImg"
-              style={{ width: "548px", height: "457px", borderRadius: "8px" }}
-            />
-            <img
-              src={TestImg}
-              alt="TestImg"
-              style={{ width: "548px", height: "457px", borderRadius: "8px" }}
-            />
+            <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+              <div className="front" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+              <div className="back" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+            </ReactCardFlip>
+            <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+              <div className="front" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+              <div className="back" onClick={flipcard}>
+                <img
+                  src={TestImg}
+                  alt="TestImg"
+                  style={{
+                    width: "548px",
+                    height: "457px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </div>
+            </ReactCardFlip>
           </div>
         </div>
       </div>
@@ -385,9 +507,9 @@ const About = ({ onLinkClick }) => {
               <div className="p-top-half">
                 <img src={ISO9001} alt="ISO 9001 Logo" />
                 <p className="p-iso-title">ISO 9001:2015</p>
-                <p>Quality Objectives</p>
               </div>
               <div className="p-btm-half">
+                <p>Quality Objectives</p>
                 <li>Introducing new products to the market.</li>
                 <li>
                   Eliminating errors and defects in products and services.
@@ -406,9 +528,9 @@ const About = ({ onLinkClick }) => {
               <div className="p-top-half">
                 <img src={ISO14001} alt="ISO 14001 Logo" />
                 <p className="p-iso-title">ISO 14001:2015</p>
-                <p>Environmental Objectives</p>
               </div>
               <div className="p-btm-half">
+                <p>Environmental Objectives</p>
                 <li>Conserving valuable energy resources.</li>
                 <li>Reducing, reusing, and recycling materials.</li>
                 <li>Minimizing significant environmental impacts.</li>
@@ -422,9 +544,9 @@ const About = ({ onLinkClick }) => {
               <div className="p-top-half">
                 <img src={ISO45001} alt="ISO 45001 Logo" />
                 <p className="p-iso-title">ISO 45001:2018</p>
-                <p>Health & Safety Objectives</p>
               </div>
               <div className="p-btm-half">
+                <p>Health & Safety Objectives</p>
                 <li>
                   Improving ergonomic conditions in all production processes.
                 </li>

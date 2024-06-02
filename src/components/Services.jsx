@@ -10,7 +10,7 @@ const Services = ({ onLinkClick }) => {
           <p onClick={() => onLinkClick("Home")} style={{ cursor: "pointer" }}>
             Home
           </p>
-          <p>/</p>
+          <p>\</p>
           <p style={{ fontWeight: "600" }}>Services</p>
         </div>
         <div className="s-service-banner-heading">

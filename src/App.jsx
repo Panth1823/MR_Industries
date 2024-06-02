@@ -23,7 +23,9 @@ const App = () => {
         {activeLink === "Services" && (
           <Services onLinkClick={handleLinkClick} />
         )}
-        {activeLink === "Services1" && <ServiceDetails />}
+        {activeLink === "Services1" && (
+          <ServiceDetails onLinkClick={handleLinkClick} />
+        )}
         {activeLink === "Services2" && <p>Services2</p>}
         {activeLink === "Services3" && <p>Services3</p>}
         {activeLink === "Services4" && <p>Services4</p>}

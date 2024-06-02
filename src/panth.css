@@ -199,6 +199,22 @@ span {
 .p-breadcrumb-current {
   font-weight: 400 !important;
 }
+
+.p-breadcrumb-current:hover{
+  text-decoration: underline;
+}
+
+.p-breadcrumb span{
+    text-decoration: none;
+  color: var(--Default-white, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
 .p-aboutUs-text {
   padding-bottom: 20px;
   width: 100%;
@@ -612,6 +628,16 @@ span {
   font-weight: 600;
   line-height: 140%;
 }
+
+.p-img-desc-top span{
+color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.70));
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+
 .p-img-desc-top li {
   color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.7));
   font-family: Montserrat;

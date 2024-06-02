@@ -2,7 +2,7 @@ import { useState } from "react";
 import TestImg from "../assets/TestImg.png";
 import productImg from "../assets/productImg.png";
 import KnowMoreButtton from "./KnowMoreButtton.jsx";
-const ServiceDetails = () => {
+const ServiceDetails = ({ onLinkClick }) => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
     { img: productImg, text: "Lorem Ipsum1" },
@@ -41,30 +41,38 @@ const ServiceDetails = () => {
         >
           <div>
             <a
-              href=""
+              onClick={() => onLinkClick("Home")}
               className="p-breadcrumb-current"
-              style={{ color: "var(--Blue-100, #9CAFDD)", fontWeight: "400" }}
+              style={{
+                color: "var(--Blue-100, #9CAFDD)",
+                fontWeight: "400",
+                cursor: "pointer",
+              }}
             >
               Home
-              <span
-                style={{ color: "var(--Blue-100, #9CAFDD)", padding: "0 8px" }}
-              >
-                \
-              </span>
-            </a>
+            </a>{" "}
+            <span
+              style={{ color: "var(--Blue-100, #9CAFDD)", padding: "0 8px" }}
+            >
+              \
+            </span>
             <a
-              href=""
-              style={{ color: "var(--Blue-100, #9CAFDD)", fontWeight: "400" }}
+              className="p-breadcrumb-current"
+              onClick={() => onLinkClick("Services")}
+              style={{
+                color: "var(--Blue-100, #9CAFDD)",
+                fontWeight: "400",
+                cursor: "pointer",
+              }}
             >
               Services
-              <span
-                style={{ color: "var(--Blue-100, #9CAFDD)", padding: "0 8px" }}
-              >
-                \
-              </span>
             </a>
+            <span
+              style={{ color: "var(--Blue-100, #9CAFDD)", padding: "0 8px" }}
+            >
+              \
+            </span>
             <a
-              href=""
               style={{
                 color: " var(--Blue-450, var(--blue, #355094))",
                 fontWeight: "600",
@@ -86,16 +94,17 @@ const ServiceDetails = () => {
                 width: "-webkit-fill-available",
                 height: "-webkit-fill-available",
                 borderRadius: "8px",
+                objectFit: "cover",
               }}
             />
           </div>
           <div className="p-img-desp-main">
             <div className="p-img-desc-top">
               <p>Lorem Ipsum</p>
-              <li className="p-sd-li">
+              <span className="p-sd-li">
                 Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
                 pellentesque auctor massa ornare ultrices diam magnis.
-              </li>
+              </span>
             </div>
             <div className="p-sd-list-container">
               <li className="p-sd-li">
@@ -116,7 +125,10 @@ const ServiceDetails = () => {
               </li>
             </div>
             <div>
-              <div className="s-banner-contact-button">
+              <div
+                className="s-banner-contact-button"
+                onClick={() => onLinkClick("Contact Now")}
+              >
                 <p>Enquire Now</p>
               </div>
             </div>
@@ -125,7 +137,12 @@ const ServiceDetails = () => {
       </div>
 
       <div className="s-product-gallery" style={{ gap: "40px" }}>
-        <p className="s-product-gallery-heading">Manufactured Products</p>
+        <p
+          className="s-product-gallery-heading"
+          style={{width:"100%", borderBottom: "1px solid #E2E2E2", paddingBottom: "24px" }}
+        >
+          Manufactured Products
+        </p>
         <div className="s-product-gallery-container">
           <div
             className="s-product-gallery-left-button"
@@ -172,13 +189,14 @@ const ServiceDetails = () => {
         </div>
       </div>
 
-      <div className="s-our-services">
-        <div className="s-our-services-heading">
+      <div className="s-our-services" style={{ gap: "40px" }}>
+        <div
+          className="s-our-services-heading"
+          style={{ borderBottom: "1px solid #E2E2E2", paddingBottom: "24px" }}
+        >
           <div className="s-about-us-heading">
-            <span>OUR SERVICES</span>
-            <p>Trusted Manufacturers of</p>
+            <p>Similar Services</p>
           </div>
-          <KnowMoreButtton KnowMoreText={"View all"} />
         </div>
         <div className="s-our-services-container">
           <div className="s-our-services-set-container">

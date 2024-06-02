@@ -114,6 +114,10 @@
   cursor: pointer;
 }
 
+.navbarMainLink:hover{
+  color: #355094 ;
+}
+
 .activeNavbarLink p {
   color: var(--Blue-450, var(--blue, #355094));
   font-family: Montserrat;
@@ -1014,6 +1018,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.s-services-home-link:hover{
+  text-decoration: underline;
 }
 
 .s-service-banner-heading {

@@ -7,7 +7,7 @@ import ISO14001 from "../assets/ISO 14001.png";
 import ISO45001 from "../assets/ISO 45001.png";
 import ReactCardFlip from "react-card-flip";
 
-const About = () => {
+const About = ({ onLinkClick }) => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
     { img: productImg, text: "Lorem Ipsum1" },
@@ -33,8 +33,7 @@ const About = () => {
     }
   };
 
-
-// card flip logic
+  // card flip logic
 
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -46,9 +45,14 @@ const About = () => {
     <div className="p-aboutUs">
       <div className="p-aboutUs-banner-background">
         <div className="p-breadcrumb">
-          <a href="" className="p-breadcrumb-current">
-            Home<span style={{ color: "white", padding: "0 8px" }}>\</span>
+          <a
+            onClick={() => onLinkClick("Home")}
+            className="p-breadcrumb-current"
+            style={{ cursor: "pointer" }}
+          >
+            Home
           </a>
+          <span style={{ color: "white", padding: "0 8px" }}>\</span>
           <a href="">About us</a>
         </div>
         <div className="p-aboutUs-text">

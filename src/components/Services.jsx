@@ -7,7 +7,7 @@ const Services = ({ onLinkClick }) => {
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div className="s-service-banner">
         <div className="s-breadcrum">
-          <p onClick={() => onLinkClick("Home")} style={{ cursor: "pointer" }}>
+          <p className="s-services-home-link" onClick={() => onLinkClick("Home")} style={{ cursor: "pointer" }}>
             Home
           </p>
           <p>\</p>

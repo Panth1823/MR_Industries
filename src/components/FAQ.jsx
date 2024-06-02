@@ -16,27 +16,26 @@ const FAQ = () => {
     setShowAll(false);
   };
 
-  
   const faqData = [
-    "Lorem ipsum dolor sit amet consectetur?",
-    "Lorem ipsum dolor sit amet consectetur?",
-    "Lorem ipsum dolor sit amet consectetur?",
-    "Lorem ipsum dolor sit amet consectetur?",
-    "Lorem ipsum dolor sit amet consectetur?",
-    "Lorem ipsum dolor sit amet consectetur?",
-    "Lorem ipsum dolor sit amet consectetur?",
-    "Lorem ipsum dolor sit amet consectetur?",
+    "What types of wiring harnesses do you produce?",
+    "Can you provide custom EV battery cables?",
+    "What makes your power cords superior?",
+    "How long have you been in the manufacturing industry?",
+    "Do you offer solutions for industrial electronics?",
+    "What industries do you serve?",
+    "Are your products compliant with industry standards?",
+    "How do you ensure the quality of your electrical supplies?",
   ];
 
   const faqAnswers = [
-    "Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum",
-    "Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum",
-    "Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum",
-    "Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum",
-    "Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum",
-    "Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum",
-    "Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum",
-    "Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm Lorem ipsum",
+    "We manufacture a wide range of wiring harnesses, including automotive, industrial, and custom solutions. Our harnesses are designed for durability and performance, meeting the highest industry standards.",
+    "Yes, we specialize in producing custom EV battery cables tailored to your specifications. Our cables ensure optimal conductivity and safety, adhering to all regulatory requirements.",
+    "Our power cords are crafted from top-quality materials and undergo rigorous testing. They offer excellent durability and reliability, making them ideal for both commercial and industrial applications.",
+    "With over 14 years of experience, we have established ourselves as leaders in wiring harnesses, EV battery cables, and power cords. Our expertise ensures we deliver only the best products.",
+    "Absolutely, we are your trusted source for all industrial electronics needs. Our products range from connectors and sensors to complete electronic systems, designed for efficiency and reliability.",
+    "We serve a diverse range of industries including automotive, aerospace, telecommunications, and industrial automation. Our products are engineered to meet the specific demands of each sector.",
+    "Yes, all our products comply with relevant industry standards and certifications. We ensure our wiring harnesses, EV battery cables, and power cords meet or exceed regulatory requirements.",
+    "Quality is our top priority. We are certified manufacturers, employing stringent quality control measures and using advanced testing equipment to ensure our electrical supplies meet the highest standards of performance and safety.",
   ];
 
   return (
@@ -50,15 +49,13 @@ const FAQ = () => {
           .slice(0, showAll ? faqData.length : 4)
           .map((question, index) => (
             <div
+              onClick={() => handleToggle(index)}
               key={index}
               className={`s-faq-set ${
                 activeIndex === index ? "s-active-faq" : ""
               }`}
             >
-              <div
-                className="s-faq-set-heading"
-                onClick={() => handleToggle(index)}
-              >
+              <div className="s-faq-set-heading">
                 <p>{question}</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

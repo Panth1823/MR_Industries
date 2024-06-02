@@ -31,11 +31,15 @@
 }
 
 .bodyMain {
+  padding-top: 74px;
   width: 100%;
   min-height: 600px;
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   display: flex;
   width: 100%;
   height: 74px;
@@ -91,7 +95,7 @@
   height: 6px;
   border-radius: 3px;
   background-color: #355094;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .navbarMainLink {
@@ -645,6 +649,7 @@
   display: flex;
   width: 100%;
   padding: 80px 160px;
+  padding-bottom: 0px;
   flex-direction: column;
   gap: 120px;
   align-items: flex-start;
@@ -717,6 +722,7 @@
 }
 
 .s-testimony {
+  margin-top: 80px;
   display: flex;
   width: 100%;
   padding: 80px 160px;
@@ -906,14 +912,14 @@
   flex: 1 0 0;
 }
 
-.s-need-help img{
+.s-need-help img {
   bottom: -1px;
   right: 30px;
   position: absolute;
 }
 
-.s-need-help .s-about-us-heading{
-   z-index: 2;
+.s-need-help .s-about-us-heading {
+  z-index: 2;
 }
 
 .s-need-help-form {
@@ -977,6 +983,192 @@
   background-clip: content-box, border-box;
 }
 
+/* Services Page */
+
+.s-service-banner {
+  width: 100%;
+  padding: 80px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  background: linear-gradient(
+      90deg,
+      rgba(18, 48, 123, 0.8) 0%,
+      rgba(86, 157, 208, 0.8) 100%
+    ),
+    url("./assets/ServiceBanner.png") lightgray 50% / cover no-repeat;
+}
+
+.s-breadcrum {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.s-breadcrum p {
+  color: var(--Default-white, #fff);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.s-service-banner-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.s-service-banner-heading h1 {
+  color: var(--Default-white, #fff);
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.s-service-banner-heading p {
+  width: 777px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.s-service-catalogue{
+  display: flex;
+width: 100%;
+padding: 80px 160px;
+flex-direction: column;
+align-items: flex-start;
+gap: 80px;
+}
+
+.s-service-catalogue .s-about-us-left{
+  width: 100%;
+}
+
+.s-service-catalogue-container{
+  width: 100%;
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 80px;
+}
+
+.s-service-catalogue-set-container{
+  width: 100%;
+  display: flex;
+align-items: flex-start;
+gap: 80px;
+}
+
+.s-service-catalogue-set{
+  display: flex;
+  width: 50%;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+border-radius: 16px;
+border: 1px solid #CCC;
+background: #FFF;
+}
+
+.s-service-catalogue-set-img{
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.s-service-catalogue-set-img img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.s-service-catalogue-set-text{
+  display: flex;
+  padding: 24px 8px 0px 8px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+}
+
+.s-service-catalogue-set-text span{
+  color: var(--Blue-450, var(--blue, #355094));
+flex: 1 0 0;
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px;
+}
+
+.s-services-catalogue-set-para{
+  color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.70));
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; 
+}
+
+.s-wire-and-cable{
+  display: flex;
+width: 100%;
+padding: 80px 160px;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+}
+
+.s-wire-and-cable .s-about-us-left{
+  width: 100%;
+}
+
+.s-wire-and-cable .s-about-us-left p{
+  width: 872px;
+}
+
+.s-wire-and-cable-container{
+  width: 100%;
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 8px;
+border: 1px solid #838DA8;
+overflow: hidden;
+}
+
+.s-wire-and-cable-set{
+  width: 100%;
+  display: flex;
+padding: 20px 30px;
+align-items: flex-start;
+justify-content: space-between;
+}
+
+.s-wire-and-cable-set p{
+color: var(--Default-Text-Primary, #111);
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+}
+
+
+/* Footer */
 footer {
   display: flex;
   width: 100%;

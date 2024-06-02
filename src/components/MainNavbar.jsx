@@ -1,31 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const MainNavbar = ({ activeLink, onLinkClick }) => {
   const links = ["Home", "Services", "About Us"];
+  const servicesLinks = [
+    "Services1",
+    "Services2",
+    "Services3",
+    "Services4",
+    "Services5",
+    "Services6",
+  ];
 
-   const [contactText, setContactText] = useState("Contact Now");
+  const [contactText, setContactText] = useState("Contact Now");
 
-   const handleContactClick = () => {
-     if (contactText === "Contact Now") {
-       onLinkClick("Contact Now");
-       setContactText("Get Started");
-     } else if (contactText === "Get Started") {
-       onLinkClick("Home");
-       setContactText("Contact Now");
-     }
-   };
+  const handleContactClick = () => {
+    if (contactText === "Contact Now") {
+      onLinkClick("Contact Now");
+      setContactText("Get Started");
+    } else if (contactText === "Get Started") {
+      onLinkClick("Home");
+      setContactText("Contact Now");
+    }
+  };
+
+  useEffect(() => {
+    if (activeLink !== "Contact Now" && contactText === "Get Started") {
+      setContactText("Contact Now");
+    }
+  }, [activeLink, contactText]);
 
   const getIndicatorPosition = () => {
     switch (activeLink) {
       case "Home":
         return -104;
       case "Services":
+      case "Services1":
+      case "Services2":
+      case "Services3":
+      case "Services4":
+      case "Services5":
+      case "Services6":
         return 0;
       case "About Us":
         return 104;
-      default:
-        return -104;
     }
+  };
+
+  const isServicesLink = (link) => {
+    return link === "Services" && servicesLinks.includes(activeLink);
   };
 
   return (
@@ -71,7 +93,9 @@ const MainNavbar = ({ activeLink, onLinkClick }) => {
           <div
             key={link}
             className={`navbarMainLink ${
-              activeLink === link ? "activeNavbarLink" : ""
+              activeLink === link || isServicesLink(link)
+                ? "activeNavbarLink"
+                : ""
             }`}
             onClick={() => onLinkClick(link)}
           >

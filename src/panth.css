@@ -167,10 +167,13 @@ span {
   justify-content: center;
   align-items: flex-start;
   align-self: stretch;
-  /* background-image: url(./assets/aboutus_background_banner.jpeg) lightgray 1.359px -262.647px / 109.673% 227.428%
-      no-repeat,
-    linear-gradient(90deg, #12307b 0%, #569dd0 100%); */
-  background: blue;
+  background: linear-gradient(
+      90deg,
+      rgba(18, 48, 123, 0.8) 0%,
+      rgba(86, 157, 208, 0.8) 100%
+    ),
+    url("./assets/aboutus_background_banner.jpeg") lightgray 1.359px -262.647px /
+      109.673% 227.428% no-repeat;
 }
 .p-breadcrumb {
   padding-bottom: 40px;

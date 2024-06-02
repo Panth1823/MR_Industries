@@ -5,7 +5,7 @@ import TestImg from "../assets/TestImg.png";
 import ISO9001 from "../assets/ISO 9001.png";
 import ISO14001 from "../assets/ISO 14001.png";
 import ISO45001 from "../assets/ISO 45001.png";
-const About = () => {
+const About = ({ onLinkClick }) => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
     { img: productImg, text: "Lorem Ipsum1" },
@@ -34,7 +34,11 @@ const About = () => {
     <div className="p-aboutUs">
       <div className="p-aboutUs-banner-background">
         <div className="p-breadcrumb">
-          <a href="" className="p-breadcrumb-current">
+          <a
+            onClick={() => onLinkClick("Home")}
+            style={{ cursor: "pointer" }}
+            className="p-breadcrumb-current"
+          >
             Home<span style={{ color: "white", padding: "0 8px" }}>\</span>
           </a>
           <a href="">About us</a>

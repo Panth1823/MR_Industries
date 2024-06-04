@@ -10,6 +10,7 @@ const HomeAboutUs = ({ onLinkClick }) => {
           <span>ABOUT US</span>
           <p>Who we are</p>
         </div>
+        <img className='s-about-us-left-img' src={TestIMG}></img>
         <p className="s-about-us-heading-para">
           Incorporated in 2017, MR Industries has established a respected
           position in the market. Operating as a Sole Proprietorship, Our fully

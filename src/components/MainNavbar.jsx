@@ -50,6 +50,19 @@ const MainNavbar = ({ activeLink, onLinkClick }) => {
     return link === "Services" && servicesLinks.includes(activeLink);
   };
 
+  const [isNavbarVisible, setNavbarVisible] = useState(false);
+  const [isPageRendered, setPageRendered] = useState(true);
+
+  const toggleNavbar = () => {
+    setNavbarVisible(!isNavbarVisible);
+    setPageRendered(false);
+  };
+
+  const hideNavbar = () => {
+    setNavbarVisible(false);
+  };
+  
+
   return (
     <div className="navbar">
       <div className="navbarLogoContainer" onClick={() => onLinkClick("Home")}>
@@ -112,6 +125,83 @@ const MainNavbar = ({ activeLink, onLinkClick }) => {
       </div>
       <div className="navbarContactUs" onClick={handleContactClick}>
         <p>{contactText}</p>
+      </div>
+      <div className="mobileNavbarButton" onClick={toggleNavbar}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="24"
+          viewBox="0 0 25 24"
+          fill="none"
+        >
+          <path
+            d="M4.66016 18H20.6602C21.2102 18 21.6602 17.55 21.6602 17C21.6602 16.45 21.2102 16 20.6602 16H4.66016C4.11016 16 3.66016 16.45 3.66016 17C3.66016 17.55 4.11016 18 4.66016 18ZM4.66016 13H20.6602C21.2102 13 21.6602 12.55 21.6602 12C21.6602 11.45 21.2102 11 20.6602 11H4.66016C4.11016 11 3.66016 11.45 3.66016 12C3.66016 12.55 4.11016 13 4.66016 13ZM3.66016 7C3.66016 7.55 4.11016 8 4.66016 8H20.6602C21.2102 8 21.6602 7.55 21.6602 7C21.6602 6.45 21.2102 6 20.6602 6H4.66016C4.11016 6 3.66016 6.45 3.66016 7Z"
+            fill="#0E2662"
+          />
+        </svg>
+      </div>
+      <div
+        className={`mobileNavbar ${
+          isPageRendered
+            ? ""
+            : isNavbarVisible
+            ? "mobileNavbarVisible"
+            : "mobileNavbarHidden"
+        }`}
+      >
+        <div className="mobileNavbarHeading">
+          <div className="mobileNavbarCancel" onClick={hideNavbar}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M18.3 5.70999C17.91 5.31999 17.28 5.31999 16.89 5.70999L12 10.59L7.10997 5.69999C6.71997 5.30999 6.08997 5.30999 5.69997 5.69999C5.30997 6.08999 5.30997 6.71999 5.69997 7.10999L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997 18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10999C18.68 6.72999 18.68 6.08999 18.3 5.70999Z"
+                fill="#0E2662"
+              />
+            </svg>
+          </div>
+          <div className="mobileNavbarMain">
+            <p
+              onClick={() => {
+                setNavbarVisible(false);
+                onLinkClick("Home");
+              }}
+            >
+              Home
+            </p>
+            <p
+              onClick={() => {
+                setNavbarVisible(false);
+                onLinkClick("Services");
+              }}
+            >
+              Services
+            </p>
+            <p
+              onClick={() => {
+                setNavbarVisible(false);
+                onLinkClick("About Us");
+              }}
+            >
+              About Us
+            </p>
+          </div>
+        </div>
+        <div className="mobileNavbarContactContainer">
+          <div
+            className="navbarContactUs"
+            onClick={() => {
+              setNavbarVisible(false);
+              onLinkClick("Contact Now");
+            }}
+          >
+            <p>Contact Now</p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -139,7 +139,11 @@ const ServiceDetails = ({ onLinkClick }) => {
       <div className="s-product-gallery" style={{ gap: "40px" }}>
         <p
           className="s-product-gallery-heading"
-          style={{width:"100%", borderBottom: "1px solid #E2E2E2", paddingBottom: "24px" }}
+          style={{
+            width: "100%",
+            borderBottom: "1px solid #E2E2E2",
+            paddingBottom: "24px",
+          }}
         >
           Manufactured Products
         </p>

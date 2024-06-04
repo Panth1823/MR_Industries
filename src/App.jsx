@@ -26,11 +26,21 @@ const App = () => {
         {activeLink === "Services1" && (
           <ServiceDetails onLinkClick={handleLinkClick} />
         )}
-        {activeLink === "Services2" && <p>Services2</p>}
-        {activeLink === "Services3" && <p>Services3</p>}
-        {activeLink === "Services4" && <p>Services4</p>}
-        {activeLink === "Services5" && <p>Services5</p>}
-        {activeLink === "Services6" && <p>Services6</p>}
+        {activeLink === "Services2" && (
+          <ServiceDetails onLinkClick={handleLinkClick} />
+        )}
+        {activeLink === "Services3" && (
+          <ServiceDetails onLinkClick={handleLinkClick} />
+        )}
+        {activeLink === "Services4" && (
+          <ServiceDetails onLinkClick={handleLinkClick} />
+        )}
+        {activeLink === "Services5" && (
+          <ServiceDetails onLinkClick={handleLinkClick} />
+        )}
+        {activeLink === "Services6" && (
+          <ServiceDetails onLinkClick={handleLinkClick} />
+        )}
         {activeLink === "About Us" && <About onLinkClick={handleLinkClick} />}
         {activeLink === "Contact Now" && <ContactForm></ContactForm>}
         {activeLink === "Terms & Conditions" && <p>Terms & Conditions</p>}

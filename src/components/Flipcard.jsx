@@ -12,113 +12,108 @@ const Flipcard = () => {
 
   return (
     <>
-    <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
-      <div className="front" onClick={flipcard}>
-        <img
-          src={TestImg}
-          alt="TestImg"
-          style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+      <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+        <div className="front" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
           />
-      </div>
-      <div className="back" onClick={flipcard}>
-        <img
-          src={TestImg}
-          alt="TestImg"
-          style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-        />
-      </div>
-    </ReactCardFlip>
-    
+        </div>
+        <div className="back" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+      </ReactCardFlip>
 
-    <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
-    <div className="front" onClick={flipcard}>
-      <img
-        src={TestImg}
-        alt="TestImg"
-        style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-        />
-    </div>
-    <div className="back" onClick={flipcard}>
-      <img
-        src={TestImg}
-        alt="TestImg"
-        style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-        />
-    </div>
-  </ReactCardFlip>
+      <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+        <div className="front" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+        <div className="back" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+      </ReactCardFlip>
 
+      <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+        <div className="front" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+        <div className="back" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+      </ReactCardFlip>
 
-<ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
-<div className="front" onClick={flipcard}>
-  <img
-    src={TestImg}
-    alt="TestImg"
-    style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-    />
-</div>
-<div className="back" onClick={flipcard}>
-  <img
-    src={TestImg}
-    alt="TestImg"
-    style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-    />
-</div>
-</ReactCardFlip>
+      <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+        <div className="front" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+        <div className="back" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+      </ReactCardFlip>
 
+      <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+        <div className="front" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+        <div className="back" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+      </ReactCardFlip>
 
-<ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
-<div className="front" onClick={flipcard}>
-  <img
-    src={TestImg}
-    alt="TestImg"
-    style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-    />
-</div>
-<div className="back" onClick={flipcard}>
-  <img
-    src={TestImg}
-    alt="TestImg"
-    style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-    />
-</div>
-</ReactCardFlip>
-
-
-<ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
-<div className="front" onClick={flipcard}>
-  <img
-    src={TestImg}
-    alt="TestImg"
-    style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-    />
-</div>
-<div className="back" onClick={flipcard}>
-  <img
-    src={TestImg}
-    alt="TestImg"
-    style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-    />
-</div>
-</ReactCardFlip>
-
-<ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
-<div className="front" onClick={flipcard}>
-  <img
-    src={TestImg}
-    alt="TestImg"
-    style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-    />
-</div>
-<div className="back" onClick={flipcard}>
-  <img
-    src={TestImg}
-    alt="TestImg"
-    style={{ width: "548px", height: "457px", borderRadius: "20px" }}
-    />
-</div>
-</ReactCardFlip>
+      <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
+        <div className="front" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+        <div className="back" onClick={flipcard}>
+          <img
+            src={TestImg}
+            alt="TestImg"
+            style={{ width: "548px", height: "457px", borderRadius: "20px" }}
+          />
+        </div>
+      </ReactCardFlip>
     </>
-
   );
 };
 

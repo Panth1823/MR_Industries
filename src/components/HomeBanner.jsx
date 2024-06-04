@@ -6,6 +6,12 @@ import Logo2 from "../assets/emo.png";
 import Logo3 from "../assets/Log9.png";
 import Logo4 from "../assets/HTL_group.png";
 import Logo5 from "../assets/CSE_power.png";
+import Logo6 from "../assets/SunMobility.png";
+import Logo7 from "../assets/vishesh.png";
+import Logo8 from "../assets/exponent.png";
+import Logo9 from "../assets/syrma.png";
+import Logo10 from "../assets/amp.png";
+import Logo11 from "../assets/aoSmith.png";
 
 const HomeBanner = ({ onLinkClick }) => {
   return (
@@ -75,21 +81,111 @@ const HomeBanner = ({ onLinkClick }) => {
           <img src={Logo3} />
           <img src={Logo4} />
           <img src={Logo5} />
+          <img src={Logo6} style={{ transform: "scale(0.9)" }} />
+          <img src={Logo7} />
+          <img src={Logo8} />
+          <img src={Logo9} />
+          <img src={Logo10} />
+          <img src={Logo11} />
           <img src={Logo1} />
           <img src={Logo2} />
           <img src={Logo3} />
           <img src={Logo4} />
           <img src={Logo5} />
+          <img src={Logo6} style={{ transform: "scale(0.9)" }} />
+          <img src={Logo7} />
+          <img src={Logo8} />
+          <img src={Logo9} />
+          <img src={Logo10} />
+          <img src={Logo11} />
           <img src={Logo1} />
           <img src={Logo2} />
           <img src={Logo3} />
           <img src={Logo4} />
           <img src={Logo5} />
-          <img src={Logo1} />
-          <img src={Logo2} />
-          <img src={Logo3} />
-          <img src={Logo4} />
-          <img src={Logo5} />
+          <img src={Logo6} style={{ transform: "scale(0.9)" }} />
+          <img src={Logo7} />
+          <img src={Logo8} />
+          <img src={Logo9} />
+          <img src={Logo10} />
+          <img src={Logo11} />
+        </div>
+      </div>
+      <div className="s-mobile-banner-logos">
+        <div
+          className="s-mobile-banner-logo-set"
+          style={{ justifyContent: "space-between" }}
+        >
+          <img
+            src={Logo6}
+            alt="Sun Mobility"
+            style={{ width: "100px", height: "52px" }}
+          ></img>
+          <img
+            src={Logo1}
+            alt="Imago"
+            style={{ width: "80.283px", height: "37px" }}
+          ></img>
+          <img
+            src={Logo5}
+            alt="CSE Power"
+            style={{ width: "88px", height: "34px" }}
+          ></img>
+        </div>
+        <div
+          className="s-mobile-banner-logo-set"
+          style={{ justifyContent: "space-around" }}
+        >
+          <img
+            src={Logo7}
+            alt="Vishesh Innovative Technologies"
+            style={{ width: "94px", height: "37px" }}
+          ></img>
+          <img
+            src={Logo8}
+            alt="Exponent Energy"
+            style={{ width: "97px", height: "27px" }}
+          ></img>
+          <img
+            src={Logo9}
+            alt="Syrma SGS"
+            style={{ width: "84px", height: "26px" }}
+          ></img>
+        </div>
+        <div
+          className="s-mobile-banner-logo-set"
+          style={{ justifyContent: "space-evenly" }}
+        >
+          <img
+            src={Logo10}
+            alt="AMP"
+            style={{ width: "48px", height: "20px" }}
+          ></img>
+          <img
+            src={Logo4}
+            alt="HTL Group"
+            style={{ width: "100px", height: "20px" }}
+          ></img>
+          <img
+            src={Logo2}
+            alt="EMO"
+            style={{ width: "66px", height: "15px" }}
+          ></img>
+        </div>
+        <div
+          className="s-mobile-banner-logo-set"
+          style={{ justifyContent: "centre", gap:"24px" }}
+        >
+          <img
+            src={Logo3}
+            alt="Log9"
+            style={{ width: "100px", height: "19px" }}
+          ></img>
+          <img
+            src={Logo11}
+            alt="AO Smith"
+            style={{ width: "99px", height: "30px" }}
+          ></img>
         </div>
       </div>
     </div>

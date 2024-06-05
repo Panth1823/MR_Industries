@@ -25,7 +25,7 @@ const ContactForm = () => {
         method="post"
       >
         <div className="p-name">
-          <div style={{ width: "50%" }}>
+          <div className="p-name-container">
             <label htmlFor="firstName">
               First Name <span>*</span>
             </label>
@@ -37,7 +37,7 @@ const ContactForm = () => {
               required
             />
           </div>
-          <div style={{ width: "50%" }}>
+          <div className="p-name-container">
             <label htmlFor="lastName">
               Last Name <span>*</span>
             </label>

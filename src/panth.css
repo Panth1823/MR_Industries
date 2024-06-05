@@ -100,7 +100,9 @@
   justify-content: space-between;
   gap: 40px;
 }
-
+.p-name-container {
+  width: 50%;
+}
 .p-phone-number {
   display: flex;
   flex-direction: column;
@@ -200,12 +202,12 @@ span {
   font-weight: 400 !important;
 }
 
-.p-breadcrumb-current:hover{
+.p-breadcrumb-current:hover {
   text-decoration: underline;
 }
 
-.p-breadcrumb span{
-    text-decoration: none;
+.p-breadcrumb span {
+  text-decoration: none;
   color: var(--Default-white, #fff);
   font-family: Montserrat;
   font-size: 16px;
@@ -213,7 +215,6 @@ span {
   font-weight: 600;
   line-height: normal;
 }
-
 
 .p-aboutUs-text {
   padding-bottom: 20px;
@@ -279,6 +280,10 @@ span {
   font-weight: 400;
   line-height: 24px;
 }
+.p-mr-desc.mobile {
+  display: none;
+}
+
 .p-what-we-do {
   display: flex;
   padding: 80px 160px;
@@ -294,6 +299,9 @@ span {
   flex-direction: column;
   width: 100%;
 }
+.p-card-grid.mobile {
+  display: none;
+}
 .p-card-row1,
 .p-card-row2 {
   width: 100%;
@@ -304,14 +312,16 @@ span {
 .p-card {
   display: flex;
   flex-direction: column;
-  width: 336px;
-  height: 280px;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
   gap: 24px;
-  border-radius: 8px;
-  border: 2px solid var(--grad, #12307b);
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(90deg, #12307bcc, #569dd0cc);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .circle-svg {
@@ -351,7 +361,13 @@ span {
   gap: 10px;
   align-self: stretch;
   border-radius: 8px;
-  border: 4px solid var(--LINEAR, #12307b);
+  border: 2px solid #12307b;
+
+  /* border: double 2px transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(90deg, #12307bcc, #569dd0cc);
+  background-origin: border-box;
+  background-clip: content-box, border-box; */
 }
 .p-policy-desc-text p {
   display: flex;
@@ -435,7 +451,7 @@ span {
 }
 .p-where-we-work {
   display: flex;
-  padding: 80px 160px;
+  padding: 80px 140px;
   flex-direction: column;
   align-items: flex-start;
   gap: 33px;
@@ -474,6 +490,9 @@ span {
   padding-top: 30px;
   gap: 40px;
   width: 100%;
+}
+.p-mb-container {
+  display: none;
 }
 .card-row-top,
 .card-row-mid,
@@ -516,6 +535,9 @@ span {
   gap: 40px;
   justify-content: space-between;
   width: 100%;
+}
+.p-certi-main.mobile {
+  display: none;
 }
 
 .p-iso-title {
@@ -574,15 +596,59 @@ span {
 .react-card-back {
   width: 548px;
   height: 457px;
-  border-radius: 8px;
+  border-radius: 20px;
   background: linear-gradient(
       0deg,
       rgba(40, 67, 133, 0.8) 0%,
       rgba(40, 67, 133, 0.8) 100%
     ),
-    url(<path-to-image>) lightgray 50% / cover no-repeat;
+    url("./assets/TestImg.png") lightgray 50% / cover no-repeat;
 }
-
+.p-card-back-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: absolute;
+  width: 548px;
+  height: 457px;
+  padding: 74px 27px 74px;
+}
+.p-card-back-subtext {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  gap: 10px;
+}
+.p-subtext-back-p {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.p-subtext-back-p.top {
+  width: 262px;
+}
+.p-subtext-back-p.btm .back,
+.front {
+  width: 548px;
+  height: 457px;
+}
+.back {
+  width: 548px;
+  height: 457px;
+}
+.p-card-back-title p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 .p-service-details-main {
   display: flex;
   padding: 80px 160px;
@@ -629,13 +695,13 @@ span {
   line-height: 140%;
 }
 
-.p-img-desc-top span{
-color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.70));
-font-family: Montserrat;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
+.p-img-desc-top span {
+  color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.7));
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .p-img-desc-top li {
@@ -652,11 +718,384 @@ line-height: 24px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 .p-sd-list-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .p-breadcrumb {
+    display: none;
+  }
+  .p-aboutUs-text h1 {
+    color: var(--Default-white, #fff);
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .p-aboutUs-description p {
+    color: var(--Default-white, #fff);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: fit-content;
+  }
+  .p-aboutUs-banner-background {
+    display: flex;
+    padding: 80px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .p-about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 20px;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+  .p-about-text {
+    color: var(--Red-400, #ad2a27);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .p-mr-inds-text {
+    color: var(--Blue-600, #0e2662);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 8px 0 18px;
+  }
+  .p-industry-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .MR_industries {
+    width: 100%;
+    height: 100%;
+  }
+  .p-what-we-do {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .p-mr-desc {
+    display: none;
+  }
+  .p-mr-desc.mobile {
+    display: block;
+  }
+  .p-card-grid {
+    padding-top: 0;
+    display: none;
+  }
+  .p-card-grid.mobile {
+    display: flex;
+  }
+  .p-card-row1,
+  .p-card-row2 {
+    gap: 16px;
+  }
+  .circle-svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    margin-top: 39px;
+  }
+  .p-card-text {
+    color: var(--Default-Text-Primary, #111);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: fit-content;
+  }
+  .p-card {
+    gap: 12px;
+  }
+  .p-policy-mission {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+  }
+  .p-our-policy {
+    color: var(--Blue-600, #0e2662);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .p-policy-text {
+    gap: 8px;
+  }
+  .p-policy-desc-text p {
+    color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.7));
+    font-family: Montserrat;
+    font-size: 14px;
+    height: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .p-policy-desc-text {
+    padding: 16px;
+    height: auto;
+  }
+  .p-why-choose-us {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+  }
+  .p-why-choose-us p {
+    color: var(--Default-Text-Primary, #111);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .p-why-us-subtext {
+    color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.7)) !important;
+    font-family: Montserrat !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+  }
+  .p-why-rectangle {
+    width: 24px;
+    height: 24px;
+  }
+  .p-choose-us-text p {
+    color: var(--Blue-600, #0e2662);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .p-choose-us-text {
+    padding-bottom: 0;
+  }
+  .p-why-us-row {
+    gap: 24px;
+  }
+  .p-why-us-desc {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .p-desc-info {
+    gap: 8px;
+  }
+  .p-where-we-work {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    align-self: stretch;
+  }
+  .p-infrastructure {
+    color: var(--Red-400, #ad2a27);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .p-where-we-work-text {
+    color: var(--Blue-600, #0e2662);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .p-where-we-work-desc {
+    color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.7));
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: fit-content;
+  }
+  .p-six-card-grid {
+    display: none;
+  }
+
+  .p-certifications-qualification {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+  }
+  .p-certi-quali-text {
+    color: var(--Blue-600, #0e2662);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    padding-bottom: 0;
+  }
+  .p-certi-main {
+    display: none;
+  }
+  .p-certi-main.mobile {
+    gap: 8px;
+    width: auto;
+    display: flex;
+  }
+  .p-top-half {
+    gap: 16px;
+  }
+  .p-top-half img {
+    width: 70px;
+    height: 70px;
+  }
+  .p-iso-title {
+    font-size: 24px !important;
+    line-height: normal !important;
+  }
+  .p-certi-qual-card {
+    gap: 16px;
+    width: 100%;
+  }
+  .p-certi-mobile-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .p-certi-quali-divs {
+    height: fit-content;
+    width: 299px;
+    padding: 20px;
+  }
+  .p-btm-half p {
+    color: var(--Blue-450, var(--blue, #355094));
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  .p-mobile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .p-mobile-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .p-certi-main-container {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .p-mb-container {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .p-mobile-card {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 369px;
+  }
+  .p-card-back-title.mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .p-card-back-main.mobile {
+    width: fit-content;
+  }
+  .p-contact {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+  }
+  .p-contact-text h1 {
+    color: var(--Blue-600, #0e2662);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+  }
+  .p-contact-text p {
+    color: var(--Default-Text-Secondary, rgba(17, 17, 17, 0.7));
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 16px;
+  }
+  .p-contact-form,
+  .p-contact-text {
+    width: 100%;
+  }
+  .p-contact-form {
+    padding: 0px;
+    border: none;
+  }
+  .p-contact-form label {
+    color: var(--Default-Text-Primary, #111);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .p-name {
+    flex-direction: column;
+  }
+  .p-name-container {
+    width: 100%;
+  }
+  .css-1xc3v61-indicatorContainer {
+    padding: 0px;
+  }
 }

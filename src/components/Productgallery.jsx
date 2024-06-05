@@ -12,8 +12,12 @@ const ProductGallery = () => {
     { img: productImg, text: "Lorem Ipsum6" },
   ];
 
-  const itemsToShow = 4;
+ const screenSizeCurrent = window.innerWidth;
+const itemsToShow = screenSizeCurrent < 1200 ? 1 : 4;
+
   const endIndex = startIndex + itemsToShow;
+  
+
 
   const handleRightClick = () => {
     if (endIndex < items.length) {
@@ -30,6 +34,10 @@ const ProductGallery = () => {
   return (
     <div className="s-product-gallery">
       <p className="s-product-gallery-heading">Products Gallery</p>
+      <div className="s-about-us-heading">
+        <span>PORTFOLIO</span>
+        <p>Products Gallery</p>
+      </div>
       <div className="s-product-gallery-container">
         <div
           className="s-product-gallery-left-button"

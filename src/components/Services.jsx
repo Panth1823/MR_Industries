@@ -7,7 +7,11 @@ const Services = ({ onLinkClick }) => {
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div className="s-service-banner">
         <div className="s-breadcrum">
-          <p className="s-services-home-link" onClick={() => onLinkClick("Home")} style={{ cursor: "pointer" }}>
+          <p
+            className="s-services-home-link"
+            onClick={() => onLinkClick("Home")}
+            style={{ cursor: "pointer" }}
+          >
             Home
           </p>
           <p>\</p>
@@ -141,6 +145,21 @@ const Services = ({ onLinkClick }) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="view-all-services">
+          <p>Load More</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="7"
+            viewBox="0 0 12 7"
+            fill="none"
+          >
+            <path
+              d="M0.235013 0.705987C-0.0783367 0.979698 -0.0783367 1.42099 0.235013 1.6947L5.54916 6.33661C5.79856 6.55446 6.20144 6.55446 6.45084 6.33661L11.765 1.6947C12.0783 1.42099 12.0783 0.979698 11.765 0.705987C11.4516 0.432276 10.9464 0.432276 10.6331 0.705987L5.9968 4.75021L1.36051 0.700401C1.05356 0.432276 0.541966 0.432276 0.235013 0.705987Z"
+              fill="#355094"
+            />
+          </svg>
         </div>
       </div>
       <div className="s-wire-and-cable">

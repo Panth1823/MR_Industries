@@ -556,6 +556,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 0px !important;
+  border: none !important;
 }
 
 .s-mobile-our-services-heading .KnowMoreButton {
@@ -1385,6 +1387,7 @@ footer {
   .mobileNavbarButton svg {
     width: 24px;
     height: 24px;
+    cursor: pointer;
   }
 
   @keyframes slideIn {
@@ -1455,6 +1458,7 @@ footer {
   .mobileNavbarCancel svg {
     width: 24px;
     height: 24px;
+    cursor: pointer;
   }
 
   .mobileNavbarMain {
@@ -1475,6 +1479,7 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
+    cursor: pointer;
   }
 
   .mobileNavbarMain p:hover {
@@ -1779,7 +1784,7 @@ footer {
     padding: 48px 20px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 24px !important;
     align-self: stretch;
   }
 
@@ -2420,18 +2425,18 @@ footer {
     width: auto;
   }
 
-  .view-all-services{
+  .view-all-services {
     width: 100%;
     justify-content: flex-end;
     display: flex;
-align-items: center;
-gap: 8px;
-color: var(--blue, #355094);
-font-family: Montserrat;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    align-items: center;
+    gap: 8px;
+    color: var(--blue, #355094);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
 
   .s-wire-and-cable {
@@ -2457,6 +2462,6 @@ line-height: normal;
   }
 
   .s-wire-and-cable-set p:first-child {
-  min-width: 140px;
-}
+    min-width: 140px;
+  }
 }

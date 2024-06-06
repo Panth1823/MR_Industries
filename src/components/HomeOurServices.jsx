@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import KnowMoreButtton from "./KnowMoreButtton.jsx";
-import Services1 from "../assets/Services1.jpg"
-import Services2 from "../assets/Services2.jpg"
+import Services1 from "../assets/Services1.jpg";
+import Services2 from "../assets/Services2.jpg";
 
 const HomeOurServices = ({ onLinkClick }) => {
   const [activeDot, setActiveDot] = useState(0);
@@ -33,7 +33,8 @@ const HomeOurServices = ({ onLinkClick }) => {
     <div className="s-our-services">
       <div className="s-our-services-heading">
         <div className="s-about-us-heading">
-          <div className="s-mobile-our-services-heading"
+          <div
+            className="s-mobile-our-services-heading"
             style={{
               display: "flex",
               width: "100%",

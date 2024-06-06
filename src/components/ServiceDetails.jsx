@@ -1,32 +1,7 @@
-import { useState } from "react";
 import TestImg from "../assets/TestImg.png";
-import productImg from "../assets/productImg.png";
-import KnowMoreButtton from "./KnowMoreButtton.jsx";
+import ProductGallerywDots from "./ProductGallerywDots.jsx";
+import Services1 from "../assets/Services1.jpg";
 const ServiceDetails = ({ onLinkClick }) => {
-  const [startIndex, setStartIndex] = useState(0);
-  const items = [
-    { img: productImg, text: "Lorem Ipsum1" },
-    { img: productImg, text: "Lorem Ipsum2" },
-    { img: productImg, text: "Lorem Ipsum3" },
-    { img: productImg, text: "Lorem Ipsum4" },
-    { img: productImg, text: "Lorem Ipsum5" },
-    { img: productImg, text: "Lorem Ipsum6" },
-  ];
-
-  const itemsToShow = 4;
-  const endIndex = startIndex + itemsToShow;
-
-  const handleRightClick = () => {
-    if (endIndex < items.length) {
-      setStartIndex(startIndex + 1);
-    }
-  };
-
-  const handleLeftClick = () => {
-    if (startIndex > 0) {
-      setStartIndex(startIndex - 1);
-    }
-  };
   return (
     <>
       <div className="p-service-details-main">
@@ -85,6 +60,10 @@ const ServiceDetails = ({ onLinkClick }) => {
             <p>Lorem Ipsum</p>
           </div>
         </div>
+        <div className="p-mobile-title">
+          <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet consectetur. Et miat sit velit. </p>
+        </div>
         <div className="p-img-desc-main">
           <div className="p-sd-img-cover">
             <img
@@ -124,7 +103,7 @@ const ServiceDetails = ({ onLinkClick }) => {
                 pellentesque auctor massa ornare ultrices diam magnis.
               </li>
             </div>
-            <div>
+            <div className="p-enquire-now-btn-div">
               <div
                 className="s-banner-contact-button"
                 onClick={() => onLinkClick("Contact Now")}
@@ -136,62 +115,7 @@ const ServiceDetails = ({ onLinkClick }) => {
         </div>
       </div>
 
-      <div className="s-product-gallery" style={{ gap: "40px" }}>
-        <p
-          className="s-product-gallery-heading"
-          style={{
-            width: "100%",
-            borderBottom: "1px solid #E2E2E2",
-            paddingBottom: "24px",
-          }}
-        >
-          Manufactured Products
-        </p>
-        <div className="s-product-gallery-container">
-          <div
-            className="s-product-gallery-left-button"
-            onClick={handleLeftClick}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="53"
-              viewBox="0 0 52 53"
-              fill="none"
-            >
-              <path
-                d="M31.8279 37.9055C32.6729 37.0605 32.6729 35.6955 31.8279 34.8505L23.4213 26.4438L31.8279 18.0372C32.6729 17.1922 32.6729 15.8272 31.8279 14.9822C30.9829 14.1372 29.6179 14.1372 28.7729 14.9822L18.8279 24.9272C17.9829 25.7722 17.9829 27.1372 18.8279 27.9822L28.7729 37.9272C29.5963 38.7505 30.9829 38.7505 31.8279 37.9055Z"
-                fill="#355094"
-              />
-            </svg>
-          </div>
-          <div className="s-gallery-set-container">
-            {items.slice(startIndex, endIndex).map((item, index) => (
-              <div className="s-gallery-set" key={index}>
-                <img src={item.img} alt={`Product ${index + 1}`} />
-                <p>{item.text}</p>
-              </div>
-            ))}
-          </div>
-          <div
-            className="s-product-gallery-right-button"
-            onClick={handleRightClick}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="53"
-              viewBox="0 0 52 53"
-              fill="none"
-            >
-              <path
-                d="M20.1721 37.9055C19.3271 37.0605 19.3271 35.6955 20.1721 34.8505L28.5787 26.4438L20.1721 18.0372C19.3271 17.1922 19.3271 15.8272 20.1721 14.9822C21.0171 14.1372 22.3821 14.1372 23.2271 14.9822L33.1721 24.9272C34.0171 25.7722 34.0171 27.1372 33.1721 27.9822L23.2271 37.9272C22.4037 38.7505 21.0171 38.7505 20.1721 37.9055Z"
-                fill="#355094"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
+      <ProductGallerywDots />
 
       <div className="s-our-services" style={{ gap: "40px" }}>
         <div
@@ -255,6 +179,164 @@ const ServiceDetails = ({ onLinkClick }) => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="s-mobile-our-services-container">
+          <div className="s-mobile-our-services-set">
+            <div className="s-mobile-our-services-set-img">
+              <img src={Services1}></img>
+            </div>
+            <div className="s-mobile-our-services-set-text">
+              <div className="s-mobile-our-services-set-heading">
+                <span>Header</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M5.50049 5.83333C5.50049 6.29167 5.87549 6.66667 6.33383 6.66667H12.6588L5.25883 14.0667C4.93383 14.3917 4.93383 14.9167 5.25883 15.2417C5.58383 15.5667 6.10883 15.5667 6.43383 15.2417L13.8338 7.84167V14.1667C13.8338 14.625 14.2088 15 14.6672 15C15.1255 15 15.5005 14.625 15.5005 14.1667V5.83333C15.5005 5.375 15.1255 5 14.6672 5H6.33383C5.87549 5 5.50049 5.375 5.50049 5.83333Z"
+                    fill="#355094"
+                  />
+                </svg>
+              </div>
+              <p>
+                Office ipsum you must be muted. Problem exploratory switch busy
+                hard board. Better roll strategies clean existing winning.
+              </p>
+            </div>
+          </div>
+          <div className="s-mobile-our-services-set">
+            <div className="s-mobile-our-services-set-img">
+              <img src={Services1}></img>
+            </div>
+            <div className="s-mobile-our-services-set-text">
+              <div className="s-mobile-our-services-set-heading">
+                <span>Header</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M5.50049 5.83333C5.50049 6.29167 5.87549 6.66667 6.33383 6.66667H12.6588L5.25883 14.0667C4.93383 14.3917 4.93383 14.9167 5.25883 15.2417C5.58383 15.5667 6.10883 15.5667 6.43383 15.2417L13.8338 7.84167V14.1667C13.8338 14.625 14.2088 15 14.6672 15C15.1255 15 15.5005 14.625 15.5005 14.1667V5.83333C15.5005 5.375 15.1255 5 14.6672 5H6.33383C5.87549 5 5.50049 5.375 5.50049 5.83333Z"
+                    fill="#355094"
+                  />
+                </svg>
+              </div>
+              <p>
+                Office ipsum you must be muted. Problem exploratory switch busy
+                hard board. Better roll strategies clean existing winning.
+              </p>
+            </div>
+          </div>
+          <div className="s-mobile-our-services-set">
+            <div className="s-mobile-our-services-set-img">
+              <img src={Services1}></img>
+            </div>
+            <div className="s-mobile-our-services-set-text">
+              <div className="s-mobile-our-services-set-heading">
+                <span>Header</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M5.50049 5.83333C5.50049 6.29167 5.87549 6.66667 6.33383 6.66667H12.6588L5.25883 14.0667C4.93383 14.3917 4.93383 14.9167 5.25883 15.2417C5.58383 15.5667 6.10883 15.5667 6.43383 15.2417L13.8338 7.84167V14.1667C13.8338 14.625 14.2088 15 14.6672 15C15.1255 15 15.5005 14.625 15.5005 14.1667V5.83333C15.5005 5.375 15.1255 5 14.6672 5H6.33383C5.87549 5 5.50049 5.375 5.50049 5.83333Z"
+                    fill="#355094"
+                  />
+                </svg>
+              </div>
+              <p>
+                Office ipsum you must be muted. Problem exploratory switch busy
+                hard board. Better roll strategies clean existing winning.
+              </p>
+            </div>
+          </div>
+          <div className="s-mobile-our-services-set">
+            <div className="s-mobile-our-services-set-img">
+              <img src={Services1}></img>
+            </div>
+            <div className="s-mobile-our-services-set-text">
+              <div className="s-mobile-our-services-set-heading">
+                <span>Header</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M5.50049 5.83333C5.50049 6.29167 5.87549 6.66667 6.33383 6.66667H12.6588L5.25883 14.0667C4.93383 14.3917 4.93383 14.9167 5.25883 15.2417C5.58383 15.5667 6.10883 15.5667 6.43383 15.2417L13.8338 7.84167V14.1667C13.8338 14.625 14.2088 15 14.6672 15C15.1255 15 15.5005 14.625 15.5005 14.1667V5.83333C15.5005 5.375 15.1255 5 14.6672 5H6.33383C5.87549 5 5.50049 5.375 5.50049 5.83333Z"
+                    fill="#355094"
+                  />
+                </svg>
+              </div>
+              <p>
+                Office ipsum you must be muted. Problem exploratory switch busy
+                hard board. Better roll strategies clean existing winning.
+              </p>
+            </div>
+          </div>
+          <div className="s-mobile-our-services-set">
+            <div className="s-mobile-our-services-set-img">
+              <img src={Services1}></img>
+            </div>
+            <div className="s-mobile-our-services-set-text">
+              <div className="s-mobile-our-services-set-heading">
+                <span>Header</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M5.50049 5.83333C5.50049 6.29167 5.87549 6.66667 6.33383 6.66667H12.6588L5.25883 14.0667C4.93383 14.3917 4.93383 14.9167 5.25883 15.2417C5.58383 15.5667 6.10883 15.5667 6.43383 15.2417L13.8338 7.84167V14.1667C13.8338 14.625 14.2088 15 14.6672 15C15.1255 15 15.5005 14.625 15.5005 14.1667V5.83333C15.5005 5.375 15.1255 5 14.6672 5H6.33383C5.87549 5 5.50049 5.375 5.50049 5.83333Z"
+                    fill="#355094"
+                  />
+                </svg>
+              </div>
+              <p>
+                Office ipsum you must be muted. Problem exploratory switch busy
+                hard board. Better roll strategies clean existing winning.
+              </p>
+            </div>
+          </div>
+          <div className="s-mobile-our-services-set">
+            <div className="s-mobile-our-services-set-img">
+              <img src={Services1}></img>
+            </div>
+            <div className="s-mobile-our-services-set-text">
+              <div className="s-mobile-our-services-set-heading">
+                <span>Header</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <path
+                    d="M5.50049 5.83333C5.50049 6.29167 5.87549 6.66667 6.33383 6.66667H12.6588L5.25883 14.0667C4.93383 14.3917 4.93383 14.9167 5.25883 15.2417C5.58383 15.5667 6.10883 15.5667 6.43383 15.2417L13.8338 7.84167V14.1667C13.8338 14.625 14.2088 15 14.6672 15C15.1255 15 15.5005 14.625 15.5005 14.1667V5.83333C15.5005 5.375 15.1255 5 14.6672 5H6.33383C5.87549 5 5.50049 5.375 5.50049 5.83333Z"
+                    fill="#355094"
+                  />
+                </svg>
+              </div>
+              <p>
+                Office ipsum you must be muted. Problem exploratory switch busy
+                hard board. Better roll strategies clean existing winning.
+              </p>
             </div>
           </div>
         </div>

@@ -583,6 +583,7 @@
 .s-our-services-two-set {
   width: 100%;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   gap: 50px;
   justify-content: space-between;
@@ -687,6 +688,7 @@
   width: 100%;
   padding: 80px 160px;
   padding-bottom: 0px;
+  margin-bottom: -40px;
   flex-direction: column;
   gap: 120px;
   align-items: flex-start;
@@ -766,10 +768,10 @@
 }
 
 .s-testimony {
-  margin-top: 80px;
   display: flex;
   width: 100%;
   padding: 80px 160px;
+  padding-top: 120px;
   flex-direction: column;
   gap: 64px;
   align-items: flex-start;
@@ -1893,7 +1895,7 @@ footer {
   }
 
   .s-process-line {
-    height: 550px;
+    height: 520px;
   }
 
   .mobile-process1,
@@ -2000,11 +2002,10 @@ footer {
   .s-testimony {
     display: flex;
     padding: 48px 20px;
-    padding-top: 0;
+    padding-top: 80px;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    margin: 0;
   }
 
   .s-testimony-set-container {

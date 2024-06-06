@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import KnowMoreButtton from "./KnowMoreButtton.jsx";
 import Services1 from "../assets/Services1.jpg";
 import Services2 from "../assets/Services2.jpg";
+import testImg from "../assets/TestImg.png"
 
 const HomeOurServices = ({ onLinkClick }) => {
   const [activeDot, setActiveDot] = useState(0);
@@ -20,13 +21,18 @@ const HomeOurServices = ({ onLinkClick }) => {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
+
+    if (window.innerWidth > 1200){
+       const interval = setInterval(() => {
       const nextIndex = (activeDot + 1) % 3;
       setActiveDot(nextIndex);
       slideToIndex(nextIndex);
     }, 5000);
-
+  
     return () => clearInterval(interval);
+    }
+
+   
   }, [activeDot]);
 
   return (
@@ -83,7 +89,7 @@ const HomeOurServices = ({ onLinkClick }) => {
               </div>
             </div>
             <div className="s-our-services-set">
-              <img src={Services2} alt="Services 1"></img>
+              <img src={testImg} alt="Services 1"></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
                   <p>Header</p>

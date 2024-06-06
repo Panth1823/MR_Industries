@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import TestIMG from "../assets/TestImg.png";
 import KnowMoreButton from "./KnowMoreButtton";
 
 const Services = ({ onLinkClick }) => {
+
+  const [showMore, setShowMore] = useState(false);
+
+  const handleLoadMore = () => {
+    setShowMore(true);
+  };
+
+  const handleSeeLess=()=>{
+    setShowMore(false);
+  }
+
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div className="s-service-banner">
@@ -146,20 +157,159 @@ const Services = ({ onLinkClick }) => {
             </div>
           </div>
         </div>
-        <div className="view-all-services">
-          <p>Load More</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="7"
-            viewBox="0 0 12 7"
-            fill="none"
-          >
-            <path
-              d="M0.235013 0.705987C-0.0783367 0.979698 -0.0783367 1.42099 0.235013 1.6947L5.54916 6.33661C5.79856 6.55446 6.20144 6.55446 6.45084 6.33661L11.765 1.6947C12.0783 1.42099 12.0783 0.979698 11.765 0.705987C11.4516 0.432276 10.9464 0.432276 10.6331 0.705987L5.9968 4.75021L1.36051 0.700401C1.05356 0.432276 0.541966 0.432276 0.235013 0.705987Z"
-              fill="#355094"
-            />
-          </svg>
+      </div>
+      <div className="mobile-services-catalouge">
+        <div className="s-about-us-left">
+          <div className="s-about-us-heading">
+            <p>Lorem Ipsum</p>
+          </div>
+          <p className="s-about-us-heading-para">
+            Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis
+            quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg
+            hynm Lorem ipsum
+          </p>
+        </div>
+        <div className="s-service-catalogue-container">
+          <div className="s-service-catalogue-set-container">
+            <div className="s-service-catalogue-set">
+              <div className="s-service-catalogue-set-img">
+                <img src={TestIMG} alt="" />
+              </div>
+              <div className="s-service-catalogue-set-text">
+                <span>Header</span>
+                <p className="s-services-catalogue-set-para">
+                  Office ipsum you must be muted. Problem exploratory switch
+                  busy hard board. Better roll strategies clean existing
+                  winning.
+                </p>
+                <KnowMoreButton
+                  KnowMoreText={"View Details"}
+                  onClick={() => onLinkClick("Services1")}
+                />
+              </div>
+            </div>
+            <div className="s-service-catalogue-set">
+              <div className="s-service-catalogue-set-img">
+                <img src={TestIMG} alt="" />
+              </div>
+              <div className="s-service-catalogue-set-text">
+                <span>Header</span>
+                <p className="s-services-catalogue-set-para">
+                  Office ipsum you must be muted. Problem exploratory switch
+                  busy hard board. Better roll strategies clean existing
+                  winning.
+                </p>
+                <KnowMoreButton
+                  KnowMoreText={"View Details"}
+                  onClick={() => onLinkClick("Services2")}
+                />
+              </div>
+            </div>
+            <div className="s-service-catalogue-set">
+              <div className="s-service-catalogue-set-img">
+                <img src={TestIMG} alt="" />
+              </div>
+              <div className="s-service-catalogue-set-text">
+                <span>Header</span>
+                <p className="s-services-catalogue-set-para">
+                  Office ipsum you must be muted. Problem exploratory switch
+                  busy hard board. Better roll strategies clean existing
+                  winning.
+                </p>
+                <KnowMoreButton
+                  KnowMoreText={"View Details"}
+                  onClick={() => onLinkClick("Services3")}
+                />
+              </div>
+            </div>
+            {showMore && (
+              <>
+                <div className="s-service-catalogue-set">
+                  <div className="s-service-catalogue-set-img">
+                    <img src={TestIMG} alt="" />
+                  </div>
+                  <div className="s-service-catalogue-set-text">
+                    <span>Header</span>
+                    <p className="s-services-catalogue-set-para">
+                      Office ipsum you must be muted. Problem exploratory switch
+                      busy hard board. Better roll strategies clean existing
+                      winning.
+                    </p>
+                    <KnowMoreButton
+                      KnowMoreText={"View Details"}
+                      onClick={() => onLinkClick("Services4")}
+                    />
+                  </div>
+                </div>
+                <div className="s-service-catalogue-set">
+                  <div className="s-service-catalogue-set-img">
+                    <img src={TestIMG} alt="" />
+                  </div>
+                  <div className="s-service-catalogue-set-text">
+                    <span>Header</span>
+                    <p className="s-services-catalogue-set-para">
+                      Office ipsum you must be muted. Problem exploratory switch
+                      busy hard board. Better roll strategies clean existing
+                      winning.
+                    </p>
+                    <KnowMoreButton
+                      KnowMoreText={"View Details"}
+                      onClick={() => onLinkClick("Services5")}
+                    />
+                  </div>
+                </div>
+                <div className="s-service-catalogue-set">
+                  <div className="s-service-catalogue-set-img">
+                    <img src={TestIMG} alt="" />
+                  </div>
+                  <div className="s-service-catalogue-set-text">
+                    <span>Header</span>
+                    <p className="s-services-catalogue-set-para">
+                      Office ipsum you must be muted. Problem exploratory switch
+                      busy hard board. Better roll strategies clean existing
+                      winning.
+                    </p>
+                    <KnowMoreButton
+                      KnowMoreText={"View Details"}
+                      onClick={() => onLinkClick("Services6")}
+                    />
+                  </div>
+                </div>
+                <div className="see-less-services" onClick={handleSeeLess}>
+                  <p>See Less</p>
+                  <svg style={{transform:"rotate(180deg)"}}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="7"
+                    viewBox="0 0 12 7"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.235013 0.705987C-0.0783367 0.979698 -0.0783367 1.42099 0.235013 1.6947L5.54916 6.33661C5.79856 6.55446 6.20144 6.55446 6.45084 6.33661L11.765 1.6947C12.0783 1.42099 12.0783 0.979698 11.765 0.705987C11.4516 0.432276 10.9464 0.432276 10.6331 0.705987L5.9968 4.75021L1.36051 0.700401C1.05356 0.432276 0.541966 0.432276 0.235013 0.705987Z"
+                      fill="#355094"
+                    />
+                  </svg>
+                </div>
+              </>
+            )}
+          </div>
+          {!showMore && (
+            <div className="view-all-services" onClick={handleLoadMore}>
+              <p>Load More</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+              >
+                <path
+                  d="M0.235013 0.705987C-0.0783367 0.979698 -0.0783367 1.42099 0.235013 1.6947L5.54916 6.33661C5.79856 6.55446 6.20144 6.55446 6.45084 6.33661L11.765 1.6947C12.0783 1.42099 12.0783 0.979698 11.765 0.705987C11.4516 0.432276 10.9464 0.432276 10.6331 0.705987L5.9968 4.75021L1.36051 0.700401C1.05356 0.432276 0.541966 0.432276 0.235013 0.705987Z"
+                  fill="#355094"
+                />
+              </svg>
+            </div>
+          )}
         </div>
       </div>
       <div className="s-wire-and-cable">

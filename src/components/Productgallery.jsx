@@ -12,12 +12,13 @@ const ProductGallery = () => {
     { img: productImg, text: "Lorem Ipsum6" },
   ];
 
- const screenSizeCurrent = window.innerWidth;
-const itemsToShow = screenSizeCurrent < 1200 ? 1 : 4;
+  const numberOfItems= items.length;
+
+
+  const screenSizeCurrent = window.innerWidth;
+  const itemsToShow = screenSizeCurrent < 1200 ? 1 : 4;
 
   const endIndex = startIndex + itemsToShow;
-  
-
 
   const handleRightClick = () => {
     if (endIndex < items.length) {
@@ -44,6 +45,7 @@ const itemsToShow = screenSizeCurrent < 1200 ? 1 : 4;
           onClick={handleLeftClick}
         >
           <svg
+            style={{ opacity: startIndex === 0 ? 0.3 : 1 }}
             xmlns="http://www.w3.org/2000/svg"
             width="52"
             height="53"
@@ -67,6 +69,7 @@ const itemsToShow = screenSizeCurrent < 1200 ? 1 : 4;
         <div
           className="s-product-gallery-right-button"
           onClick={handleRightClick}
+          style={{ opacity: endIndex >= numberOfItems ? 0.3 : 1 }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,6 @@
 import MR_industries from "../assets/MR_industries.jpeg";
 import { useState } from "react";
+import Productgallery from "./Productgallery.jsx";
 import productImg from "../assets/productImg.png";
 import TestImg from "../assets/TestImg.png";
 import ISO9001 from "../assets/ISO 9001.png";
@@ -735,7 +736,12 @@ const About = ({ onLinkClick }) => {
               <img
                 src={TestImg}
                 alt=""
-                style={{ width: "300px", height: "369px", borderRadius: "8px" }}
+                style={{
+                  width: "300px",
+                  height: "369px",
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                }}
               />
               {/* <div className="p-card-back-main mobile">
                   <div className="p-card-back-title mobile">
@@ -784,86 +790,66 @@ const About = ({ onLinkClick }) => {
               <img
                 src={TestImg}
                 alt=""
-                style={{ width: "300px", height: "369px", borderRadius: "8px" }}
+                style={{
+                  width: "300px",
+                  height: "369px",
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                }}
               />
             </div>
             <div className="p-mobile-card">
               <img
                 src={TestImg}
                 alt=""
-                style={{ width: "300px", height: "369px", borderRadius: "8px" }}
+                style={{
+                  width: "300px",
+                  height: "369px",
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                }}
               />
             </div>
             <div className="p-mobile-card">
               <img
                 src={TestImg}
                 alt=""
-                style={{ width: "300px", height: "369px", borderRadius: "8px" }}
+                style={{
+                  width: "300px",
+                  height: "369px",
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                }}
               />
             </div>
             <div className="p-mobile-card">
               <img
                 src={TestImg}
                 alt=""
-                style={{ width: "300px", height: "369px", borderRadius: "8px" }}
+                style={{
+                  width: "300px",
+                  height: "369px",
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                }}
               />
             </div>
             <div className="p-mobile-card">
               <img
                 src={TestImg}
                 alt=""
-                style={{ width: "300px", height: "369px", borderRadius: "8px" }}
+                style={{
+                  width: "300px",
+                  height: "369px",
+                  borderRadius: "8px",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="s-product-gallery">
-        <div className="s-product-gallery-container">
-          <div
-            className="s-product-gallery-left-button"
-            onClick={handleLeftClick}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="53"
-              viewBox="0 0 52 53"
-              fill="none"
-            >
-              <path
-                d="M31.8279 37.9055C32.6729 37.0605 32.6729 35.6955 31.8279 34.8505L23.4213 26.4438L31.8279 18.0372C32.6729 17.1922 32.6729 15.8272 31.8279 14.9822C30.9829 14.1372 29.6179 14.1372 28.7729 14.9822L18.8279 24.9272C17.9829 25.7722 17.9829 27.1372 18.8279 27.9822L28.7729 37.9272C29.5963 38.7505 30.9829 38.7505 31.8279 37.9055Z"
-                fill="#355094"
-              />
-            </svg>
-          </div>
-          <div className="s-gallery-set-container">
-            {items.slice(startIndex, endIndex).map((item, index) => (
-              <div className="s-gallery-set" key={index}>
-                <img src={item.img} alt={`Product ${index + 1}`} />
-                <p>{item.text}</p>
-              </div>
-            ))}
-          </div>
-          <div
-            className="s-product-gallery-right-button"
-            onClick={handleRightClick}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="53"
-              viewBox="0 0 52 53"
-              fill="none"
-            >
-              <path
-                d="M20.1721 37.9055C19.3271 37.0605 19.3271 35.6955 20.1721 34.8505L28.5787 26.4438L20.1721 18.0372C19.3271 17.1922 19.3271 15.8272 20.1721 14.9822C21.0171 14.1372 22.3821 14.1372 23.2271 14.9822L33.1721 24.9272C34.0171 25.7722 34.0171 27.1372 33.1721 27.9822L23.2271 37.9272C22.4037 38.7505 21.0171 38.7505 20.1721 37.9055Z"
-                fill="#355094"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
+      <Productgallery />
       <div className="p-certifications-qualification">
         <div className="p-certi-quali-text">
           <p>Certifications & Qualifications</p>
@@ -936,7 +922,10 @@ const About = ({ onLinkClick }) => {
                   <p className="p-iso-title">ISO 9001:2015</p>
                 </div>
                 <div className="p-btm-half">
-                  <div className="p-certi-mobile-div">
+                  <div
+                    className="p-certi-mobile-div"
+                    onClick={toggleVisibility1}
+                  >
                     <p>Quality Objectives</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -944,7 +933,6 @@ const About = ({ onLinkClick }) => {
                       height="6"
                       viewBox="0 0 12 6"
                       fill="none"
-                      onClick={toggleVisibility1}
                       style={{
                         cursor: "pointer",
                         transform: `rotate(${rotateDeg1}deg)`,
@@ -981,7 +969,10 @@ const About = ({ onLinkClick }) => {
                   <p className="p-iso-title">ISO 14001:2015</p>
                 </div>
                 <div className="p-btm-half">
-                  <div className="p-certi-mobile-div">
+                  <div
+                    className="p-certi-mobile-div"
+                    onClick={toggleVisibility2}
+                  >
                     <p>Environmental Objectives</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -989,7 +980,6 @@ const About = ({ onLinkClick }) => {
                       height="6"
                       viewBox="0 0 12 6"
                       fill="none"
-                      onClick={toggleVisibility2}
                       style={{
                         cursor: "pointer",
                         transform: `rotate(${rotateDeg2}deg)`,
@@ -1021,7 +1011,10 @@ const About = ({ onLinkClick }) => {
                   <p className="p-iso-title">ISO 45001:2018</p>
                 </div>
                 <div className="p-btm-half">
-                  <div className="p-certi-mobile-div">
+                  <div
+                    className="p-certi-mobile-div"
+                    onClick={toggleVisibility3}
+                  >
                     <p>Health & Safety Objectives</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1029,7 +1022,6 @@ const About = ({ onLinkClick }) => {
                       height="6"
                       viewBox="0 0 12 6"
                       fill="none"
-                      onClick={toggleVisibility3}
                       style={{
                         cursor: "pointer",
                         transform: `rotate(${rotateDeg3}deg)`,

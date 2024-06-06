@@ -1103,6 +1103,10 @@
   gap: 80px;
 }
 
+  .mobile-services-catalouge{
+    display: none;
+  }
+
 .s-service-catalogue .s-about-us-left {
   width: 100%;
 }
@@ -1123,6 +1127,7 @@
 }
 
 .s-service-catalogue-set {
+  overflow: hidden;
   display: flex;
   width: 50%;
   padding: 24px;
@@ -2368,6 +2373,11 @@ footer {
   }
 
   .s-service-catalogue {
+    display: none;
+  }
+
+  .mobile-services-catalouge {
+    width: 100%;
     display: flex;
     padding: 48px 20px;
     flex-direction: column;
@@ -2427,6 +2437,20 @@ footer {
 
   .view-all-services {
     width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--blue, #355094);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .see-less-services{
+        width: 100%;
     justify-content: flex-end;
     display: flex;
     align-items: center;

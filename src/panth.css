@@ -160,6 +160,10 @@ span {
 }
 
 /* AboutUs */
+/* 
+.p-aboutUs .s-gallery-set p{
+  display: none;
+} */
 
 .p-aboutUs-banner-background {
   width: 100%;
@@ -1138,6 +1142,12 @@ span {
     justify-content: space-between;
     align-items: center;
   }
+
+
+  .p-certi-mobile-div svg{
+    transition: transform 0.3s ease;
+  }
+
   .p-certi-quali-divs {
     height: fit-content;
     width: 100%;
@@ -1344,4 +1354,8 @@ span {
   .p-enquire-now-btn-div {
     width: 100%;
   }
+/* 
+  .p-aboutUs .s-gallery-set p{
+  display: none;
+} */
 }

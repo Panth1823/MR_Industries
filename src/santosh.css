@@ -705,6 +705,97 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 1210px;
+}
+
+.s-process-line {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 0px;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #12307bcc, #569dd0cc, #fff);
+  animation: lineScroll 1s linear forwards;
+  animation-timeline: view(300px 300px);
+}
+
+.process-1 {
+  top: 59px;
+  left: 50%;
+  opacity: 0;
+  animation: process1 linear 0.5s forwards;
+  animation-timeline: view(550px 0px);
+}
+
+.process-2 {
+  top: 317px;
+  left: 50%;
+  opacity: 0;
+  animation: process2 linear 0.5s forwards;
+  animation-timeline: view(680px 0px);
+}
+
+.process-3 {
+  top: 575px;
+  left: 50%;
+  opacity: 0;
+  animation: process3 linear 0.5s forwards;
+  animation-timeline: view(700px 0px);
+}
+
+.process-4 {
+  top: 837px;
+  left: 50%;
+  opacity: 0;
+  animation: process4 linear 0.5s forwards;
+  animation-timeline: view(600px 0px);
+}
+
+@keyframes lineScroll {
+  to {
+    height: 1150px;
+  }
+}
+
+@keyframes process1 {
+  from {
+    opacity: 0;
+    transform: translateX(calc(-50% + 350px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(calc(-50% + 250px));
+  }
+}
+@keyframes process2 {
+  from {
+    opacity: 0;
+    transform: translateX(calc(-50% - 350px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(calc(-50% - 250px));
+  }
+}
+@keyframes process3 {
+  from {
+    opacity: 0;
+    transform: translateX(calc(-50% + 350px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(calc(-50% + 250px));
+  }
+}
+@keyframes process4 {
+  from {
+    opacity: 0;
+    transform: translateX(calc(-50% - 350px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(calc(-50% - 250px));
+  }
 }
 
 .process-1,
@@ -741,30 +832,6 @@
 
 .process-dot-4 {
   top: 912px;
-}
-
-.process-1 {
-  top: 59px;
-  left: 50%;
-  transform: translateX(calc(-50% + 250px));
-}
-
-.process-2 {
-  top: 317px;
-  left: 50%;
-  transform: translateX(calc(-50% - 250px));
-}
-
-.process-3 {
-  top: 575px;
-  left: 50%;
-  transform: translateX(calc(-50% + 250px));
-}
-
-.process-4 {
-  top: 837px;
-  left: 50%;
-  transform: translateX(calc(-50% - 250px));
 }
 
 .s-testimony {

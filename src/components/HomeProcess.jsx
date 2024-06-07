@@ -24,36 +24,7 @@ function HomeProcess() {
         </p>
       </div>
       <div className="s-process-container">
-        <svg
-          className="s-process-line"
-          xmlns="http://www.w3.org/2000/svg"
-          width="11"
-          height="1210"
-          viewBox="0 0 11 1210"
-          fill="none"
-        >
-          <path
-            d="M5.5 5.8877L5.5 1204.02"
-            stroke="url(#paint0_linear_11_876)"
-            strokeOpacity="0.8"
-            strokeWidth="10"
-            strokeLinecap="round"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_11_876"
-              x1="5"
-              y1="5.8877"
-              x2="5"
-              y2="1204.02"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#12307B" />
-              <stop offset="0.531" stopColor="#569DD0" />
-              <stop offset="0.926" stopColor="white" />
-            </linearGradient>
-          </defs>
-        </svg>
+        <div className="s-process-line"></div>
         <img className="process-1" src={Process1}></img>
         <img className="process-2" src={Process2}></img>
         <img className="process-3" src={Process3}></img>

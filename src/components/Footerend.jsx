@@ -57,7 +57,7 @@ const Footerend = ({ onLinkClick }) => {
           </a>
           <span>M R INDUSTRIES </span>
           <div className="FooterMainLinks">
-            <a href="" className="FooterMainLinksSet">
+            <a href="tel:+919901451802" className="FooterMainLinksSet">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -72,7 +72,11 @@ const Footerend = ({ onLinkClick }) => {
               </svg>
               <p>+91 99014 51802</p>
             </a>
-            <a href="" className="FooterMainLinksSet">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@mrindustries.in.net"
+              target="_blank"
+              className="FooterMainLinksSet"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -87,7 +91,11 @@ const Footerend = ({ onLinkClick }) => {
               </svg>
               <p>sales@mrindustries.in.net</p>
             </a>
-            <a href="" className="FooterMainLinksSet">
+            <a
+              href="https://maps.app.goo.gl/xoQPbuDDNBRRSQft8"
+              target="_blank"
+              className="FooterMainLinksSet"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -109,7 +117,11 @@ const Footerend = ({ onLinkClick }) => {
               </p>
             </a>
           </div>
-          <a href="" className="FooterMainMapLink">
+          <a
+            href="https://maps.app.goo.gl/xoQPbuDDNBRRSQft8"
+            target="_blank"
+            className="FooterMainMapLink"
+          >
             <p>View on Google Maps</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -206,7 +218,7 @@ const Footerend = ({ onLinkClick }) => {
             <div className="mobile-footer-conatct">
               <p>Contact us</p>
               <div className="mobile-footer-contact-link">
-                <a>
+                <a href="tel:+919901451802">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -221,7 +233,10 @@ const Footerend = ({ onLinkClick }) => {
                   </svg>
                   <p>+91 99014 51802</p>
                 </a>
-                <a>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@mrindustries.in.net"
+                  target="_blank"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -236,7 +251,10 @@ const Footerend = ({ onLinkClick }) => {
                   </svg>
                   <p>sales@mrindustries.in.net</p>
                 </a>
-                <a>
+                <a
+                  href="https://maps.app.goo.gl/xoQPbuDDNBRRSQft8"
+                  target="_blank"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="90"
@@ -256,7 +274,11 @@ const Footerend = ({ onLinkClick }) => {
                   </p>
                 </a>
               </div>
-              <a style={{paddingLeft:"28px"}}>
+              <a
+                href="https://maps.app.goo.gl/xoQPbuDDNBRRSQft8"
+                target="_blank"
+                style={{ paddingLeft: "28px" }}
+              >
                 <p>View on Google Maps</p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

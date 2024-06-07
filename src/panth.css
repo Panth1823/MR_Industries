@@ -1181,7 +1181,14 @@ span {
     display: flex;
     width: 100%;
     overflow-x: auto;
+     -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
   }
+
+  .p-mb-container::-webkit-scrollbar {
+    display: none;
+}
+
   .p-mobile-card {
     display: flex;
     width: 300px;

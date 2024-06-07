@@ -1819,7 +1819,13 @@ footer {
     align-items: center;
     gap: 8px;
     align-self: stretch;
+      -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
   }
+
+  .s-mobile-our-services-container::-webkit-scrollbar {
+    display: none;
+}
 
   .s-mobile-our-services-set {
     display: flex;
@@ -2019,7 +2025,13 @@ footer {
     justify-content: flex-start;
     gap: 8px;
     overflow-x: scroll;
+     -ms-overflow-style: none; 
+  scrollbar-width: none;
   }
+
+  .s-mobile-testimony-set-container::-webkit-scrollbar {
+    display: none;
+}
 
   .s-mobile-testimony-set {
     width: 80%;

@@ -154,128 +154,140 @@ const About = ({ onLinkClick }) => {
       </div>
       <div className="p-what-we-do">
         <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-          <div className="p-about-text">DELIVERING EXCELLENT SOLUTIONS IN</div>
+          <div className="p-about-text">OTHER PARTS AVAILABLE</div>
           <div className="p-mr-inds-text" style={{ paddingBottom: "0px" }}>
-            What we do
+            Trading Parts Catalogue
           </div>
         </div>
         <div className="p-card-grid">
           <div className="p-card-row1">
             <div className="p-card">
-              <svg
-                className="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="94"
-                height="93"
-                viewBox="0 0 94 93"
-                fill="none"
-              >
-                <ellipse
-                  cx="46.7663"
-                  cy="46.4756"
-                  rx="46.6027"
-                  ry="45.7705"
-                  fill="#D9D9D9"
-                />
-              </svg>
-              <p className="p-card-text">Wiring Harness</p>
+              <div className="p-circle-svg-container">
+                <svg
+                  className="circle-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="94"
+                  height="93"
+                  viewBox="0 0 94 93"
+                  fill="none"
+                >
+                  <ellipse
+                    cx="46.7663"
+                    cy="46.4756"
+                    rx="46.6027"
+                    ry="45.7705"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              </div>
+              <p className="p-card-text">Heat Shrinkable Sleeve</p>
             </div>
             <div className="p-card">
-              <svg
-                className="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="94"
-                height="93"
-                viewBox="0 0 94 93"
-                fill="none"
-              >
-                <ellipse
-                  cx="46.7663"
-                  cy="46.4756"
-                  rx="46.6027"
-                  ry="45.7705"
-                  fill="#D9D9D9"
-                />
-              </svg>
-              <p className="p-card-text">Design & Engineering</p>
+              <div className="p-circle-svg-container">
+                <svg
+                  className="circle-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="94"
+                  height="93"
+                  viewBox="0 0 94 93"
+                  fill="none"
+                >
+                  <ellipse
+                    cx="46.7663"
+                    cy="46.4756"
+                    rx="46.6027"
+                    ry="45.7705"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              </div>
+              <p className="p-card-text">Lugs & terminals</p>
             </div>
             <div className="p-card">
-              <svg
-                className="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="94"
-                height="93"
-                viewBox="0 0 94 93"
-                fill="none"
-              >
-                <ellipse
-                  cx="46.7663"
-                  cy="46.4756"
-                  rx="46.6027"
-                  ry="45.7705"
-                  fill="#D9D9D9"
-                />
-              </svg>
-              <p className="p-card-text">Design & Engineering</p>
+              <div className="p-circle-svg-container">
+                <svg
+                  className="circle-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="94"
+                  height="93"
+                  viewBox="0 0 94 93"
+                  fill="none"
+                >
+                  <ellipse
+                    cx="46.7663"
+                    cy="46.4756"
+                    rx="46.6027"
+                    ry="45.7705"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              </div>
+              <p className="p-card-text">All types of Automotive Connectors</p>
             </div>
           </div>
           <div className="p-card-row2">
             <div className="p-card">
-              <svg
-                className="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="94"
-                height="93"
-                viewBox="0 0 94 93"
-                fill="none"
-              >
-                <ellipse
-                  cx="46.7663"
-                  cy="46.4756"
-                  rx="46.6027"
-                  ry="45.7705"
-                  fill="#D9D9D9"
-                />
-              </svg>
-              <p className="p-card-text">Design & Engineering</p>
+              <div className="p-circle-svg-container">
+                <svg
+                  className="circle-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="94"
+                  height="93"
+                  viewBox="0 0 94 93"
+                  fill="none"
+                >
+                  <ellipse
+                    cx="46.7663"
+                    cy="46.4756"
+                    rx="46.6027"
+                    ry="45.7705"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              </div>
+              <p className="p-card-text">VFG Sleeves lug</p>
             </div>
             <div className="p-card">
-              <svg
-                className="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="94"
-                height="93"
-                viewBox="0 0 94 93"
-                fill="none"
-              >
-                <ellipse
-                  cx="46.7663"
-                  cy="46.4756"
-                  rx="46.6027"
-                  ry="45.7705"
-                  fill="#D9D9D9"
-                />
-              </svg>
-              <p className="p-card-text">Design & Engineering</p>
+              <div className="p-circle-svg-container">
+                <svg
+                  className="circle-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="94"
+                  height="93"
+                  viewBox="0 0 94 93"
+                  fill="none"
+                >
+                  <ellipse
+                    cx="46.7663"
+                    cy="46.4756"
+                    rx="46.6027"
+                    ry="45.7705"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              </div>
+              <p className="p-card-text">Mid joint and Lug terminals</p>
             </div>
             <div className="p-card">
-              <svg
-                className="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="94"
-                height="93"
-                viewBox="0 0 94 93"
-                fill="none"
-              >
-                <ellipse
-                  cx="46.7663"
-                  cy="46.4756"
-                  rx="46.6027"
-                  ry="45.7705"
-                  fill="#D9D9D9"
-                />
-              </svg>
-              <p className="p-card-text">Design & Engineering</p>
+              <div className="p-circle-svg-container">
+                <svg
+                  className="circle-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="94"
+                  height="93"
+                  viewBox="0 0 94 93"
+                  fill="none"
+                >
+                  <ellipse
+                    cx="46.7663"
+                    cy="46.4756"
+                    rx="46.6027"
+                    ry="45.7705"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              </div>
+              <p className="p-card-text">Ev Grade wires</p>
             </div>
           </div>
         </div>
@@ -298,7 +310,7 @@ const About = ({ onLinkClick }) => {
                   fill="#D9D9D9"
                 />
               </svg>
-              <p className="p-card-text">Wiring Harness</p>
+              <p className="p-card-text">Heat Shrinkable Sleeve</p>
             </div>
             <div className="p-card">
               <svg
@@ -317,47 +329,7 @@ const About = ({ onLinkClick }) => {
                   fill="#D9D9D9"
                 />
               </svg>
-              <p className="p-card-text">Design & Engineering</p>
-            </div>
-          </div>
-          <div className="p-card-row2">
-            <div className="p-card">
-              <svg
-                className="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="94"
-                height="93"
-                viewBox="0 0 94 93"
-                fill="none"
-              >
-                <ellipse
-                  cx="46.7663"
-                  cy="46.4756"
-                  rx="46.6027"
-                  ry="45.7705"
-                  fill="#D9D9D9"
-                />
-              </svg>
-              <p className="p-card-text">Design & Engineering</p>
-            </div>
-            <div className="p-card">
-              <svg
-                className="circle-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="94"
-                height="93"
-                viewBox="0 0 94 93"
-                fill="none"
-              >
-                <ellipse
-                  cx="46.7663"
-                  cy="46.4756"
-                  rx="46.6027"
-                  ry="45.7705"
-                  fill="#D9D9D9"
-                />
-              </svg>
-              <p className="p-card-text">Design & Engineering</p>
+              <p className="p-card-text">Lugs & terminals</p>
             </div>
           </div>
           <div className="p-card-row2">
@@ -378,7 +350,7 @@ const About = ({ onLinkClick }) => {
                   fill="#D9D9D9"
                 />
               </svg>
-              <p className="p-card-text">Design & Engineering</p>
+              <p className="p-card-text">All types of Automotive Connectors</p>
             </div>
             <div className="p-card">
               <svg
@@ -397,7 +369,47 @@ const About = ({ onLinkClick }) => {
                   fill="#D9D9D9"
                 />
               </svg>
-              <p className="p-card-text">Design & Engineering</p>
+              <p className="p-card-text">VFG Sleeves lug</p>
+            </div>
+          </div>
+          <div className="p-card-row2">
+            <div className="p-card">
+              <svg
+                className="circle-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="94"
+                height="93"
+                viewBox="0 0 94 93"
+                fill="none"
+              >
+                <ellipse
+                  cx="46.7663"
+                  cy="46.4756"
+                  rx="46.6027"
+                  ry="45.7705"
+                  fill="#D9D9D9"
+                />
+              </svg>
+              <p className="p-card-text">Mid joint and Lug terminals</p>
+            </div>
+            <div className="p-card">
+              <svg
+                className="circle-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="94"
+                height="93"
+                viewBox="0 0 94 93"
+                fill="none"
+              >
+                <ellipse
+                  cx="46.7663"
+                  cy="46.4756"
+                  rx="46.6027"
+                  ry="45.7705"
+                  fill="#D9D9D9"
+                />
+              </svg>
+              <p className="p-card-text">Ev Grade wires</p>
             </div>
           </div>
         </div>
@@ -434,9 +446,9 @@ const About = ({ onLinkClick }) => {
           <div className="p-why-us-desc">
             <div className="p-why-rectangle"></div>
             <div className="p-desc-info">
-              <p>Lorem Ipsum</p>
+              <p>14+ years of Experience</p>
               <p className="p-why-us-subtext">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit.
+                Extensive expertise ensuring top-quality results.
               </p>
             </div>
           </div>
@@ -444,9 +456,9 @@ const About = ({ onLinkClick }) => {
           <div className="p-why-us-desc">
             <div className="p-why-rectangle"></div>
             <div className="p-desc-info">
-              <p>Lorem Ipsum</p>
+              <p>Certified Quality</p>
               <p className="p-why-us-subtext">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit.
+                Industry-certified products for guaranteed reliability.
               </p>
             </div>
           </div>
@@ -455,9 +467,9 @@ const About = ({ onLinkClick }) => {
           <div className="p-why-us-desc">
             <div className="p-why-rectangle"></div>
             <div className="p-desc-info">
-              <p>Lorem Ipsum</p>
+              <p>Customized Solutions</p>
               <p className="p-why-us-subtext">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit.
+                Tailored manufacturing to meet your exact needs.
               </p>
             </div>
           </div>
@@ -465,9 +477,10 @@ const About = ({ onLinkClick }) => {
           <div className="p-why-us-desc">
             <div className="p-why-rectangle"></div>
             <div className="p-desc-info">
-              <p>Lorem Ipsum</p>
+              <p>Comprehensive Product Range</p>
               <p className="p-why-us-subtext">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit.
+                One-stop shop for all industrial electronics and electrical
+                supplies.
               </p>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import TestIMG from "../assets/TestImg.png";
 import KnowMoreButtton from "./KnowMoreButtton.jsx";
 
@@ -10,7 +10,7 @@ const HomeAboutUs = ({ onLinkClick }) => {
           <span>ABOUT US</span>
           <p>Who we are</p>
         </div>
-        <img className='s-about-us-left-img' src={TestIMG}></img>
+        <img className="s-about-us-left-img" src={TestIMG}></img>
         <p className="s-about-us-heading-para">
           Incorporated in 2017, MR Industries has established a respected
           position in the market. Operating as a Sole Proprietorship, Our fully
@@ -29,6 +29,6 @@ const HomeAboutUs = ({ onLinkClick }) => {
       </div>
     </div>
   );
-}
+};
 
-export default HomeAboutUs
+export default HomeAboutUs;

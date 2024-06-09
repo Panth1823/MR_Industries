@@ -1172,9 +1172,9 @@
   gap: 80px;
 }
 
-  .mobile-services-catalouge{
-    display: none;
-  }
+.mobile-services-catalouge {
+  display: none;
+}
 
 .s-service-catalogue .s-about-us-left {
   width: 100%;
@@ -1886,13 +1886,13 @@ footer {
     align-items: center;
     gap: 8px;
     align-self: stretch;
-      -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
   }
 
   .s-mobile-our-services-container::-webkit-scrollbar {
     display: none;
-}
+  }
 
   .s-mobile-our-services-set {
     display: flex;
@@ -1965,16 +1965,66 @@ footer {
   .s-process-container {
     width: 100%;
     justify-content: flex-start;
+    height: 500px;
   }
 
   .s-process-line {
-    height: 520px;
+    width: 5px;
+    animation: lineScroll 1s linear forwards;
+    animation-timeline: view(300px 500px);
   }
 
+  .mobile-process1 {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    animation: process1 linear 0.5s forwards;
+    animation-timeline: view(600px 0px);
+  }
+  .mobile-process2 {
+    position: absolute;
+    top: 144px;
+    left: 10px;
+    animation: process1 linear 0.5s forwards;
+    animation-timeline: view(600px 0px);
+  }
+  .mobile-process3 {
+    position: absolute;
+    top: 268px;
+    left: 10px;
+    animation: process1 linear 0.5s forwards;
+    animation-timeline: view(500px 0px);
+  }
+  .mobile-process4 {
+    position: absolute;
+    top: 393px;
+    left: 10px;
+    animation: process1 linear 0.5s forwards;
+    animation-timeline: view(450px 0px);
+  }
+
+  @keyframes lineScroll {
+    to {
+      height: 495px;
+    }
+  }
+
+  @keyframes process1 {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
   .mobile-process1,
   .mobile-process2,
   .mobile-process3,
   .mobile-process4 {
+    opacity: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2039,37 +2089,16 @@ footer {
     top: 40px;
   }
 
-  .mobile-process1 {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-  }
   .process-dot-2 {
     top: 164px;
   }
 
-  .mobile-process2 {
-    position: absolute;
-    top: 144px;
-    left: 10px;
-  }
   .process-dot-3 {
     top: 288px;
   }
 
-  .mobile-process3 {
-    position: absolute;
-    top: 268px;
-    left: 10px;
-  }
   .process-dot-4 {
     top: 413px;
-  }
-
-  .mobile-process4 {
-    position: absolute;
-    top: 393px;
-    left: 10px;
   }
 
   .s-testimony {
@@ -2092,13 +2121,13 @@ footer {
     justify-content: flex-start;
     gap: 8px;
     overflow-x: scroll;
-     -ms-overflow-style: none; 
-  scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .s-mobile-testimony-set-container::-webkit-scrollbar {
     display: none;
-}
+  }
 
   .s-mobile-testimony-set {
     width: 80%;
@@ -2529,8 +2558,8 @@ footer {
     line-height: normal;
   }
 
-  .see-less-services{
-        width: 100%;
+  .see-less-services {
+    width: 100%;
     justify-content: flex-end;
     display: flex;
     align-items: center;

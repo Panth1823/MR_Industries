@@ -5,6 +5,7 @@ import Services from "./components/Services.jsx";
 import ContactForm from "./components/Contact.jsx";
 import Footerend from "./components/Footerend.jsx";
 import About from "./components/About.jsx";
+import TandC from "./components/T&C.jsx";
 import ServiceDetails from "./components/ServiceDetails.jsx";
 
 const App = () => {
@@ -43,7 +44,7 @@ const App = () => {
         )}
         {activeLink === "About Us" && <About onLinkClick={handleLinkClick} />}
         {activeLink === "Contact Now" && <ContactForm></ContactForm>}
-        {activeLink === "Terms & Conditions" && <p>Terms & Conditions</p>}
+        {activeLink === "TandC" && <TandC/>}
         {activeLink === "Privacy Policy" && <p>Privacy Policy</p>}
       </div>
       <Footerend onLinkClick={handleLinkClick} />

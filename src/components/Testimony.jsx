@@ -1,5 +1,7 @@
 import React from "react";
-import testimony from "../assets/testimony.jpg";
+import testimony1 from "../assets/testimony1.jpg";
+import testimony2 from "../assets/testimony2.jpg";
+import testimony3 from "../assets/testimony3.jpg";
 
 function Testimony() {
   return (
@@ -10,7 +12,7 @@ function Testimony() {
       </div>
       <div className="s-testimony-set-container">
         <div className="s-testimony-set">
-          <img src={testimony}></img>
+          <img src={testimony1}></img>
           <div className="s-testimony-content">
             <span>Rajesh R</span>
             <p>
@@ -20,7 +22,7 @@ function Testimony() {
           </div>
         </div>
         <div className="s-testimony-set">
-          <img src={testimony}></img>
+          <img src={testimony2}></img>
           <div className="s-testimony-content">
             <span>Anil S.</span>
             <p>
@@ -30,7 +32,7 @@ function Testimony() {
           </div>
         </div>
         <div className="s-testimony-set">
-          <img src={testimony}></img>
+          <img src={testimony3}></img>
           <div className="s-testimony-content">
             <span>Vijay P.</span>
             <p>
@@ -42,7 +44,7 @@ function Testimony() {
       </div>
       <div className="s-mobile-testimony-set-container">
         <div className="s-mobile-testimony-set">
-          <img src={testimony}></img>
+          <img src={testimony1}></img>
           <div className="content">
             <span>Rajesh R</span>
             <p>
@@ -52,7 +54,7 @@ function Testimony() {
           </div>
         </div>
         <div className="s-mobile-testimony-set">
-          <img src={testimony}></img>
+          <img src={testimony2}></img>
           <div className="content">
             <span>Anil S.</span>
             <p>
@@ -62,7 +64,7 @@ function Testimony() {
           </div>
         </div>
         <div className="s-mobile-testimony-set">
-          <img src={testimony}></img>
+          <img src={testimony3}></img>
           <div className="content">
             <span>Vijay P.</span>
             <p>

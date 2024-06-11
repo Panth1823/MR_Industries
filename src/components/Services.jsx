@@ -31,20 +31,21 @@ const Services = ({ onLinkClick }) => {
         <div className="s-service-banner-heading">
           <h1>Our Services</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Dui platea condimentum Dui
-            platea condimentum Dui platea condimentum
+            Providing top-tier EV, HV, LV, and custom wiring harnesses,
+            including charger cables and ICE vehicle solutions, tailored for
+            superior performance and reliability.
           </p>
         </div>
       </div>
       <div className="s-service-catalogue">
         <div className="s-about-us-left">
           <div className="s-about-us-heading">
-            <p>Lorem Ipsum</p>
+            <p>Comprehensive Wiring Solutions</p>
           </div>
           <p className="s-about-us-heading-para">
-            Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis
-            quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg
-            hynm Lorem ipsum
+            With unparalleled expertise and a commitment to quality, we deliver
+            superior EV, HV, and LV wiring harnesses. Our custom solutions and
+            reliable performance set us apart in the industry.
           </p>
         </div>
         <div className="s-service-catalogue-container">
@@ -54,7 +55,7 @@ const Services = ({ onLinkClick }) => {
                 <img src={TestIMG} alt=""></img>
               </div>
               <div className="s-service-catalogue-set-text">
-                <span>Header</span>
+                <span>EV Vehicle Harness</span>
                 <p className="s-services-catalogue-set-para">
                   Office ipsum you must be muted. Problem exploratory switch
                   busy hard board. Better roll strategies clean existing
@@ -62,7 +63,7 @@ const Services = ({ onLinkClick }) => {
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
-                  onClick={() => onLinkClick("Services1")}
+                  onClick={() => onLinkClick("EVHarness")}
                 />
               </div>
             </div>
@@ -71,7 +72,7 @@ const Services = ({ onLinkClick }) => {
                 <img src={TestIMG} alt=""></img>
               </div>
               <div className="s-service-catalogue-set-text">
-                <span>Header</span>
+                <span>HV Harness </span>
                 <p className="s-services-catalogue-set-para">
                   Office ipsum you must be muted. Problem exploratory switch
                   busy hard board. Better roll strategies clean existing
@@ -79,43 +80,7 @@ const Services = ({ onLinkClick }) => {
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
-                  onClick={() => onLinkClick("Services2")}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="s-service-catalogue-set-container">
-            <div className="s-service-catalogue-set">
-              <div className="s-service-catalogue-set-img">
-                <img src={TestIMG} alt=""></img>
-              </div>
-              <div className="s-service-catalogue-set-text">
-                <span>Header</span>
-                <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
-                </p>
-                <KnowMoreButton
-                  KnowMoreText={"View Details"}
-                  onClick={() => onLinkClick("Services3")}
-                />
-              </div>
-            </div>
-            <div className="s-service-catalogue-set">
-              <div className="s-service-catalogue-set-img">
-                <img src={TestIMG} alt=""></img>
-              </div>
-              <div className="s-service-catalogue-set-text">
-                <span>Header</span>
-                <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
-                </p>
-                <KnowMoreButton
-                  KnowMoreText={"View Details"}
-                  onClick={() => onLinkClick("Services4")}
+                  onClick={() => onLinkClick("HVHarness")}
                 />
               </div>
             </div>
@@ -126,7 +91,7 @@ const Services = ({ onLinkClick }) => {
                 <img src={TestIMG} alt=""></img>
               </div>
               <div className="s-service-catalogue-set-text">
-                <span>Header</span>
+                <span>LV Harness</span>
                 <p className="s-services-catalogue-set-para">
                   Office ipsum you must be muted. Problem exploratory switch
                   busy hard board. Better roll strategies clean existing
@@ -134,7 +99,7 @@ const Services = ({ onLinkClick }) => {
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
-                  onClick={() => onLinkClick("Services5")}
+                  onClick={() => onLinkClick("LVHarness")}
                 />
               </div>
             </div>
@@ -143,7 +108,7 @@ const Services = ({ onLinkClick }) => {
                 <img src={TestIMG} alt=""></img>
               </div>
               <div className="s-service-catalogue-set-text">
-                <span>Header</span>
+                <span>Customised Wiring harness </span>
                 <p className="s-services-catalogue-set-para">
                   Office ipsum you must be muted. Problem exploratory switch
                   busy hard board. Better roll strategies clean existing
@@ -151,7 +116,49 @@ const Services = ({ onLinkClick }) => {
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
-                  onClick={() => onLinkClick("Services6")}
+                  onClick={() => {
+                    onLinkClick("CustomisedHarness");
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="s-service-catalogue-set-container">
+            <div className="s-service-catalogue-set">
+              <div className="s-service-catalogue-set-img">
+                <img src={TestIMG} alt=""></img>
+              </div>
+              <div className="s-service-catalogue-set-text">
+                <span>ICE Vehicle wiring harness</span>
+                <p className="s-services-catalogue-set-para">
+                  Office ipsum you must be muted. Problem exploratory switch
+                  busy hard board. Better roll strategies clean existing
+                  winning.
+                </p>
+                <KnowMoreButton
+                  KnowMoreText={"View Details"}
+                  onClick={() => {
+                    onLinkClick("ICEHarness");
+                  }}
+                />
+              </div>
+            </div>
+            <div className="s-service-catalogue-set">
+              <div className="s-service-catalogue-set-img">
+                <img src={TestIMG} alt=""></img>
+              </div>
+              <div className="s-service-catalogue-set-text">
+                <span>Charger Cables</span>
+                <p className="s-services-catalogue-set-para">
+                  Office ipsum you must be muted. Problem exploratory switch
+                  busy hard board. Better roll strategies clean existing
+                  winning.
+                </p>
+                <KnowMoreButton
+                  KnowMoreText={"View Details"}
+                  onClick={() => {
+                    onLinkClick("ChargerCables");
+                  }}
                 />
               </div>
             </div>
@@ -277,7 +284,8 @@ const Services = ({ onLinkClick }) => {
                 </div>
                 <div className="see-less-services" onClick={handleSeeLess}>
                   <p>See Less</p>
-                  <svg style={{transform:"rotate(180deg)"}}
+                  <svg
+                    style={{ transform: "rotate(180deg)" }}
                     xmlns="http://www.w3.org/2000/svg"
                     width="12"
                     height="7"

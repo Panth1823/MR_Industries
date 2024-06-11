@@ -7,6 +7,12 @@ import Footerend from "./components/Footerend.jsx";
 import About from "./components/About.jsx";
 import TandC from "./components/T&C.jsx";
 import ServiceDetails from "./components/ServiceDetails.jsx";
+import EVHarness from "./components/EVHarness.jsx";
+import HVHarness from "./components/HVHarness.jsx";
+import LVHarness from "./components/LVHarness.jsx";
+import CustomisedHarness from "./components/CustomisedHarness.jsx";
+import ICEHarness from "./components/ICEHarness.jsx";
+import ChargerCables from "./components/ChargerCables.jsx"
 
 const App = () => {
   const [activeLink, setActiveLink] = useState("Home");
@@ -24,27 +30,27 @@ const App = () => {
         {activeLink === "Services" && (
           <Services onLinkClick={handleLinkClick} />
         )}
-        {activeLink === "Services1" && (
-          <ServiceDetails onLinkClick={handleLinkClick} />
+        {activeLink === "EVHarness" && (
+          <EVHarness onLinkClick={handleLinkClick} />
         )}
-        {activeLink === "Services2" && (
-          <ServiceDetails onLinkClick={handleLinkClick} />
+        {activeLink === "HVHarness" && (
+          <HVHarness onLinkClick={handleLinkClick} />
         )}
-        {activeLink === "Services3" && (
-          <ServiceDetails onLinkClick={handleLinkClick} />
+        {activeLink === "LVHarness" && (
+          <LVHarness onLinkClick={handleLinkClick} />
         )}
-        {activeLink === "Services4" && (
-          <ServiceDetails onLinkClick={handleLinkClick} />
+        {activeLink === "CustomisedHarness" && (
+          <CustomisedHarness onLinkClick={handleLinkClick} />
         )}
-        {activeLink === "Services5" && (
-          <ServiceDetails onLinkClick={handleLinkClick} />
+        {activeLink === "ICEHarness" && (
+          <ICEHarness onLinkClick={handleLinkClick} />
         )}
-        {activeLink === "Services6" && (
-          <ServiceDetails onLinkClick={handleLinkClick} />
+        {activeLink === "ChargerCables" && (
+          <ChargerCables onLinkClick={handleLinkClick} />
         )}
         {activeLink === "About Us" && <About onLinkClick={handleLinkClick} />}
         {activeLink === "Contact Now" && <ContactForm></ContactForm>}
-        {activeLink === "TandC" && <TandC/>}
+        {activeLink === "TandC" && <TandC />}
         {activeLink === "Privacy Policy" && <p>Privacy Policy</p>}
       </div>
       <Footerend onLinkClick={handleLinkClick} />

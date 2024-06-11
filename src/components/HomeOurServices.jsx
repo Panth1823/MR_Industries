@@ -63,11 +63,14 @@ const HomeOurServices = ({ onLinkClick }) => {
       <div className="s-our-services-container">
         <div className="s-our-services-set-container">
           <div className="s-our-services-two-set">
-            <div className="s-our-services-set">
+            <div
+              className="s-our-services-set"
+              onClick={() => onLinkClick("EVHarness")}
+            >
               <img src={Services1} alt="Services 1"></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
-                  <p>Header</p>
+                  <p>EV Vehicle Harness</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -88,11 +91,14 @@ const HomeOurServices = ({ onLinkClick }) => {
                 </p>
               </div>
             </div>
-            <div className="s-our-services-set">
+            <div
+              className="s-our-services-set"
+              onClick={() => onLinkClick("HVHarness")}
+            >
               <img src={testImg} alt="Services 1"></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
-                  <p>Header</p>
+                  <p>HV Harness</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -115,11 +121,14 @@ const HomeOurServices = ({ onLinkClick }) => {
             </div>
           </div>
           <div className="s-our-services-two-set">
-            <div className="s-our-services-set">
+            <div
+              className="s-our-services-set"
+              onClick={() => onLinkClick("LVHarness")}
+            >
               <img src={Services1} alt="Services 1"></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
-                  <p>Header</p>
+                  <p>LV Harness</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -140,11 +149,16 @@ const HomeOurServices = ({ onLinkClick }) => {
                 </p>
               </div>
             </div>
-            <div className="s-our-services-set">
+            <div
+              className="s-our-services-set"
+              onClick={() => {
+                onLinkClick("CustomisedHarness");
+              }}
+            >
               <img src={Services1} alt="Services 1"></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
-                  <p>Header</p>
+                  <p>CustomisedHarness</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -167,11 +181,16 @@ const HomeOurServices = ({ onLinkClick }) => {
             </div>
           </div>
           <div className="s-our-services-two-set">
-            <div className="s-our-services-set">
+            <div
+              className="s-our-services-set"
+              onClick={() => {
+                onLinkClick("ICEHarness");
+              }}
+            >
               <img src={Services2} alt="Services 1"></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
-                  <p>Header</p>
+                  <p>ICE Harness</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -192,11 +211,16 @@ const HomeOurServices = ({ onLinkClick }) => {
                 </p>
               </div>
             </div>
-            <div className="s-our-services-set">
+            <div
+              className="s-our-services-set"
+              onClick={() => {
+                onLinkClick("ChargerCables");
+              }}
+            >
               <img src={Services2} alt="Services 1"></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
-                  <p>Header</p>
+                  <p>Charger Cables</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"

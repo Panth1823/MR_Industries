@@ -41,7 +41,7 @@ const FAQ = () => {
   return (
     <div className="s-faq">
       <div className="s-about-us-heading">
-        <span>FAQ</span>
+        <span>SOME COMMON FAQ</span>
         <p>Frequently Asked Questions</p>
       </div>
       <div className="s-faq-container">

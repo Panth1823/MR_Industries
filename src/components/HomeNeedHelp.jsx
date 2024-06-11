@@ -6,7 +6,7 @@ function HomeNeedHelp() {
     <div className="s-need-help">
       <div className="s-about-us-heading">
         <span>NEED HELP ?</span>
-        <p>Let us know how can we help</p>
+        <p>Can't Find It? Email Us!</p>
       </div>
       <form className="s-need-help-form">
         <input

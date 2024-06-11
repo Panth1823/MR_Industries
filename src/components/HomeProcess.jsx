@@ -14,13 +14,14 @@ function HomeProcess() {
     <div className="s-process">
       <div className="s-about-us-left">
         <div className="s-about-us-heading">
-          <span>THE PROCESS</span>
-          <p>Process Development for Business</p>
+          <span>THE DEVELOPMENT PROCESS</span>
+          <p>Inside Our Development Journey</p>
         </div>
         <p className="s-about-us-heading-para">
-          Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis
-          quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg hynm
-          Lorem ipsum
+          We start by conceptualizing ideas, then engineer and refine prototypes
+          through iterative cycles. After rigorous testing, we implement the
+          finalized solution, ensuring seamless integration and optimal
+          functionality.
         </p>
       </div>
       <div className="s-process-container">

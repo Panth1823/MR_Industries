@@ -34,12 +34,12 @@ const MainNavbar = ({ activeLink, onLinkClick }) => {
       case "Home":
         return -104;
       case "Services":
-      case "Services1":
-      case "Services2":
-      case "Services3":
-      case "Services4":
-      case "Services5":
-      case "Services6":
+      case "EVHarness":
+      case "HVHarness":
+      case "LVHarness":
+      case "CustomisedHarness":
+      case "ICEHarness":
+      case "ChargerCables":
         return 0;
       case "About Us":
         return 104;
@@ -118,7 +118,11 @@ const MainNavbar = ({ activeLink, onLinkClick }) => {
 
         <div
           className={`navbarLinkIndicator ${
-            activeLink === "Contact Now" ? "hidden" : ""
+            activeLink === "Contact Now" ||
+            activeLink === "TandC" ||
+            activeLink === "PrivacyPolicy"
+              ? "hidden"
+              : ""
           }`}
           style={{ transform: `translateX(${getIndicatorPosition()}px)` }}
         ></div>

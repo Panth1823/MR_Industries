@@ -80,7 +80,7 @@ const About = ({ onLinkClick }) => {
     const newVisibility = !isVisible4;
     setIsVisible4(newVisibility);
     setRotateDeg4(newVisibility ? 0 : 180);
-    setMarginTop(newVisibility ? -267 : -88);
+    setMarginTop(newVisibility ? -234 : -80);
   };
 
   // Mobile Card Logic V2
@@ -92,7 +92,7 @@ const About = ({ onLinkClick }) => {
     const newVisibility = !isVisible5;
     setIsVisible5(newVisibility);
     setRotateDeg5(newVisibility ? 0 : 180);
-    setMarginTop1(newVisibility ? -163 : -88);
+    setMarginTop1(newVisibility ? -154 : -80);
   };
 
   // Mobile Card Logic V3
@@ -104,7 +104,7 @@ const About = ({ onLinkClick }) => {
     const newVisibility = !isVisible6;
     setIsVisible6(newVisibility);
     setRotateDeg6(newVisibility ? 0 : 180);
-    setMarginTop2(newVisibility ? -253 : -88);
+    setMarginTop2(newVisibility ? -244 : -80);
   };
 
   // Mobile Card Logic V4
@@ -116,7 +116,7 @@ const About = ({ onLinkClick }) => {
     const newVisibility = !isVisible7;
     setIsVisible7(newVisibility);
     setRotateDeg7(newVisibility ? 0 : 180);
-    setMarginTop3(newVisibility ? -163 : -88);
+    setMarginTop3(newVisibility ? -154 : -80);
   };
 
   // Mobile Card Logic V5
@@ -128,7 +128,7 @@ const About = ({ onLinkClick }) => {
     const newVisibility = !isVisible8;
     setIsVisible8(newVisibility);
     setRotateDeg8(newVisibility ? 0 : 180);
-    setMarginTop4(newVisibility ? -263 : -88);
+    setMarginTop4(newVisibility ? -234 : -80);
   };
 
   // Mobile Card Logic V6
@@ -140,7 +140,7 @@ const About = ({ onLinkClick }) => {
     const newVisibility = !isVisible9;
     setIsVisible9(newVisibility);
     setRotateDeg9(newVisibility ? 0 : 180);
-    setMarginTop5(newVisibility ? -263 : -88);
+    setMarginTop5(newVisibility ? -234 : -80);
   };
 
   const [startIndex, setStartIndex] = useState(0);
@@ -590,7 +590,7 @@ const About = ({ onLinkClick }) => {
                     width: "548px",
                     height: "457px",
                     borderRadius: "20px",
-                    objectFit: "fill",
+                    objectFit: "cover",
                   }}
                 />
               </div>
@@ -632,7 +632,7 @@ const About = ({ onLinkClick }) => {
                     width: "548px",
                     height: "457px",
                     borderRadius: "20px",
-                    objectFit: "fill",
+                    objectFit: "cover",
                   }}
                 />
               </div>
@@ -674,7 +674,7 @@ const About = ({ onLinkClick }) => {
                     width: "548px",
                     height: "457px",
                     borderRadius: "20px",
-                    objectFit: "fill",
+                    objectFit: "cover",
                   }}
                 />
               </div>
@@ -715,7 +715,7 @@ const About = ({ onLinkClick }) => {
                     width: "548px",
                     height: "457px",
                     borderRadius: "20px",
-                    objectFit: "fill",
+                    objectFit: "cover",
                   }}
                 />
               </div>
@@ -752,7 +752,7 @@ const About = ({ onLinkClick }) => {
                     width: "548px",
                     height: "457px",
                     borderRadius: "20px",
-                    objectFit: "fill",
+                    objectFit: "cover",
                   }}
                 />
               </div>
@@ -794,7 +794,7 @@ const About = ({ onLinkClick }) => {
                     width: "548px",
                     height: "457px",
                     borderRadius: "20px",
-                    objectFit: "fill",
+                    objectFit: "cover",
                   }}
                 />
               </div>

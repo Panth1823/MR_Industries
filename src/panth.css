@@ -825,7 +825,7 @@ span {
 }
 
 .p-gallery-set img {
-  object-fit: cover;
+  object-fit: none;
   align-self: stretch;
   width: auto;
   height: 228.888px;

@@ -3,16 +3,15 @@ import TestIMG from "../assets/TestImg.png";
 import KnowMoreButton from "./KnowMoreButtton";
 
 const Services = ({ onLinkClick }) => {
-
   const [showMore, setShowMore] = useState(false);
 
   const handleLoadMore = () => {
     setShowMore(true);
   };
 
-  const handleSeeLess=()=>{
+  const handleSeeLess = () => {
     setShowMore(false);
-  }
+  };
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>

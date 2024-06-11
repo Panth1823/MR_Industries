@@ -79,28 +79,29 @@ const CustomisedHarness = ({ onLinkClick }) => {
           </div>
           <div className="p-img-desp-main">
             <div className="p-img-desc-top">
-              <p>Lorem Ipsum</p>
+              <p>Description</p>
               <span className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                We engineer custom wiring harnesses tailored to your
+                requirements, using advanced materials and precise manufacturing
+                for optimal performance and durability.
               </span>
             </div>
             <div className="p-sd-list-container">
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                We use premium materials to construct harnesses that meet
+                industry standards for safety and reliability.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Our state-of-the-art processes ensure each harness is crafted
+                with superior accuracy and consistency.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Every custom harness undergoes comprehensive testing to ensure
+                exceptional performance and longevity.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                We guarantee our work, ensuring complete customer satisfaction
+                with tailored solutions and unwavering support.
               </li>
             </div>
             <div className="p-enquire-now-btn-div">

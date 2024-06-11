@@ -12,8 +12,7 @@ const ProductGallery = () => {
     { img: productImg, text: "Lorem Ipsum6" },
   ];
 
-  const numberOfItems= items.length;
-
+  const numberOfItems = items.length;
 
   const screenSizeCurrent = window.innerWidth;
   const itemsToShow = screenSizeCurrent < 1200 ? 1 : 4;

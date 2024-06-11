@@ -865,6 +865,19 @@ span {
   background-color: #355094;
 }
 
+.title-svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Optional: if you want space between the text and SVG */
+}
+
+.title-svg-container p {
+  margin: 0; /* Adjust as necessary */
+}
+
+.title-svg-container svg {
+  cursor: pointer;
+}
 @media screen and (max-width: 1200px) {
   .p-breadcrumb {
     display: none !important ;
@@ -1166,6 +1179,11 @@ span {
   .p-certi-mobile-div svg {
     transition: transform 0.3s ease;
   }
+  .svg-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
   .p-certi-quali-divs {
     height: fit-content;
@@ -1190,6 +1208,30 @@ span {
     display: flex;
     flex-direction: row;
     gap: 8px;
+    z-index: 1;
+  }
+  .p-arrow-down-svg {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .p-mobile-card-back-main {
+    z-index: 2;
+    background: linear-gradient(
+      90deg,
+      rgba(18, 48, 123, 0.8) 0%,
+      rgba(86, 157, 208, 0.8) 100%
+    );
+    display: flex;
+    width: 300px;
+    height: fit-content;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: -89px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 8px;
   }
   .p-certi-main-container {
     display: flex;
@@ -1213,12 +1255,33 @@ span {
     width: 300px;
     flex-direction: column;
     align-items: flex-start;
-    height: 369px;
+    height: auto;
   }
   .p-card-back-title.mobile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+  }
+  .p-card-back-title.mobile p {
+    color: var(--Default-white, #fff);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+  }
+  .p-card-back-subtext.mobile {
+    color: var(--Default-white, #fff);
+    width: fit-content;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding-top: 24px;
+  }
+  .p-subtext-back-p {
+    gap: 10px;
   }
   .p-card-back-main.mobile {
     width: fit-content;

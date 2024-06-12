@@ -1232,6 +1232,8 @@ span {
     flex-shrink: 0;
     overflow: hidden;
     border-radius: 8px;
+    position: absolute;
+    bottom: 0;
   }
   .p-certi-main-container {
     display: flex;
@@ -1256,6 +1258,8 @@ span {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
+    overflow: hidden;
+    position: relative;
   }
   .p-card-back-title.mobile {
     display: flex;

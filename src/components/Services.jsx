@@ -179,10 +179,10 @@ const Services = ({ onLinkClick }) => {
           <div className="s-service-catalogue-set-container">
             <div className="s-service-catalogue-set">
               <div className="s-service-catalogue-set-img">
-                <img src={TestIMG} alt="" />
+                <img src={TestIMG} alt=""></img>
               </div>
               <div className="s-service-catalogue-set-text">
-                <span>Header</span>
+                <span>EV Vehicle Harness</span>
                 <p className="s-services-catalogue-set-para">
                   Office ipsum you must be muted. Problem exploratory switch
                   busy hard board. Better roll strategies clean existing
@@ -190,16 +190,16 @@ const Services = ({ onLinkClick }) => {
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
-                  onClick={() => onLinkClick("Services1")}
+                  onClick={() => onLinkClick("EVHarness")}
                 />
               </div>
             </div>
             <div className="s-service-catalogue-set">
               <div className="s-service-catalogue-set-img">
-                <img src={TestIMG} alt="" />
+                <img src={TestIMG} alt=""></img>
               </div>
               <div className="s-service-catalogue-set-text">
-                <span>Header</span>
+                <span>HV Harness </span>
                 <p className="s-services-catalogue-set-para">
                   Office ipsum you must be muted. Problem exploratory switch
                   busy hard board. Better roll strategies clean existing
@@ -207,16 +207,16 @@ const Services = ({ onLinkClick }) => {
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
-                  onClick={() => onLinkClick("Services2")}
+                  onClick={() => onLinkClick("HVHarness")}
                 />
               </div>
             </div>
             <div className="s-service-catalogue-set">
               <div className="s-service-catalogue-set-img">
-                <img src={TestIMG} alt="" />
+                <img src={TestIMG} alt=""></img>
               </div>
               <div className="s-service-catalogue-set-text">
-                <span>Header</span>
+                <span>LV Harness</span>
                 <p className="s-services-catalogue-set-para">
                   Office ipsum you must be muted. Problem exploratory switch
                   busy hard board. Better roll strategies clean existing
@@ -224,7 +224,7 @@ const Services = ({ onLinkClick }) => {
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
-                  onClick={() => onLinkClick("Services3")}
+                  onClick={() => onLinkClick("LVHarness")}
                 />
               </div>
             </div>
@@ -232,10 +232,10 @@ const Services = ({ onLinkClick }) => {
               <>
                 <div className="s-service-catalogue-set">
                   <div className="s-service-catalogue-set-img">
-                    <img src={TestIMG} alt="" />
+                    <img src={TestIMG} alt=""></img>
                   </div>
                   <div className="s-service-catalogue-set-text">
-                    <span>Header</span>
+                    <span>Customised Wiring harness </span>
                     <p className="s-services-catalogue-set-para">
                       Office ipsum you must be muted. Problem exploratory switch
                       busy hard board. Better roll strategies clean existing
@@ -243,16 +243,18 @@ const Services = ({ onLinkClick }) => {
                     </p>
                     <KnowMoreButton
                       KnowMoreText={"View Details"}
-                      onClick={() => onLinkClick("Services4")}
+                      onClick={() => {
+                        onLinkClick("CustomisedHarness");
+                      }}
                     />
                   </div>
                 </div>
                 <div className="s-service-catalogue-set">
                   <div className="s-service-catalogue-set-img">
-                    <img src={TestIMG} alt="" />
+                    <img src={TestIMG} alt=""></img>
                   </div>
                   <div className="s-service-catalogue-set-text">
-                    <span>Header</span>
+                    <span>ICE Vehicle wiring harness</span>
                     <p className="s-services-catalogue-set-para">
                       Office ipsum you must be muted. Problem exploratory switch
                       busy hard board. Better roll strategies clean existing
@@ -260,16 +262,18 @@ const Services = ({ onLinkClick }) => {
                     </p>
                     <KnowMoreButton
                       KnowMoreText={"View Details"}
-                      onClick={() => onLinkClick("Services5")}
+                      onClick={() => {
+                        onLinkClick("ICEHarness");
+                      }}
                     />
                   </div>
                 </div>
                 <div className="s-service-catalogue-set">
                   <div className="s-service-catalogue-set-img">
-                    <img src={TestIMG} alt="" />
+                    <img src={TestIMG} alt=""></img>
                   </div>
                   <div className="s-service-catalogue-set-text">
-                    <span>Header</span>
+                    <span>Charger Cables</span>
                     <p className="s-services-catalogue-set-para">
                       Office ipsum you must be muted. Problem exploratory switch
                       busy hard board. Better roll strategies clean existing
@@ -277,7 +281,9 @@ const Services = ({ onLinkClick }) => {
                     </p>
                     <KnowMoreButton
                       KnowMoreText={"View Details"}
-                      onClick={() => onLinkClick("Services6")}
+                      onClick={() => {
+                        onLinkClick("ChargerCables");
+                      }}
                     />
                   </div>
                 </div>

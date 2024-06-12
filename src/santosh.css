@@ -725,36 +725,86 @@
 .process-1 {
   top: 59px;
   left: 50%;
-  opacity: 0;
+  opacity: 1;
+  transform: translateX(calc(-50% + 250px));
+}
+
+.process1cover {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  top: 59px;
+  left: 50%;
+  background: #fff;
+  z-index: 1;
+  transform: translateX(calc(-50% + 260px));
   animation: process1 linear 0.5s forwards;
-  animation-timeline: view(550px 0px);
+  animation-timeline: view(0px 300px);
 }
 
 .process-2 {
   top: 317px;
   left: 50%;
-  opacity: 0;
+  opacity: 1;
+  transform: translateX(calc(-50% - 250px));
+}
+
+.process2cover {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 317px;
+  left: 50%;
+  background: #fff;
+  z-index: 1;
+  transform: translateX(calc(-50% - 260px));
   animation: process2 linear 0.5s forwards;
-  animation-timeline: view(680px 0px);
+  animation-timeline: view(0px 100px);
 }
 
 .process-3 {
   top: 575px;
   left: 50%;
-  opacity: 0;
-  animation: process3 linear 0.5s forwards;
-  animation-timeline: view(700px 0px);
+  opacity: 1;
+  transform: translateX(calc(-50% + 250px));
 }
 
+.process3cover {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 575px;
+  left: 50%;
+  background: #fff;
+  z-index: 1;
+  transform: translateX(calc(-50% + 260px));
+  animation: process3 linear 0.5s forwards;
+  animation-timeline: view(0px 100px);
+}
 .process-4 {
   top: 837px;
   left: 50%;
-  opacity: 0;
+  opacity: 1;
+  transform: translateX(calc(-50% - 250px));
+}
+
+.process4cover {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 837px;
+  left: 50%;
+  background: #fff;
+  z-index: 1;
+  transform: translateX(calc(-50% - 260px));
   animation: process4 linear 0.5s forwards;
-  animation-timeline: view(600px 0px);
+  animation-timeline: view(0px 200px);
 }
 
 @keyframes lineScroll {
+  from {
+    height: 0;
+  }
   to {
     height: 1150px;
   }
@@ -762,42 +812,42 @@
 
 @keyframes process1 {
   from {
-    opacity: 0;
-    transform: translateX(calc(-50% + 350px));
+    display: block;
+    transform: translateX(calc(-50% + 260px));
   }
   to {
-    opacity: 1;
-    transform: translateX(calc(-50% + 250px));
+    display: none;
+    transform: translateX(calc(-50% + 1650px));
   }
 }
 @keyframes process2 {
   from {
-    opacity: 0;
-    transform: translateX(calc(-50% - 350px));
+    display: block;
+    transform: translateX(calc(-50% - 260px));
   }
   to {
-    opacity: 1;
-    transform: translateX(calc(-50% - 250px));
+    display: none;
+    transform: translateX(calc(-50% - 1650px));
   }
 }
 @keyframes process3 {
   from {
-    opacity: 0;
-    transform: translateX(calc(-50% + 350px));
+    display: block;
+    transform: translateX(calc(-50% + 260px));
   }
   to {
-    opacity: 1;
-    transform: translateX(calc(-50% + 250px));
+    display: none;
+    transform: translateX(calc(-50% + 1650px));
   }
 }
 @keyframes process4 {
   from {
-    opacity: 0;
-    transform: translateX(calc(-50% - 350px));
+    display: block;
+    transform: translateX(calc(-50% - 260px));
   }
   to {
-    opacity: 1;
-    transform: translateX(calc(-50% - 250px));
+    display: none;
+    transform: translateX(calc(-50% - 1650px));
   }
 }
 
@@ -1941,6 +1991,7 @@ footer {
   }
 
   .s-mobile-our-services-set {
+    height: 367px;
     display: flex;
     width: 80%;
     flex-direction: column;
@@ -2014,6 +2065,10 @@ footer {
     height: 500px;
   }
 
+
+  .process1cover,.process2cover, .process3cover, .process4cover{
+    display: none;
+  }
   .s-process-line {
     width: 5px;
     animation: lineScroll 1s linear forwards;

@@ -26,6 +26,10 @@ function HomeProcess() {
       </div>
       <div className="s-process-container">
         <div className="s-process-line"></div>
+        <div className="process1cover"></div>
+        <div className="process2cover"></div>
+        <div className="process3cover"></div>
+        <div className="process4cover"></div>
         <img className="process-1" src={Process1}></img>
         <img className="process-2" src={Process2}></img>
         <img className="process-3" src={Process3}></img>

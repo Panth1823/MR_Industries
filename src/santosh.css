@@ -1269,8 +1269,9 @@
 }
 
 .s-service-catalogue-set-img img {
+  height: 320px;
   width: 100%;
-  object-fit: cover;
+  object-fit: none;
 }
 
 .s-service-catalogue-set-text {
@@ -2065,8 +2066,10 @@ footer {
     height: 500px;
   }
 
-
-  .process1cover,.process2cover, .process3cover, .process4cover{
+  .process1cover,
+  .process2cover,
+  .process3cover,
+  .process4cover {
     display: none;
   }
   .s-process-line {
@@ -2645,6 +2648,11 @@ footer {
 
   .s-service-catalogue-set-img {
     height: 180px;
+  }
+  .s-service-catalogue-set-img img {
+    height: 180px;
+    width: 348px;
+    object-fit: contain;
   }
   .s-service-catalogue-set-text {
     display: flex;

@@ -570,7 +570,7 @@ const About = ({ onLinkClick }) => {
       <div className="p-where-we-work">
         <div>
           <p className="p-infrastructure">INFRASTRUCTURE</p>
-          <p className="p-where-we-work-text">Where we Work</p>
+          <p className="p-where-we-work-text">Where We Work</p>
         </div>
         <div>
           <p className="p-where-we-work-desc">

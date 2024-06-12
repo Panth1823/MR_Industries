@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import KnowMoreButtton from "./KnowMoreButtton.jsx";
 import Services1 from "../assets/Services1.jpg";
 import Services2 from "../assets/Services2.jpg";
-import testImg from "../assets/TestImg.png"
+import testImg from "../assets/TestImg.png";
+import HV_Harness_06_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 06 - MR Industries.png";
+import HV_Harness_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness - MR Industries.png";
+import LV_Harness_MR_Industries from "../assets/serviceDetails/LV Harness/LV Harness - MR Industries.png";
+import Custom_Harness_MR_Industries from "../assets/serviceDetails/Custom Harness/Custom Harness - MR Industries.png";
+import ICE_Vehicle_Harness_01_MR_Industries from "../assets/serviceDetails/ICE Vehicle Harness/ICE Vehicle Harness 01 - MR Industries.png";
+import charger_cables_MR_Industries from "../assets/serviceDetails/charger cables/charger cables - MR Industries.png";
+import PIGTAIL_HARNESS_ICE_Vehicle_Harness_MR_Industries from "../assets/serviceDetails/ICE Vehicle Harness/PIGTAIL HARNESS - ICE Vehicle Harness - MR Industries.png";
 
 const HomeOurServices = ({ onLinkClick }) => {
   const [activeDot, setActiveDot] = useState(0);
@@ -21,18 +28,15 @@ const HomeOurServices = ({ onLinkClick }) => {
   };
 
   useEffect(() => {
+    if (window.innerWidth > 1200) {
+      const interval = setInterval(() => {
+        const nextIndex = (activeDot + 1) % 3;
+        setActiveDot(nextIndex);
+        slideToIndex(nextIndex);
+      }, 5000);
 
-    if (window.innerWidth > 1200){
-       const interval = setInterval(() => {
-      const nextIndex = (activeDot + 1) % 3;
-      setActiveDot(nextIndex);
-      slideToIndex(nextIndex);
-    }, 5000);
-  
-    return () => clearInterval(interval);
+      return () => clearInterval(interval);
     }
-
-   
   }, [activeDot]);
 
   return (
@@ -67,7 +71,11 @@ const HomeOurServices = ({ onLinkClick }) => {
               className="s-our-services-set"
               onClick={() => onLinkClick("EVHarness")}
             >
-              <img src={Services1} alt="Services 1"></img>
+              <img
+                src={HV_Harness_06_MR_Industries}
+                alt="HV_Harness_06_MR_Industries"
+                style={{ objectFit: "none" }}
+              ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
                   <p>EV Vehicle Harness</p>
@@ -95,7 +103,11 @@ const HomeOurServices = ({ onLinkClick }) => {
               className="s-our-services-set"
               onClick={() => onLinkClick("HVHarness")}
             >
-              <img src={testImg} alt="Services 1"></img>
+              <img
+                src={HV_Harness_MR_Industries}
+                alt="HV_Harness_MR_Industries"
+                style={{ objectFit: "none" }}
+              ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
                   <p>HV Harness</p>
@@ -125,7 +137,11 @@ const HomeOurServices = ({ onLinkClick }) => {
               className="s-our-services-set"
               onClick={() => onLinkClick("LVHarness")}
             >
-              <img src={Services1} alt="Services 1"></img>
+              <img
+                src={LV_Harness_MR_Industries}
+                alt="LV_Harness_MR_Industries"
+                style={{ objectFit: "none" }}
+              ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
                   <p>LV Harness</p>
@@ -155,7 +171,11 @@ const HomeOurServices = ({ onLinkClick }) => {
                 onLinkClick("CustomisedHarness");
               }}
             >
-              <img src={Services1} alt="Services 1"></img>
+              <img
+                src={Custom_Harness_MR_Industries}
+                alt="Custom_Harness_MR_Industries"
+                style={{ objectFit: "none" }}
+              ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
                   <p>CustomisedHarness</p>
@@ -187,7 +207,11 @@ const HomeOurServices = ({ onLinkClick }) => {
                 onLinkClick("ICEHarness");
               }}
             >
-              <img src={Services2} alt="Services 1"></img>
+              <img
+                src={ICE_Vehicle_Harness_01_MR_Industries}
+                alt="ICE_Vehicle_Harness_01_MR_Industries"
+                style={{ objectFit: "none" }}
+              ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
                   <p>ICE Harness</p>
@@ -217,7 +241,11 @@ const HomeOurServices = ({ onLinkClick }) => {
                 onLinkClick("ChargerCables");
               }}
             >
-              <img src={Services2} alt="Services 1"></img>
+              <img
+                src={charger_cables_MR_Industries}
+                alt="charger_cables_MR_Industries"
+                style={{ objectFit: "none" }}
+              ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
                   <p>Charger Cables</p>

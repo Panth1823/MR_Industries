@@ -1,4 +1,3 @@
-import TestImg from "../assets/TestImg.png";
 import { useEffect, useState } from "react";
 import Services1 from "../assets/Services1.jpg";
 import HV_Harness_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness - MR Industries.png";
@@ -10,6 +9,7 @@ import HV_Harness_05_MR_Industries from "../assets/serviceDetails/HV Harness/HV 
 import HV_Harness_06_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 06 - MR Industries.png";
 import HV_Harness_07_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 07 - MR Industries.png";
 import HV_Harness_08_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 08 - MR Industries.png";
+import Custom_Harness_MR_Industries from "../assets/serviceDetails/Custom Harness/Custom Harness - MR Industries.png";
 
 const HVHarness = ({ onLinkClick }) => {
   const [startIndex, setStartIndex] = useState(0);
@@ -30,7 +30,6 @@ const HVHarness = ({ onLinkClick }) => {
   }, []);
 
   const items = [
-    { img: HV_Harness_MR_Industries },
     { img: HV_Harness_01_MR_Industries },
     { img: HV_Harness_02_MR_Industries },
     { img: HV_Harness_03_MR_Industries },
@@ -135,13 +134,13 @@ const HVHarness = ({ onLinkClick }) => {
         <div className="p-img-desc-main">
           <div className="p-sd-img-cover">
             <img
-              src={TestImg}
-              alt="TestImg"
+              src={HV_Harness_MR_Industries}
+              alt="HV_Harness_MR_Industries"
               style={{
                 width: "-webkit-fill-available",
                 height: "-webkit-fill-available",
                 borderRadius: "8px",
-                objectFit: "cover",
+                objectFit: "none",
               }}
             />
           </div>
@@ -274,7 +273,11 @@ const HVHarness = ({ onLinkClick }) => {
           <div className="s-our-services-set-container">
             <div className="s-our-services-two-set">
               <div className="s-our-services-set">
-                <img src={TestImg} alt="TestImg"></img>
+                <img
+                  src={Custom_Harness_MR_Industries}
+                  alt="Custom_Harness_MR_Industries"
+                  style={{ objectFit: "none" }}
+                ></img>
                 <div className="s-our-services-set-text">
                   <div className="s-our-services-set-heading">
                     <p>Customized Wiring Harness</p>
@@ -299,7 +302,11 @@ const HVHarness = ({ onLinkClick }) => {
                 </div>
               </div>
               <div className="s-our-services-set">
-                <img src={TestImg} alt="TestImg"></img>
+                <img
+                  src={HV_Harness_06_MR_Industries}
+                  alt="HV_Harness_06_MR_Industries"
+                  style={{ objectFit: "none" }}
+                ></img>
                 <div className="s-our-services-set-text">
                   <div className="s-our-services-set-heading">
                     <p>EV Vehicle Harness</p>
@@ -329,7 +336,11 @@ const HVHarness = ({ onLinkClick }) => {
         <div className="s-mobile-our-services-container">
           <div className="s-mobile-our-services-set">
             <div className="s-mobile-our-services-set-img">
-              <img src={Services1}></img>
+              <img
+                src={HV_Harness_06_MR_Industries}
+                alt="HV_Harness_06_MR_Industries"
+                style={{ objectFit: "none" }}
+              ></img>
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">

@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Services1 from "../assets/Services1.jpg";
 import LV_Harness_MR_Industries from "../assets/serviceDetails/LV Harness/LV Harness - MR Industries.png";
 import LV_Harness_01_MR_Industries from "../assets/serviceDetails/LV Harness/LV Harness 01 - MR Industries.png";
+import HV_Harness_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness - MR Industries.png";
+import HV_Harness_06_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 06 - MR Industries.png";
 
 const LVHarness = ({ onLinkClick }) => {
   const [startIndex, setStartIndex] = useState(0);
@@ -22,10 +24,7 @@ const LVHarness = ({ onLinkClick }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const items = [
-    { img: LV_Harness_MR_Industries },
-    { img: LV_Harness_01_MR_Industries },
-  ];
+  const items = [{ img: LV_Harness_01_MR_Industries }];
 
   useEffect(() => {
     setIsLeftDisabled(startIndex === 0);
@@ -121,13 +120,13 @@ const LVHarness = ({ onLinkClick }) => {
         <div className="p-img-desc-main">
           <div className="p-sd-img-cover">
             <img
-              src={TestImg}
-              alt="TestImg"
+              src={LV_Harness_MR_Industries}
+              alt="LV_Harness_MR_Industries"
               style={{
                 width: "-webkit-fill-available",
                 height: "-webkit-fill-available",
                 borderRadius: "8px",
-                objectFit: "cover",
+                objectFit: "none",
               }}
             />
           </div>
@@ -258,7 +257,11 @@ const LVHarness = ({ onLinkClick }) => {
           <div className="s-our-services-set-container">
             <div className="s-our-services-two-set">
               <div className="s-our-services-set">
-                <img src={TestImg} alt="TestImg"></img>
+                <img
+                  src={HV_Harness_MR_Industries}
+                  alt="HV_Harness_MR_Industries"
+                  style={{ objectFit: "none" }}
+                ></img>
                 <div className="s-our-services-set-text">
                   <div className="s-our-services-set-heading">
                     <p>High Voltage Harness</p>
@@ -283,10 +286,14 @@ const LVHarness = ({ onLinkClick }) => {
                 </div>
               </div>
               <div className="s-our-services-set">
-                <img src={TestImg} alt="TestImg"></img>
+                <img
+                  src={HV_Harness_06_MR_Industries}
+                  alt="HV_Harness_06_MR_Industries"
+                  style={{ objectFit: "none" }}
+                ></img>
                 <div className="s-our-services-set-text">
                   <div className="s-our-services-set-heading">
-                    <p>High Voltage Harness</p>
+                    <p>EV Vehicle Harness</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"

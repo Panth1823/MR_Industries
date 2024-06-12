@@ -98,7 +98,7 @@
 .p-name {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 24px;
 }
 .p-name-container {
   width: 50%;
@@ -825,7 +825,7 @@ span {
 }
 
 .p-gallery-set img {
-  object-fit: none;
+  object-fit: contain;
   align-self: stretch;
   width: auto;
   height: 228.888px;
@@ -1228,12 +1228,9 @@ span {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    margin-top: -89px;
     flex-shrink: 0;
     overflow: hidden;
     border-radius: 8px;
-    position: absolute;
-    bottom: 0;
   }
   .p-certi-main-container {
     display: flex;
@@ -1258,8 +1255,6 @@ span {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    overflow: hidden;
-    position: relative;
   }
   .p-card-back-title.mobile {
     display: flex;

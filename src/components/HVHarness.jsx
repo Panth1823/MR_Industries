@@ -116,16 +116,21 @@ const HVHarness = ({ onLinkClick }) => {
                 fontWeight: "600",
               }}
             >
-              Services Details
+              HV Harness
             </a>
           </div>
           <div className="p-breadcrumb-subtitle">
-            <p>HV Harness</p>
+            <p>High Voltage Harness</p>
           </div>
         </div>
         <div className="p-mobile-title">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur. Et miat sit velit. </p>
+          <h1>High Voltage Harness</h1>
+          <p>
+            Using advanced wire extrusion machines and precision crimping tools,
+            we engineer high-voltage (HV) harnesses with precision and
+            reliability. Rigorous testing ensures optimal performance and
+            durability in demanding environments.{" "}
+          </p>
         </div>
         <div className="p-img-desc-main">
           <div className="p-sd-img-cover">
@@ -142,28 +147,32 @@ const HVHarness = ({ onLinkClick }) => {
           </div>
           <div className="p-img-desp-main">
             <div className="p-img-desc-top">
-              <p>Lorem Ipsum</p>
+              <p>Description</p>
               <span className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Using advanced wire extrusion machines and precision crimping
+                tools, we engineer high-voltage (HV) harnesses with precision
+                and reliability. Rigorous testing ensures optimal performance
+                and durability in demanding environments.
               </span>
             </div>
             <div className="p-sd-list-container">
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Advanced wire extrusion machines coat conductors for HV
+                harnesses, ensuring insulation integrity and electrical
+                conductivity.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Precision crimping tools secure connections with minimal signal
+                loss, meeting industry standards.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Rigorous testing ensures our HV wiring harnesses deliver
+                outstanding performance and durability in demanding
+                applications.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                We guarantee the quality and durability of our HV harnesses,
+                backed by our commitment to excellence.
               </li>
             </div>
             <div className="p-enquire-now-btn-div">
@@ -268,7 +277,7 @@ const HVHarness = ({ onLinkClick }) => {
                 <img src={TestImg} alt="TestImg"></img>
                 <div className="s-our-services-set-text">
                   <div className="s-our-services-set-heading">
-                    <p>Header</p>
+                    <p>Customized Wiring Harness</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -293,7 +302,7 @@ const HVHarness = ({ onLinkClick }) => {
                 <img src={TestImg} alt="TestImg"></img>
                 <div className="s-our-services-set-text">
                   <div className="s-our-services-set-heading">
-                    <p>Header</p>
+                    <p>EV Vehicle Harness</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -324,7 +333,7 @@ const HVHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>EV Vehicle Harness</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -350,7 +359,7 @@ const HVHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>Low Voltage Harness</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -376,7 +385,7 @@ const HVHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>Customised Wiring harness </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -402,7 +411,7 @@ const HVHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>ICE Vehicle wiring harness</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -428,33 +437,7 @@ const HVHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="21"
-                  height="20"
-                  viewBox="0 0 21 20"
-                  fill="none"
-                >
-                  <path
-                    d="M5.50049 5.83333C5.50049 6.29167 5.87549 6.66667 6.33383 6.66667H12.6588L5.25883 14.0667C4.93383 14.3917 4.93383 14.9167 5.25883 15.2417C5.58383 15.5667 6.10883 15.5667 6.43383 15.2417L13.8338 7.84167V14.1667C13.8338 14.625 14.2088 15 14.6672 15C15.1255 15 15.5005 14.625 15.5005 14.1667V5.83333C15.5005 5.375 15.1255 5 14.6672 5H6.33383C5.87549 5 5.50049 5.375 5.50049 5.83333Z"
-                    fill="#355094"
-                  />
-                </svg>
-              </div>
-              <p>
-                Office ipsum you must be muted. Problem exploratory switch busy
-                hard board. Better roll strategies clean existing winning.
-              </p>
-            </div>
-          </div>
-          <div className="s-mobile-our-services-set">
-            <div className="s-mobile-our-services-set-img">
-              <img src={Services1}></img>
-            </div>
-            <div className="s-mobile-our-services-set-text">
-              <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>Charger Cables</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"

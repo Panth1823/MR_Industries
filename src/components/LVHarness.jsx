@@ -1,7 +1,56 @@
 import TestImg from "../assets/TestImg.png";
-import ProductGallerywDots from "./ProductGallerywDots.jsx";
+import { useEffect, useState } from "react";
 import Services1 from "../assets/Services1.jpg";
+import LV_Harness_MR_Industries from "../assets/serviceDetails/LV Harness/LV Harness - MR Industries.png";
+import LV_Harness_01_MR_Industries from "../assets/serviceDetails/LV Harness/LV Harness 01 - MR Industries.png";
+
 const LVHarness = ({ onLinkClick }) => {
+  const [startIndex, setStartIndex] = useState(0);
+  const [itemsToShow, setItemsToShow] = useState(3);
+  const [isLeftDisabled, setIsLeftDisabled] = useState(true);
+  const [isRightDisabled, setIsRightDisabled] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenSizeCurrent = window.innerWidth;
+      setItemsToShow(screenSizeCurrent < 1200 ? 1 : 3);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial check
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const items = [
+    { img: LV_Harness_MR_Industries },
+    { img: LV_Harness_01_MR_Industries },
+  ];
+
+  useEffect(() => {
+    setIsLeftDisabled(startIndex === 0);
+    setIsRightDisabled(startIndex + itemsToShow >= items.length);
+  }, [startIndex, itemsToShow, items.length]);
+
+  const totalSets = Math.ceil(items.length / itemsToShow);
+  const currentSet = Math.floor(startIndex / itemsToShow);
+
+  const handleRightClick = () => {
+    if (startIndex + itemsToShow < items.length) {
+      setStartIndex(startIndex + itemsToShow);
+    }
+  };
+
+  const handleLeftClick = () => {
+    if (startIndex > 0) {
+      setStartIndex(startIndex - itemsToShow);
+    }
+  };
+
+  const handleDotClick = (index) => {
+    setStartIndex(index * itemsToShow);
+  };
+
   return (
     <>
       <div className="p-service-details-main">
@@ -53,16 +102,21 @@ const LVHarness = ({ onLinkClick }) => {
                 fontWeight: "600",
               }}
             >
-              Services Details
+              LV Harness
             </a>
           </div>
           <div className="p-breadcrumb-subtitle">
-            <p>LV Harness</p>
+            <p>Low Voltage Harness</p>
           </div>
         </div>
         <div className="p-mobile-title">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur. Et miat sit velit. </p>
+          <h1>Low Voltage Harness</h1>
+          <p>
+            Using precision wire cutting machines and automated crimping
+            equipment, we craft low-voltage (LV) harnesses with meticulous
+            attention to detail. Rigorous testing ensures reliability and
+            durability for various applications.{" "}
+          </p>
         </div>
         <div className="p-img-desc-main">
           <div className="p-sd-img-cover">
@@ -79,28 +133,30 @@ const LVHarness = ({ onLinkClick }) => {
           </div>
           <div className="p-img-desp-main">
             <div className="p-img-desc-top">
-              <p>Lorem Ipsum</p>
+              <p>Description</p>
               <span className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Using precision wire cutting machines and automated crimping
+                equipment, we craft low-voltage (LV) harnesses with meticulous
+                attention to detail. Rigorous testing ensures reliability and
+                durability for various applications.
               </span>
             </div>
             <div className="p-sd-list-container">
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Precision wire cutting machines ensure accurate conductor
+                preparation for LV harnesses, optimizing connectivity.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Automated crimping equipment guarantees secure connections,
+                meeting industry standards for reliability.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Each LV harness undergoes thorough testing, ensuring reliability
+                in real-world conditions.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                We ensure the quality and durability of our LV harnesses, backed
+                by comprehensive support and customer satisfaction.
               </li>
             </div>
             <div className="p-enquire-now-btn-div">
@@ -115,7 +171,79 @@ const LVHarness = ({ onLinkClick }) => {
         </div>
       </div>
 
-      <ProductGallerywDots />
+      <div className="p-product-gallery">
+        <p
+          className="p-product-gallery-heading"
+          style={{
+            width: "100%",
+            borderBottom: "1px solid #E2E2E2",
+            paddingBottom: "24px",
+          }}
+        >
+          Manufactured Products
+        </p>
+        <div className="p-product-gallery-container">
+          <div
+            className={`p-product-gallery-left-button ${
+              isLeftDisabled ? "disabled" : ""
+            }`}
+            onClick={handleLeftClick}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="74"
+              height="74"
+              viewBox="0 0 74 74"
+              fill="none"
+            >
+              <path
+                d="M42.8279 44.9055C43.6729 44.0605 43.6729 42.6955 42.8279 41.8505L34.4213 33.4438L42.8279 25.0372C43.6729 24.1922 43.6729 22.8272 42.8279 21.9822C41.9829 21.1372 40.6179 21.1372 39.7729 21.9822L29.8279 31.9272C28.9829 32.7722 28.9829 34.1372 29.8279 34.9822L39.7729 44.9272C40.5963 45.7505 41.9829 45.7505 42.8279 44.9055Z"
+                fill="#12307B"
+              />
+            </svg>
+          </div>
+          <div className="p-gallery-set-container">
+            {items
+              .slice(startIndex, startIndex + itemsToShow)
+              .map((item, index) => (
+                <div className="p-gallery-set" key={index}>
+                  <img src={item.img} alt={`Product ${index + 1}`} />
+                  <p>{item.text}</p>
+                </div>
+              ))}
+          </div>
+          <div
+            className={`p-product-gallery-right-button ${
+              isRightDisabled ? "disabled" : ""
+            }`}
+            onClick={handleRightClick}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="74"
+              height="74"
+              viewBox="0 0 74 74"
+              fill="none"
+            >
+              <path
+                d="M31.1721 44.9055C30.3271 44.0605 30.3271 42.6955 31.1721 41.8505L39.5787 33.4438L31.1721 25.0372C30.3271 24.1922 30.3271 22.8272 31.1721 21.9822C32.0171 21.1372 33.3821 21.1372 34.2271 21.9822L44.1721 31.9272C45.0171 32.7722 45.0171 34.1372 44.1721 34.9822L34.2271 44.9272C33.4037 45.7505 32.0171 45.7505 31.1721 44.9055Z"
+                fill="#12307B"
+              />
+            </svg>
+          </div>
+        </div>
+        <div className="p-gallery-dots">
+          {Array.from({ length: totalSets }).map((_, index) => (
+            <span
+              key={index}
+              className={`p-gallery-dot ${
+                index === currentSet ? "active" : ""
+              }`}
+              onClick={() => handleDotClick(index)}
+            />
+          ))}
+        </div>
+      </div>
 
       <div className="s-our-services" style={{ gap: "40px" }}>
         <div
@@ -133,7 +261,7 @@ const LVHarness = ({ onLinkClick }) => {
                 <img src={TestImg} alt="TestImg"></img>
                 <div className="s-our-services-set-text">
                   <div className="s-our-services-set-heading">
-                    <p>Header</p>
+                    <p>High Voltage Harness</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -158,7 +286,7 @@ const LVHarness = ({ onLinkClick }) => {
                 <img src={TestImg} alt="TestImg"></img>
                 <div className="s-our-services-set-text">
                   <div className="s-our-services-set-heading">
-                    <p>Header</p>
+                    <p>High Voltage Harness</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -189,7 +317,7 @@ const LVHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>EV Vehicle Harness</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -215,7 +343,7 @@ const LVHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>High Voltage Harness </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -241,7 +369,7 @@ const LVHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>Customised Wiring harness </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -267,7 +395,7 @@ const LVHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>ICE Vehicle wiring harness</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -293,33 +421,7 @@ const LVHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="21"
-                  height="20"
-                  viewBox="0 0 21 20"
-                  fill="none"
-                >
-                  <path
-                    d="M5.50049 5.83333C5.50049 6.29167 5.87549 6.66667 6.33383 6.66667H12.6588L5.25883 14.0667C4.93383 14.3917 4.93383 14.9167 5.25883 15.2417C5.58383 15.5667 6.10883 15.5667 6.43383 15.2417L13.8338 7.84167V14.1667C13.8338 14.625 14.2088 15 14.6672 15C15.1255 15 15.5005 14.625 15.5005 14.1667V5.83333C15.5005 5.375 15.1255 5 14.6672 5H6.33383C5.87549 5 5.50049 5.375 5.50049 5.83333Z"
-                    fill="#355094"
-                  />
-                </svg>
-              </div>
-              <p>
-                Office ipsum you must be muted. Problem exploratory switch busy
-                hard board. Better roll strategies clean existing winning.
-              </p>
-            </div>
-          </div>
-          <div className="s-mobile-our-services-set">
-            <div className="s-mobile-our-services-set-img">
-              <img src={Services1}></img>
-            </div>
-            <div className="s-mobile-our-services-set-text">
-              <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>Charger Cables</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"

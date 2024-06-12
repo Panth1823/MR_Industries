@@ -53,16 +53,18 @@ const ICEHarness = ({ onLinkClick }) => {
                 fontWeight: "600",
               }}
             >
-              Services Details
+              ICE Vehicle Harness
             </a>
           </div>
           <div className="p-breadcrumb-subtitle">
-            <p>ICE Vehicle wiring harness</p>
+            <p>ICE Vehicle Harness</p>
           </div>
         </div>
         <div className="p-mobile-title">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur. Et miat sit velit. </p>
+          <h1>ICE Vehicle Harness</h1>
+          <p> Employing advanced wire cutting and stripping machines,
+                precision crimping, and automated soldering processes, we craft
+                high-quality Internal Combustion Engine (ICE) vehicle harnesses. </p>
         </div>
         <div className="p-img-desc-main">
           <div className="p-sd-img-cover">
@@ -79,28 +81,31 @@ const ICEHarness = ({ onLinkClick }) => {
           </div>
           <div className="p-img-desp-main">
             <div className="p-img-desc-top">
-              <p>Lorem Ipsum</p>
+              <p>Description</p>
               <span className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Employing advanced wire cutting and stripping machines,
+                precision crimping, and automated soldering processes, we craft
+                high-quality Internal Combustion Engine (ICE) vehicle harnesses.
               </span>
             </div>
             <div className="p-sd-list-container">
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Advanced wire cutting and stripping machines prepare conductors
+                precisely for ICE vehicle harnesses, ensuring optimal
+                connectivity.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Automated crimping and soldering processes deliver secure
+                connections and minimal signal loss, meeting automotive
+                requirements.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Rigorous testing, including electrical continuity and insulation
+                resistance tests, ensures reliability and safety.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                We guarantee the quality of our ICE vehicle harnesses, backed by
+                our commitment to excellence and customer satisfaction.
               </li>
             </div>
             <div className="p-enquire-now-btn-div">
@@ -189,7 +194,7 @@ const ICEHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>EV Vehicle Harness</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -215,7 +220,7 @@ const ICEHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>High Voltage Harness </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -241,7 +246,7 @@ const ICEHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>Low Voltage Harness</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -267,7 +272,7 @@ const ICEHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>Customised Wiring harness </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -293,7 +298,7 @@ const ICEHarness = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>Charger Cables</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"

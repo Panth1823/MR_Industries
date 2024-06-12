@@ -53,7 +53,7 @@ const ChargerCables = ({ onLinkClick }) => {
                 fontWeight: "600",
               }}
             >
-              Services Details
+              Charger Cables
             </a>
           </div>
           <div className="p-breadcrumb-subtitle">
@@ -61,8 +61,12 @@ const ChargerCables = ({ onLinkClick }) => {
           </div>
         </div>
         <div className="p-mobile-title">
-          <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur. Et miat sit velit. </p>
+          <h1>Charger Cables</h1>
+          <p>
+            With advanced cable extrusion machines and precision soldering
+            equipment, we produce durable charger cables. Rigorous testing
+            ensures reliability and safety for all charging applications.{" "}
+          </p>
         </div>
         <div className="p-img-desc-main">
           <div className="p-sd-img-cover">
@@ -79,28 +83,30 @@ const ChargerCables = ({ onLinkClick }) => {
           </div>
           <div className="p-img-desp-main">
             <div className="p-img-desc-top">
-              <p>Lorem Ipsum</p>
+              <p>Description</p>
               <span className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                With advanced cable extrusion machines and precision soldering
+                equipment, we produce durable charger cables. Rigorous testing
+                ensures reliability and safety for all charging applications.
               </span>
             </div>
             <div className="p-sd-list-container">
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Advanced cable extrusion machines coat conductors for charger
+                cables, ensuring insulation integrity and electrical
+                conductivity.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Precision soldering equipment secures connections with minimal
+                signal loss, meeting industry standards.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                Each charger cable undergoes comprehensive testing for
+                reliability and safety.
               </li>
               <li className="p-sd-li">
-                Lorem ipsum dolor sit amet consectetur. Et mi at sit velit. Orci
-                pellentesque auctor massa ornare ultrices diam magnis.
+                We guarantee the quality of our charger cables, backed by our
+                commitment to excellence and customer satisfaction.
               </li>
             </div>
             <div className="p-enquire-now-btn-div">
@@ -189,7 +195,7 @@ const ChargerCables = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>EV Vehicle Harness</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -215,7 +221,7 @@ const ChargerCables = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>High Voltage Harness </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -241,7 +247,7 @@ const ChargerCables = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>Low Voltage Harness</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -267,7 +273,7 @@ const ChargerCables = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>Customised Wiring harness </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -293,33 +299,7 @@ const ChargerCables = ({ onLinkClick }) => {
             </div>
             <div className="s-mobile-our-services-set-text">
               <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="21"
-                  height="20"
-                  viewBox="0 0 21 20"
-                  fill="none"
-                >
-                  <path
-                    d="M5.50049 5.83333C5.50049 6.29167 5.87549 6.66667 6.33383 6.66667H12.6588L5.25883 14.0667C4.93383 14.3917 4.93383 14.9167 5.25883 15.2417C5.58383 15.5667 6.10883 15.5667 6.43383 15.2417L13.8338 7.84167V14.1667C13.8338 14.625 14.2088 15 14.6672 15C15.1255 15 15.5005 14.625 15.5005 14.1667V5.83333C15.5005 5.375 15.1255 5 14.6672 5H6.33383C5.87549 5 5.50049 5.375 5.50049 5.83333Z"
-                    fill="#355094"
-                  />
-                </svg>
-              </div>
-              <p>
-                Office ipsum you must be muted. Problem exploratory switch busy
-                hard board. Better roll strategies clean existing winning.
-              </p>
-            </div>
-          </div>
-          <div className="s-mobile-our-services-set">
-            <div className="s-mobile-our-services-set-img">
-              <img src={Services1}></img>
-            </div>
-            <div className="s-mobile-our-services-set-text">
-              <div className="s-mobile-our-services-set-heading">
-                <span>Header</span>
+                <span>ICE Vehicle wiring harness</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"

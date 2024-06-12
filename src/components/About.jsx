@@ -73,8 +73,8 @@ const About = ({ onLinkClick }) => {
 
   // Mobile Card Logic V1
   const [isVisible4, setIsVisible4] = useState(false);
-  const [rotateDeg4, setRotateDeg4] = useState(0);
-  const [marginTop, setMarginTop] = useState(-88);
+  const [rotateDeg4, setRotateDeg4] = useState(180);
+  const [marginTop, setMarginTop] = useState(-80);
 
   const toggleVisibility4 = () => {
     const newVisibility = !isVisible4;
@@ -85,8 +85,8 @@ const About = ({ onLinkClick }) => {
 
   // Mobile Card Logic V2
   const [isVisible5, setIsVisible5] = useState(false);
-  const [rotateDeg5, setRotateDeg5] = useState(0);
-  const [marginTop1, setMarginTop1] = useState(-88);
+  const [rotateDeg5, setRotateDeg5] = useState(180);
+  const [marginTop1, setMarginTop1] = useState(-80);
 
   const toggleVisibility5 = () => {
     const newVisibility = !isVisible5;
@@ -97,8 +97,8 @@ const About = ({ onLinkClick }) => {
 
   // Mobile Card Logic V3
   const [isVisible6, setIsVisible6] = useState(false);
-  const [rotateDeg6, setRotateDeg6] = useState(0);
-  const [marginTop2, setMarginTop2] = useState(-88);
+  const [rotateDeg6, setRotateDeg6] = useState(180);
+  const [marginTop2, setMarginTop2] = useState(-80);
 
   const toggleVisibility6 = () => {
     const newVisibility = !isVisible6;
@@ -109,8 +109,8 @@ const About = ({ onLinkClick }) => {
 
   // Mobile Card Logic V4
   const [isVisible7, setIsVisible7] = useState(false);
-  const [rotateDeg7, setRotateDeg7] = useState(0);
-  const [marginTop3, setMarginTop3] = useState(-88);
+  const [rotateDeg7, setRotateDeg7] = useState(180);
+  const [marginTop3, setMarginTop3] = useState(-80);
 
   const toggleVisibility7 = () => {
     const newVisibility = !isVisible7;
@@ -121,8 +121,8 @@ const About = ({ onLinkClick }) => {
 
   // Mobile Card Logic V5
   const [isVisible8, setIsVisible8] = useState(false);
-  const [rotateDeg8, setRotateDeg8] = useState(0);
-  const [marginTop4, setMarginTop4] = useState(-88);
+  const [rotateDeg8, setRotateDeg8] = useState(180);
+  const [marginTop4, setMarginTop4] = useState(-80);
 
   const toggleVisibility8 = () => {
     const newVisibility = !isVisible8;
@@ -133,8 +133,8 @@ const About = ({ onLinkClick }) => {
 
   // Mobile Card Logic V6
   const [isVisible9, setIsVisible9] = useState(false);
-  const [rotateDeg9, setRotateDeg9] = useState(0);
-  const [marginTop5, setMarginTop5] = useState(-88);
+  const [rotateDeg9, setRotateDeg9] = useState(180);
+  const [marginTop5, setMarginTop5] = useState(-80);
 
   const toggleVisibility9 = () => {
     const newVisibility = !isVisible9;

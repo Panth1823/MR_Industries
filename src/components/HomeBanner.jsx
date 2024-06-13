@@ -174,7 +174,7 @@ const HomeBanner = ({ onLinkClick }) => {
         </div>
         <div
           className="s-mobile-banner-logo-set"
-          style={{ justifyContent: "centre", gap:"24px" }}
+          style={{ justifyContent: "centre", gap: "24px" }}
         >
           <img
             src={Logo3}

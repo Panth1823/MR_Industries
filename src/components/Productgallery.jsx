@@ -1,15 +1,33 @@
 import React, { useState } from "react";
-import productImg from "../assets/productImg.png";
+import HV_Harness_01_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 01 - MR Industries.png";
+import HV_Harness_02_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 02 - MR Industries.png";
+import HV_Harness_03_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 03 - MR Industries.png";
+import HV_Harness_04_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 04 - MR Industries.png";
+import Custom_Harness_01_MR_Industries from "../assets/serviceDetails/Custom Harness/Custom Harness 01 - MR Industries.png";
+import Custom_Harness_02_MR_Industries from "../assets/serviceDetails/Custom Harness/Custom Harness 02 - MR Industries.png";
+import Custom_Harness_03_MR_Industries from "../assets/serviceDetails/Custom Harness/Custom Harness 03 - MR Industries.png";
+import Custom_Harness_04_MR_Industries from "../assets/serviceDetails/Custom Harness/Custom Harness 04 - MR Industries.png";
+import charger_cables_01_MR_Industries_2 from "../assets/serviceDetails/charger cables/charger cables 01 - MR Industries (2).png";
+import charger_cables_01_MR_Industries from "../assets/serviceDetails/charger cables/charger cables 01 - MR Industries.png";
+import PIGTAIL_HARNESS_ICE_Vehicle_Harness_MR_Industries from "../assets/serviceDetails/ICE Vehicle Harness/PIGTAIL HARNESS - ICE Vehicle Harness - MR Industries.png";
 
 const ProductGallery = () => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
-    { img: productImg, text: "Lorem Ipsum1" },
-    { img: productImg, text: "Lorem Ipsum2" },
-    { img: productImg, text: "Lorem Ipsum3" },
-    { img: productImg, text: "Lorem Ipsum4" },
-    { img: productImg, text: "Lorem Ipsum5" },
-    { img: productImg, text: "Lorem Ipsum6" },
+    { img: HV_Harness_01_MR_Industries, text: "Lorem Ipsum1" },
+    { img: HV_Harness_02_MR_Industries, text: "Lorem Ipsum2" },
+    { img: HV_Harness_03_MR_Industries, text: "Lorem Ipsum3" },
+    { img: HV_Harness_04_MR_Industries, text: "Lorem Ipsum4" },
+    { img: Custom_Harness_01_MR_Industries, text: "Lorem Ipsum5" },
+    { img: Custom_Harness_02_MR_Industries, text: "Lorem Ipsum5" },
+    { img: Custom_Harness_03_MR_Industries, text: "Lorem Ipsum5" },
+    { img: Custom_Harness_04_MR_Industries, text: "Lorem Ipsum5" },
+    { img: charger_cables_01_MR_Industries_2, text: "Lorem Ipsum5" },
+    { img: charger_cables_01_MR_Industries, text: "Lorem Ipsum5" },
+    {
+      img: PIGTAIL_HARNESS_ICE_Vehicle_Harness_MR_Industries,
+      text: "Lorem Ipsum5",
+    },
   ];
 
   const numberOfItems = items.length;

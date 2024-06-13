@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from "react";
 import KnowMoreButtton from "./KnowMoreButtton.jsx";
-import Services1 from "../assets/Services1.jpg";
-import Services2 from "../assets/Services2.jpg";
-import testImg from "../assets/TestImg.png";
 import HV_Harness_06_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 06 - MR Industries.png";
 import HV_Harness_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness - MR Industries.png";
 import LV_Harness_MR_Industries from "../assets/serviceDetails/LV Harness/LV Harness - MR Industries.png";
 import Custom_Harness_MR_Industries from "../assets/serviceDetails/Custom Harness/Custom Harness - MR Industries.png";
 import ICE_Vehicle_Harness_01_MR_Industries from "../assets/serviceDetails/ICE Vehicle Harness/ICE Vehicle Harness 01 - MR Industries.png";
 import charger_cables_MR_Industries from "../assets/serviceDetails/charger cables/charger cables - MR Industries.png";
-import PIGTAIL_HARNESS_ICE_Vehicle_Harness_MR_Industries from "../assets/serviceDetails/ICE Vehicle Harness/PIGTAIL HARNESS - ICE Vehicle Harness - MR Industries.png";
 
 const HomeOurServices = ({ onLinkClick }) => {
   const [activeDot, setActiveDot] = useState(0);
@@ -93,9 +89,9 @@ const HomeOurServices = ({ onLinkClick }) => {
                   </svg>
                 </div>
                 <p>
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture EV harnesses using automated assembly,
+                  precision crimping, and testing for applications like electric
+                  cars.
                 </p>
               </div>
             </div>
@@ -125,9 +121,9 @@ const HomeOurServices = ({ onLinkClick }) => {
                   </svg>
                 </div>
                 <p>
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture HV harnesses using advanced wire extrusion,
+                  automated crimping, and thorough testing for applications like
+                  EVs.
                 </p>
               </div>
             </div>
@@ -159,9 +155,9 @@ const HomeOurServices = ({ onLinkClick }) => {
                   </svg>
                 </div>
                 <p>
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture LV harnesses using precision cutting and
+                  automated crimping, for reliable applications in consumer
+                  electronics.
                 </p>
               </div>
             </div>
@@ -193,9 +189,8 @@ const HomeOurServices = ({ onLinkClick }) => {
                   </svg>
                 </div>
                 <p>
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture customized wiring harnesses using CAD design,
+                  precision cutting, and testing for specialized applications.
                 </p>
               </div>
             </div>
@@ -229,9 +224,9 @@ const HomeOurServices = ({ onLinkClick }) => {
                   </svg>
                 </div>
                 <p>
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture ICE vehicle harnesses using automated wire
+                  cutting, stripping, crimping, and soldering for precision and
+                  reliability.
                 </p>
               </div>
             </div>
@@ -263,9 +258,8 @@ const HomeOurServices = ({ onLinkClick }) => {
                   </svg>
                 </div>
                 <p>
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture durable charger cables with advanced extrusion
+                  and precision soldering, ensuring high reliability and safety.
                 </p>
               </div>
             </div>
@@ -321,8 +315,8 @@ const HomeOurServices = ({ onLinkClick }) => {
               </svg>
             </div>
             <p>
-              Office ipsum you must be muted. Problem exploratory switch busy
-              hard board. Better roll strategies clean existing winning.
+              We manufacture EV harnesses using automated assembly, precision
+              crimping, and testing for applications like electric cars.
             </p>
           </div>
         </div>
@@ -354,8 +348,9 @@ const HomeOurServices = ({ onLinkClick }) => {
               </svg>
             </div>
             <p>
-              Office ipsum you must be muted. Problem exploratory switch busy
-              hard board. Better roll strategies clean existing winning.
+              We manufacture HV harnesses using advanced wire extrusion,
+              automated crimping, and thorough testing for applications like
+              EVs.
             </p>
           </div>
         </div>
@@ -387,8 +382,8 @@ const HomeOurServices = ({ onLinkClick }) => {
               </svg>
             </div>
             <p>
-              Office ipsum you must be muted. Problem exploratory switch busy
-              hard board. Better roll strategies clean existing winning.
+              We manufacture LV harnesses using precision cutting and automated
+              crimping, for reliable applications in consumer electronics.
             </p>
           </div>
         </div>
@@ -420,8 +415,8 @@ const HomeOurServices = ({ onLinkClick }) => {
               </svg>
             </div>
             <p>
-              Office ipsum you must be muted. Problem exploratory switch busy
-              hard board. Better roll strategies clean existing winning.
+              We manufacture customized wiring harnesses using CAD design,
+              precision cutting, and testing for specialized applications.
             </p>
           </div>
         </div>
@@ -453,8 +448,8 @@ const HomeOurServices = ({ onLinkClick }) => {
               </svg>
             </div>
             <p>
-              Office ipsum you must be muted. Problem exploratory switch busy
-              hard board. Better roll strategies clean existing winning.
+              We manufacture ICE vehicle harnesses using automated wire cutting,
+              stripping, crimping, and soldering for precision and reliability.
             </p>
           </div>
         </div>
@@ -486,8 +481,8 @@ const HomeOurServices = ({ onLinkClick }) => {
               </svg>
             </div>
             <p>
-              Office ipsum you must be muted. Problem exploratory switch busy
-              hard board. Better roll strategies clean existing winning.
+              We manufacture durable charger cables with advanced extrusion and
+              precision soldering, ensuring high reliability and safety.
             </p>
           </div>
         </div>

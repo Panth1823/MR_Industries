@@ -574,9 +574,9 @@ const About = ({ onLinkClick }) => {
         </div>
         <div>
           <p className="p-where-we-work-desc">
-            Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis
-            quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg
-            hynm Lorem ipsum
+            In our state-of-the-art facility, equipped with advanced machinery,
+            we ensure to meet your special wiring needs with tailor-made
+            solutions.
           </p>
         </div>
         <div className="p-six-card-grid">

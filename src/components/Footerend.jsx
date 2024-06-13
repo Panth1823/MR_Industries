@@ -143,9 +143,7 @@ const Footerend = ({ onLinkClick }) => {
           <a onClick={() => onLinkClick("Services")}>Services</a>
           <a onClick={() => onLinkClick("Contact Now")}>Contact Us</a>
           <a onClick={() => scrollToTestimony()}>Testimonial</a>
-          <a onClick={() => onLinkClick("TandC")}>
-            Terms & Conditions
-          </a>
+          <a onClick={() => onLinkClick("TandC")}>Terms & Conditions</a>
           <a onClick={() => onLinkClick("Privacy Policy")}>Privacy Policy</a>
         </div>
       </div>
@@ -208,9 +206,7 @@ const Footerend = ({ onLinkClick }) => {
               <a onClick={() => onLinkClick("Services")}>Services</a>
               <a onClick={() => onLinkClick("Contact Now")}>Contact Us</a>
               <a onClick={() => scrollToTestimony()}>Testimonial</a>
-              <a onClick={() => onLinkClick("TandC")}>
-                Terms & Conditions
-              </a>
+              <a onClick={() => onLinkClick("TandC")}>Terms & Conditions</a>
               <a onClick={() => onLinkClick("Privacy Policy")}>
                 Privacy Policy
               </a>

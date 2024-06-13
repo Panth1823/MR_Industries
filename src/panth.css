@@ -709,6 +709,10 @@ span {
   border: 1px solid #ccc;
   background: #fff;
 }
+.p-sd-img-cover img {
+  border-radius: 8px !important;
+  object-fit: contain !important;
+}
 .p-img-desp-main {
   display: flex;
   flex-direction: column;
@@ -1423,6 +1427,7 @@ span {
   .p-sd-img-cover img {
     width: 100% !important;
     height: 100% !important;
+    scale: 1 !important;
   }
   .p-img-desc-top {
     display: none;

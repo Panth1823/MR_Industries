@@ -17,7 +17,7 @@ const HomeAboutUs = ({ onLinkClick }) => {
           equipped in-house capability for product and process design, as well
           as tooling and infrastructure development, enables us to deliver
           excellent products. With a dedicated team and advanced technology, we
-          continuously strive to meet and exceed our customers' expectations.
+          continuously strive to meet and exceed our customers expectations.
         </p>
         <KnowMoreButtton
           KnowMoreText={"Know More"}

@@ -61,7 +61,6 @@ const MainNavbar = ({ activeLink, onLinkClick }) => {
   const hideNavbar = () => {
     setNavbarVisible(false);
   };
-  
 
   return (
     <div className="navbar">

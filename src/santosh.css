@@ -528,7 +528,7 @@
 
 .s-gallery-set img {
   width: 100%;
-  object-fit: cover;
+  object-fit: none;
   align-self: stretch;
 }
 
@@ -611,7 +611,8 @@
   height: 409px;
   align-self: stretch;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: none;
+  scale: 1.5;
 }
 
 .s-our-services-set-text {
@@ -621,6 +622,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+  z-index: 1;
 }
 
 .s-our-services-set-text p {
@@ -631,6 +633,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
+  z-index: 1;
 }
 
 .s-our-services-set-heading {
@@ -651,7 +654,6 @@
 
 .s-our-services-set-heading svg {
   display: flex;
-  padding: 4px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -1259,6 +1261,7 @@
   border-radius: 16px;
   border: 1px solid #ccc;
   background: #fff;
+  height: 606px;
 }
 
 .s-service-catalogue-set-img {
@@ -1271,6 +1274,7 @@
 .s-service-catalogue-set-img img {
   height: 320px;
   width: 100%;
+  scale: 1.4;
   object-fit: none;
 }
 
@@ -1932,6 +1936,7 @@ footer {
   .s-gallery-set img {
     height: 228.888px;
     align-self: stretch;
+    object-fit: contain;
   }
 
   .s-gallery-set p {
@@ -1992,7 +1997,7 @@ footer {
   }
 
   .s-mobile-our-services-set {
-    height: 380px;
+    height: 422px;
     display: flex;
     width: 80%;
     flex-direction: column;
@@ -2013,8 +2018,9 @@ footer {
   }
 
   .s-mobile-our-services-set-img img {
+    object-fit: contain;
     width: 100%;
-    object-fit: cover;
+    height: 244px;
   }
 
   .s-mobile-our-services-set-text {
@@ -2370,7 +2376,6 @@ footer {
     display: flex;
     width: 100%;
     height: 52px;
-    padding: 12px 24px;
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -2645,6 +2650,7 @@ footer {
     padding: 0;
     width: 100%;
     gap: 16px;
+    height: auto;
   }
 
   .s-service-catalogue-set-img {
@@ -2652,8 +2658,9 @@ footer {
   }
   .s-service-catalogue-set-img img {
     height: 180px;
-    width: 348px;
     object-fit: contain;
+    scale: 1;
+    object-position: top;
   }
   .s-service-catalogue-set-text {
     display: flex;

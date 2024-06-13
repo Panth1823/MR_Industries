@@ -8,14 +8,18 @@ function HomeNeedHelp() {
         <span>NEED HELP ?</span>
         <p>Can't Find It? Email Us!</p>
       </div>
-      <form className="s-need-help-form">
+      <form
+        className="s-need-help-form"
+        action="https://formspree.io/f/xrgndjlp"
+        method="post"
+      >
         <input
           name="question"
           type="text"
           placeholder="What are you looking for?"
           required
         />
-        <button type="submit">Submit</button>
+        <button type="submit"><p> Submit </p></button>
       </form>
       <img src={needHelp}></img>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TestIMG from "../assets/TestImg.png";
+
 import KnowMoreButton from "./KnowMoreButtton";
 import HV_Harness_06_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness 06 - MR Industries.png";
 import HV_Harness_MR_Industries from "../assets/serviceDetails/HV Harness/HV Harness - MR Industries.png";
@@ -66,9 +66,9 @@ const Services = ({ onLinkClick }) => {
               <div className="s-service-catalogue-set-text">
                 <span>EV Vehicle Harness</span>
                 <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture EV harnesses using automated assembly,
+                  precision crimping, and testing for applications like electric
+                  cars.
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
@@ -86,9 +86,9 @@ const Services = ({ onLinkClick }) => {
               <div className="s-service-catalogue-set-text">
                 <span>HV Harness </span>
                 <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture HV harnesses using advanced wire extrusion,
+                  automated crimping, and thorough testing for applications like
+                  EVs.
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
@@ -108,9 +108,9 @@ const Services = ({ onLinkClick }) => {
               <div className="s-service-catalogue-set-text">
                 <span>LV Harness</span>
                 <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture LV harnesses using precision cutting and
+                  automated crimping, for reliable applications in consumer
+                  electronics.
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
@@ -128,9 +128,8 @@ const Services = ({ onLinkClick }) => {
               <div className="s-service-catalogue-set-text">
                 <span>Customised Wiring harness </span>
                 <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture customized wiring harnesses using CAD design,
+                  precision cutting, and testing for specialized applications.
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
@@ -152,9 +151,9 @@ const Services = ({ onLinkClick }) => {
               <div className="s-service-catalogue-set-text">
                 <span>ICE Vehicle wiring harness</span>
                 <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture ICE vehicle harnesses using automated wire
+                  cutting, stripping, crimping, and soldering for precision and
+                  reliability.
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
@@ -174,9 +173,8 @@ const Services = ({ onLinkClick }) => {
               <div className="s-service-catalogue-set-text">
                 <span>Charger Cables</span>
                 <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture durable charger cables with advanced extrusion
+                  and precision soldering, ensuring high reliability and safety.
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
@@ -192,12 +190,13 @@ const Services = ({ onLinkClick }) => {
       <div className="mobile-services-catalouge">
         <div className="s-about-us-left">
           <div className="s-about-us-heading">
-            <p>Lorem Ipsum</p>
+            <p>Comprehensive Wiring Solutions</p>
           </div>
           <p className="s-about-us-heading-para">
-            Lorem ipsum dolor sit amet consectetur. Sed imperdiet in diam felis
-            quis ultrices lacinia proin pellentesque. Vivamus est ispre oilfg
-            hynm Lorem ipsum
+            With unparalleled expertise and a commitment to quality, we
+            manufacture and deliver superior EV, HV, and LV wiring harnesses.
+            Our custom solutions and reliable performance set us apart in the
+            industry.
           </p>
         </div>
         <div className="s-service-catalogue-container">
@@ -207,15 +206,14 @@ const Services = ({ onLinkClick }) => {
                 <img
                   src={HV_Harness_06_MR_Industries}
                   alt="HV_Harness_06_MR_Industries"
-                  style={{ objectFit: "none" }}
                 ></img>
               </div>
               <div className="s-service-catalogue-set-text">
                 <span>EV Vehicle Harness</span>
                 <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture EV harnesses using automated assembly,
+                  precision crimping, and testing for applications like electric
+                  cars.
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
@@ -233,9 +231,9 @@ const Services = ({ onLinkClick }) => {
               <div className="s-service-catalogue-set-text">
                 <span>HV Harness </span>
                 <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture HV harnesses using advanced wire extrusion,
+                  automated crimping, and thorough testing for applications like
+                  EVs.
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
@@ -253,9 +251,9 @@ const Services = ({ onLinkClick }) => {
               <div className="s-service-catalogue-set-text">
                 <span>LV Harness</span>
                 <p className="s-services-catalogue-set-para">
-                  Office ipsum you must be muted. Problem exploratory switch
-                  busy hard board. Better roll strategies clean existing
-                  winning.
+                  We manufacture LV harnesses using precision cutting and
+                  automated crimping, for reliable applications in consumer
+                  electronics.
                 </p>
                 <KnowMoreButton
                   KnowMoreText={"View Details"}
@@ -275,9 +273,9 @@ const Services = ({ onLinkClick }) => {
                   <div className="s-service-catalogue-set-text">
                     <span>Customised Wiring harness </span>
                     <p className="s-services-catalogue-set-para">
-                      Office ipsum you must be muted. Problem exploratory switch
-                      busy hard board. Better roll strategies clean existing
-                      winning.
+                      We manufacture customized wiring harnesses using CAD
+                      design, precision cutting, and testing for specialized
+                      applications.
                     </p>
                     <KnowMoreButton
                       KnowMoreText={"View Details"}
@@ -297,9 +295,9 @@ const Services = ({ onLinkClick }) => {
                   <div className="s-service-catalogue-set-text">
                     <span>ICE Vehicle wiring harness</span>
                     <p className="s-services-catalogue-set-para">
-                      Office ipsum you must be muted. Problem exploratory switch
-                      busy hard board. Better roll strategies clean existing
-                      winning.
+                      We manufacture ICE vehicle harnesses using automated wire
+                      cutting, stripping, crimping, and soldering for precision
+                      and reliability.
                     </p>
                     <KnowMoreButton
                       KnowMoreText={"View Details"}
@@ -319,9 +317,9 @@ const Services = ({ onLinkClick }) => {
                   <div className="s-service-catalogue-set-text">
                     <span>Charger Cables</span>
                     <p className="s-services-catalogue-set-para">
-                      Office ipsum you must be muted. Problem exploratory switch
-                      busy hard board. Better roll strategies clean existing
-                      winning.
+                      We manufacture durable charger cables with advanced
+                      extrusion and precision soldering, ensuring high
+                      reliability and safety.
                     </p>
                     <KnowMoreButton
                       KnowMoreText={"View Details"}

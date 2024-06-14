@@ -347,6 +347,7 @@ span {
     linear-gradient(90deg, #12307bcc, #569dd0cc);
   background-origin: border-box;
   background-clip: content-box, border-box;
+  overflow: hidden;
 }
 
 .circle-svg {
@@ -537,7 +538,6 @@ span {
   flex-direction: row;
   gap: 24px;
   width: 100%;
-  justify-content: space-between;
 }
 .p-certifications-qualification {
   display: flex;
@@ -625,7 +625,7 @@ span {
 
 .react-card-flip {
   cursor: pointer;
-  width: 548px;
+  width: 100%;
   height: 457px;
   border-radius: 8px;
 }
@@ -634,11 +634,10 @@ span {
   height: 457px;
   border-radius: 20px;
   background: linear-gradient(
-      0deg,
-      rgba(40, 67, 133, 0.8) 0%,
-      rgba(40, 67, 133, 0.8) 100%
-    ),
-    url("./assets/TestImg.png") lightgray 50% / cover no-repeat;
+    90deg,
+    rgba(18, 48, 123, 0.8) 0%,
+    rgba(86, 157, 208, 0.8) 100%
+  );
 }
 .p-card-back-main {
   display: flex;
@@ -670,8 +669,15 @@ span {
 }
 .p-subtext-back-p.btm .back,
 .front {
-  width: 548px;
+  width: 100%;
   height: 457px;
+  overflow: hidden;
+}
+.front img {
+  width: 100%;
+
+  border-radius: 20px;
+  object-fit: none;
 }
 .back {
   width: 548px;
@@ -1091,6 +1097,13 @@ span {
   .p-why-us-desc {
     flex-direction: column;
     gap: 8px;
+  }
+  .p-why-us-desc svg {
+    width: 40px;
+    height: 40px;
+  }
+  .p-why-us-desc svg path {
+    fill: #355094;
   }
   .p-desc-info {
     gap: 8px;

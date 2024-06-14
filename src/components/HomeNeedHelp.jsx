@@ -10,7 +10,7 @@ function HomeNeedHelp() {
       </div>
       <form
         className="s-need-help-form"
-        action="https://formspree.io/f/xrgndjlp"
+        action="https://formspree.io/f/xayrrpqo"
         method="post"
       >
         <input
@@ -19,7 +19,9 @@ function HomeNeedHelp() {
           placeholder="What are you looking for?"
           required
         />
-        <button type="submit"><p> Submit </p></button>
+        <button type="submit">
+          <p> Submit </p>
+        </button>
       </form>
       <img src={needHelp}></img>
     </div>

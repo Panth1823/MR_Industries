@@ -70,7 +70,6 @@ const HomeOurServices = ({ onLinkClick }) => {
               <img
                 src={HV_Harness_06_MR_Industries}
                 alt="HV_Harness_06_MR_Industries"
-                style={{ objectFit: "none", scale: "1.5" }}
               ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
@@ -102,7 +101,6 @@ const HomeOurServices = ({ onLinkClick }) => {
               <img
                 src={HV_Harness_MR_Industries}
                 alt="HV_Harness_MR_Industries"
-                style={{ objectFit: "none", scale: "1.5" }}
               ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
@@ -170,7 +168,6 @@ const HomeOurServices = ({ onLinkClick }) => {
               <img
                 src={Custom_Harness_MR_Industries}
                 alt="Custom_Harness_MR_Industries"
-                style={{ objectFit: "none", scale: "1.5" }}
               ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
@@ -205,7 +202,6 @@ const HomeOurServices = ({ onLinkClick }) => {
               <img
                 src={ICE_Vehicle_Harness_01_MR_Industries}
                 alt="ICE_Vehicle_Harness_01_MR_Industries"
-                style={{ objectFit: "none", scale: "1.5" }}
               ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
@@ -239,7 +235,6 @@ const HomeOurServices = ({ onLinkClick }) => {
               <img
                 src={charger_cables_MR_Industries}
                 alt="charger_cables_MR_Industries"
-                style={{ objectFit: "none", scale: "1.5" }}
               ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
@@ -295,7 +290,7 @@ const HomeOurServices = ({ onLinkClick }) => {
             <img
               src={HV_Harness_06_MR_Industries}
               alt="HV_Harness_06_MR_Industries"
-              style={{ objectFit: "none", objectPosition: "top" }}
+              style={{ objectPosition: "top" }}
             ></img>
           </div>
           <div className="s-mobile-our-services-set-text">
@@ -328,7 +323,7 @@ const HomeOurServices = ({ onLinkClick }) => {
             <img
               src={HV_Harness_MR_Industries}
               alt="HV_Harness_MR_Industries"
-              style={{ objectFit: "none", objectPosition: "top" }}
+              style={{ objectPosition: "top" }}
             ></img>
           </div>
           <div className="s-mobile-our-services-set-text">
@@ -362,7 +357,7 @@ const HomeOurServices = ({ onLinkClick }) => {
             <img
               src={LV_Harness_MR_Industries}
               alt="LV_Harness_MR_Industries"
-              style={{ objectFit: "none", objectPosition: "top" }}
+              style={{ objectPosition: "top" }}
             ></img>
           </div>
           <div className="s-mobile-our-services-set-text">
@@ -395,7 +390,7 @@ const HomeOurServices = ({ onLinkClick }) => {
             <img
               src={Custom_Harness_MR_Industries}
               alt="Custom_Harness_MR_Industries"
-              style={{ objectFit: "none", objectPosition: "top" }}
+              style={{ objectPosition: "top" }}
             ></img>
           </div>
           <div className="s-mobile-our-services-set-text">
@@ -428,7 +423,7 @@ const HomeOurServices = ({ onLinkClick }) => {
             <img
               src={ICE_Vehicle_Harness_01_MR_Industries}
               alt="ICE_Vehicle_Harness_01_MR_Industries"
-              style={{ objectFit: "none", objectPosition: "top" }}
+              style={{ objectPosition: "top" }}
             ></img>
           </div>
           <div className="s-mobile-our-services-set-text">
@@ -461,7 +456,7 @@ const HomeOurServices = ({ onLinkClick }) => {
             <img
               src={charger_cables_MR_Industries}
               alt="charger_cables_MR_Industries"
-              style={{ objectFit: "none", objectPosition: "top" }}
+              style={{ objectPosition: "top" }}
             ></img>
           </div>
           <div className="s-mobile-our-services-set-text">

@@ -601,6 +601,7 @@
   border-radius: 8px;
   border: 1px solid #ccc;
   background: #fff;
+  overflow: hidden;
 }
 
 .s-mobile-our-services-container {
@@ -608,11 +609,10 @@
 }
 
 .s-our-services-set img {
-  height: 409px;
+  width: 100%;
   align-self: stretch;
   border-radius: 8px;
-  object-fit: none;
-  scale: 1.5;
+  object-fit: cover;
 }
 
 .s-our-services-set-text {
@@ -1261,22 +1261,20 @@
   border-radius: 16px;
   border: 1px solid #ccc;
   background: #fff;
-  height: 606px;
   cursor: pointer;
 }
 
 .s-service-catalogue-set-img {
   width: 100%;
-  height: 320px;
   border-radius: 8px;
   overflow: hidden;
 }
 
 .s-service-catalogue-set-img img {
-  height: 320px;
   width: 100%;
-  scale: 1.4;
-  object-fit: none;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: top;
 }
 
 .s-service-catalogue-set-text {
@@ -1935,7 +1933,6 @@ footer {
   }
 
   .s-gallery-set img {
-    height: 228.888px;
     align-self: stretch;
     object-fit: contain;
   }
@@ -1998,7 +1995,7 @@ footer {
   }
 
   .s-mobile-our-services-set {
-    height: 422px;
+    height: 455px;
     display: flex;
     width: 80%;
     flex-direction: column;
@@ -2012,16 +2009,14 @@ footer {
 
   .s-mobile-our-services-set-img {
     width: 100%;
-    height: 244px;
     overflow: hidden;
     align-self: stretch;
     border-radius: 8px;
   }
 
   .s-mobile-our-services-set-img img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
-    height: 244px;
   }
 
   .s-mobile-our-services-set-text {
@@ -2138,7 +2133,8 @@ footer {
   .mobile-process3,
   .mobile-process4 {
     opacity: 0;
-    width: 100%;
+    left: 0;
+   width: calc(100% - 25px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2150,7 +2146,7 @@ footer {
   }
 
   .mobile-process-set {
-    width: 100%;
+ width: calc(100% - 25px);
     display: flex;
     flex-direction: column;
   }
@@ -2657,13 +2653,9 @@ footer {
     height: auto;
   }
 
-  .s-service-catalogue-set-img {
-    height: 180px;
-  }
   .s-service-catalogue-set-img img {
-    height: 180px;
+    width: 100%;
     object-fit: contain;
-    scale: 1;
     object-position: top;
   }
   .s-service-catalogue-set-text {

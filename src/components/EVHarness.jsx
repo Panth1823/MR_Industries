@@ -279,7 +279,6 @@ const EVHarness = ({ onLinkClick }) => {
                 <img
                   src={Custom_Harness_MR_Industries}
                   alt="Custom_Harness_MR_Industries"
-                  style={{ objectFit: "none" }}
                 ></img>
                 <div className="s-our-services-set-text">
                   <div className="s-our-services-set-heading">
@@ -309,7 +308,6 @@ const EVHarness = ({ onLinkClick }) => {
                 <img
                   src={ICE_Vehicle_Harness_01_MR_Industries}
                   alt="ICE_Vehicle_Harness_01_MR_Industries"
-                  style={{ objectFit: "none" }}
                 ></img>
                 <div className="s-our-services-set-text">
                   <div className="s-our-services-set-heading">

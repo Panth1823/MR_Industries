@@ -564,7 +564,7 @@ span {
   border-radius: 8px;
   border: 1px solid var(--Blue-50, #d3ddf8);
   background: var(--Default-white, #fff);
-  width: 360px;
+  width: 100%;
 }
 .p-certi-main {
   display: flex;
@@ -645,7 +645,7 @@ span {
   align-items: flex-start;
   gap: 40px;
   position: absolute;
-  width: 548px;
+  width: 100%;
   height: 457px;
   padding: 74px 27px 74px;
 }
@@ -680,7 +680,7 @@ span {
   object-fit: none;
 }
 .back {
-  width: 548px;
+  width: auto;
   height: 457px;
 }
 .p-card-back-title p {
@@ -1434,12 +1434,11 @@ span {
     width: 100%;
     padding: 0%;
     border: none;
-    height: 202px;
+    height: auto;
     object-fit: cover;
   }
   .p-sd-img-cover img {
     width: 100% !important;
-    height: 100% !important;
     scale: 1 !important;
   }
   .p-img-desc-top {

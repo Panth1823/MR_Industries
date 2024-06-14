@@ -29,7 +29,7 @@ const HomeOurServices = ({ onLinkClick }) => {
         const nextIndex = (activeDot + 1) % 3;
         setActiveDot(nextIndex);
         slideToIndex(nextIndex);
-      }, 5000);
+      }, 3000);
 
       return () => clearInterval(interval);
     }
@@ -136,7 +136,7 @@ const HomeOurServices = ({ onLinkClick }) => {
               <img
                 src={LV_Harness_MR_Industries}
                 alt="LV_Harness_MR_Industries"
-                style={{ objectFit: "none", scale: "1.5" }}
+                style={{ objectFit: "cover", scale: "0.8" }}
               ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
@@ -174,7 +174,7 @@ const HomeOurServices = ({ onLinkClick }) => {
               ></img>
               <div className="s-our-services-set-text">
                 <div className="s-our-services-set-heading">
-                  <p>CustomisedHarness</p>
+                  <p>Customised Wiring Harness</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"

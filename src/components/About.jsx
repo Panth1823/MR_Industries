@@ -11,6 +11,14 @@ import Fully_Automatic_Cable_Cutting_Stripping_Machine_MR_Industries from "../as
 import Ton_Gear_Transmission_Crimping_Machine from "../assets/Ton Gear Transmission Crimping Machine - MR Industries.jpg";
 import Ton_Gear_Transmission_Crimping_Machine_1 from "../assets/Ton Gear Transmission Crimping Machine MR Industries.jpg";
 import ReactCardFlip from "react-card-flip";
+import Ferrule_Printing_MR_Industries from "../assets/serviceDetails/infrastructure/Ferrule Printing - MR Industries.png";
+import IQC_Area_MR_Industries from "../assets/serviceDetails/infrastructure/IQC Area - MR Industries.png";
+import Machinery_unit_MR_Industries from "../assets/serviceDetails/infrastructure/Machinery unit -MR Industries.png";
+import machinery_MR_Industries from "../assets/serviceDetails/infrastructure/machinery- MR Industries.png";
+import shop_floor_MR_Industries from "../assets/serviceDetails/infrastructure/shop floor - MR Industries.png";
+import Shop_Floor_MR_Industries_2 from "../assets/serviceDetails/infrastructure/Shop Floor- MR Industries (2).png";
+import Shop_Floor_MR_Industries from "../assets/serviceDetails/infrastructure/Shop Floor- MR Industries.png";
+import visual_Inspection_MR_Industries from "../assets/serviceDetails/infrastructure/visual Inspection- MR Industries.png";
 import "../santosh.css";
 
 const About = ({ onLinkClick }) => {
@@ -145,12 +153,14 @@ const About = ({ onLinkClick }) => {
 
   const [startIndex, setStartIndex] = useState(0);
   const items = [
-    { img: productImg, text: "Lorem Ipsum1" },
-    { img: productImg, text: "Lorem Ipsum2" },
-    { img: productImg, text: "Lorem Ipsum3" },
-    { img: productImg, text: "Lorem Ipsum4" },
-    { img: productImg, text: "Lorem Ipsum5" },
-    { img: productImg, text: "Lorem Ipsum6" },
+    { img: Ferrule_Printing_MR_Industries, text: "Ferrule Printing" },
+    { img: IQC_Area_MR_Industries, text: "IQC Area" },
+    { img: Machinery_unit_MR_Industries, text: "Machinery unit" },
+    { img: machinery_MR_Industries, text: "Machinery" },
+    { img: shop_floor_MR_Industries, text: "Shop floor" },
+    { img: Shop_Floor_MR_Industries_2, text: "Shop floor" },
+    { img: Shop_Floor_MR_Industries, text: "Shop floor" },
+    { img: visual_Inspection_MR_Industries, text: "Visual Inspection" },
   ];
 
   const numberOfItems = items.length;

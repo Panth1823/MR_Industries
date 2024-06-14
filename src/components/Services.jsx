@@ -56,7 +56,10 @@ const Services = ({ onLinkClick }) => {
         </div>
         <div className="s-service-catalogue-container">
           <div className="s-service-catalogue-set-container">
-            <div className="s-service-catalogue-set">
+            <div
+              className="s-service-catalogue-set"
+              onClick={() => onLinkClick("EVHarness")}
+            >
               <div className="s-service-catalogue-set-img">
                 <img
                   src={HV_Harness_06_MR_Industries}
@@ -76,7 +79,10 @@ const Services = ({ onLinkClick }) => {
                 />
               </div>
             </div>
-            <div className="s-service-catalogue-set">
+            <div
+              className="s-service-catalogue-set"
+              onClick={() => onLinkClick("HVHarness")}
+            >
               <div className="s-service-catalogue-set-img">
                 <img
                   src={HV_Harness_MR_Industries}
@@ -98,7 +104,10 @@ const Services = ({ onLinkClick }) => {
             </div>
           </div>
           <div className="s-service-catalogue-set-container">
-            <div className="s-service-catalogue-set">
+            <div
+              className="s-service-catalogue-set"
+              onClick={() => onLinkClick("LVHarness")}
+            >
               <div className="s-service-catalogue-set-img">
                 <img
                   src={LV_Harness_MR_Industries}
@@ -119,7 +128,12 @@ const Services = ({ onLinkClick }) => {
               </div>
             </div>
             <div className="s-service-catalogue-set">
-              <div className="s-service-catalogue-set-img">
+              <div
+                className="s-service-catalogue-set-img"
+                onClick={() => {
+                  onLinkClick("CustomisedHarness");
+                }}
+              >
                 <img
                   src={Custom_Harness_MR_Industries}
                   alt="Custom_Harness_MR_Industries"
@@ -141,7 +155,12 @@ const Services = ({ onLinkClick }) => {
             </div>
           </div>
           <div className="s-service-catalogue-set-container">
-            <div className="s-service-catalogue-set">
+            <div
+              className="s-service-catalogue-set"
+              onClick={() => {
+                onLinkClick("ICEHarness");
+              }}
+            >
               <div className="s-service-catalogue-set-img">
                 <img
                   src={ICE_Vehicle_Harness_01_MR_Industries}
@@ -163,7 +182,12 @@ const Services = ({ onLinkClick }) => {
                 />
               </div>
             </div>
-            <div className="s-service-catalogue-set">
+            <div
+              className="s-service-catalogue-set"
+              onClick={() => {
+                onLinkClick("ChargerCables");
+              }}
+            >
               <div className="s-service-catalogue-set-img">
                 <img
                   src={charger_cables_MR_Industries}
@@ -201,7 +225,10 @@ const Services = ({ onLinkClick }) => {
         </div>
         <div className="s-service-catalogue-container">
           <div className="s-service-catalogue-set-container">
-            <div className="s-service-catalogue-set">
+            <div
+              className="s-service-catalogue-set"
+              onClick={() => onLinkClick("EVHarness")}
+            >
               <div className="s-service-catalogue-set-img">
                 <img
                   src={HV_Harness_06_MR_Industries}
@@ -221,7 +248,10 @@ const Services = ({ onLinkClick }) => {
                 />
               </div>
             </div>
-            <div className="s-service-catalogue-set">
+            <div
+              className="s-service-catalogue-set"
+              onClick={() => onLinkClick("HVHarness")}
+            >
               <div className="s-service-catalogue-set-img">
                 <img
                   src={HV_Harness_MR_Industries}
@@ -241,7 +271,10 @@ const Services = ({ onLinkClick }) => {
                 />
               </div>
             </div>
-            <div className="s-service-catalogue-set">
+            <div
+              className="s-service-catalogue-set"
+              onClick={() => onLinkClick("LVHarness")}
+            >
               <div className="s-service-catalogue-set-img">
                 <img
                   src={LV_Harness_MR_Industries}
@@ -263,7 +296,12 @@ const Services = ({ onLinkClick }) => {
             </div>
             {showMore && (
               <>
-                <div className="s-service-catalogue-set">
+                <div
+                  className="s-service-catalogue-set"
+                  onClick={() => {
+                    onLinkClick("CustomisedHarness");
+                  }}
+                >
                   <div className="s-service-catalogue-set-img">
                     <img
                       src={Custom_Harness_MR_Industries}
@@ -285,7 +323,12 @@ const Services = ({ onLinkClick }) => {
                     />
                   </div>
                 </div>
-                <div className="s-service-catalogue-set">
+                <div
+                  className="s-service-catalogue-set"
+                  onClick={() => {
+                    onLinkClick("ICEHarness");
+                  }}
+                >
                   <div className="s-service-catalogue-set-img">
                     <img
                       src={PIGTAIL_HARNESS_ICE_Vehicle_Harness_MR_Industries}
@@ -307,7 +350,12 @@ const Services = ({ onLinkClick }) => {
                     />
                   </div>
                 </div>
-                <div className="s-service-catalogue-set">
+                <div
+                  className="s-service-catalogue-set"
+                  onClick={() => {
+                    onLinkClick("ChargerCables");
+                  }}
+                >
                   <div className="s-service-catalogue-set-img">
                     <img
                       src={charger_cables_MR_Industries}

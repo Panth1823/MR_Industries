@@ -14,19 +14,19 @@ import PIGTAIL_HARNESS_ICE_Vehicle_Harness_MR_Industries from "../assets/service
 const ProductGallery = () => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
-    { img: HV_Harness_01_MR_Industries, text: "Lorem Ipsum1" },
-    { img: HV_Harness_02_MR_Industries, text: "Lorem Ipsum2" },
-    { img: HV_Harness_03_MR_Industries, text: "Lorem Ipsum3" },
-    { img: HV_Harness_04_MR_Industries, text: "Lorem Ipsum4" },
-    { img: Custom_Harness_01_MR_Industries, text: "Lorem Ipsum5" },
-    { img: Custom_Harness_02_MR_Industries, text: "Lorem Ipsum5" },
-    { img: Custom_Harness_03_MR_Industries, text: "Lorem Ipsum5" },
-    { img: Custom_Harness_04_MR_Industries, text: "Lorem Ipsum5" },
-    { img: charger_cables_01_MR_Industries_2, text: "Lorem Ipsum5" },
-    { img: charger_cables_01_MR_Industries, text: "Lorem Ipsum5" },
+    { img: HV_Harness_01_MR_Industries, text: "HV Harness" },
+    { img: HV_Harness_02_MR_Industries, text: "HV Harness" },
+    { img: HV_Harness_03_MR_Industries, text: "HV Harness" },
+    { img: HV_Harness_04_MR_Industries, text: "HV Harness" },
+    { img: Custom_Harness_01_MR_Industries, text: "Custom Harness" },
+    { img: Custom_Harness_02_MR_Industries, text: "Custom Harness" },
+    { img: Custom_Harness_03_MR_Industries, text: "Custom Harness" },
+    { img: Custom_Harness_04_MR_Industries, text: "Custom Harness" },
+    { img: charger_cables_01_MR_Industries_2, text: "Charger Cables" },
+    { img: charger_cables_01_MR_Industries, text: "Charger Cables" },
     {
       img: PIGTAIL_HARNESS_ICE_Vehicle_Harness_MR_Industries,
-      text: "Lorem Ipsum5",
+      text: "Pigtail Harness",
     },
   ];
 

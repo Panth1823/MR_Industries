@@ -528,8 +528,8 @@
 
 .s-gallery-set img {
   width: 100%;
-  object-fit: none;
   align-self: stretch;
+  border-radius: 8px;
 }
 
 .s-gallery-set p {
@@ -1262,6 +1262,7 @@
   border: 1px solid #ccc;
   background: #fff;
   height: 606px;
+  cursor: pointer;
 }
 
 .s-service-catalogue-set-img {
@@ -2046,6 +2047,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
   }
 
   .s-mobile-our-services-set-heading span {
@@ -2056,7 +2058,9 @@ footer {
     font-weight: 600;
     line-height: normal;
   }
-
+  .s-mobile-our-services-set-heading svg:hover path {
+    fill: #569dd0cc;
+  }
   .s-process {
     display: flex;
     padding: 48px 20px;

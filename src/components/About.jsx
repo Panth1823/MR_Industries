@@ -647,7 +647,6 @@ const About = ({ onLinkClick }) => {
                 <img
                   src={Six_Ton_Gear_Transmission_Crimping_Machine}
                   alt="Six_Ton_Gear_Transmission_Crimping_Machine"
-                   
                 />
               </div>
               <div className="back" onMouseLeave={() => flipCard(1)}>
@@ -684,7 +683,6 @@ const About = ({ onLinkClick }) => {
                 <img
                   src={Motorized_Push_Pull_Load_tester_MR_Industries}
                   alt="Motorized_Push_Pull_Load_tester_MR_Industries"
-                   
                 />
               </div>
               <div className="back" onMouseLeave={() => flipCard(2)}>
@@ -721,7 +719,6 @@ const About = ({ onLinkClick }) => {
                     Fully_Automatic_Cable_Cutting_Stripping_Machine_MR_Industries
                   }
                   alt="Fully_Automatic_Cable_Cutting_Stripping_Machine_MR_Industries"
-                   
                 />
               </div>
               <div className="back" onMouseLeave={() => flipCard(3)}>
@@ -757,7 +754,6 @@ const About = ({ onLinkClick }) => {
                     Motorized_Push_Pull_Load_tester_Digital_read_out_MR_Industries
                   }
                   alt="Motorized_Push_Pull_Load_tester_Digital_read_out_MR_Industries"
-                   
                 />
               </div>
               <div className="back" onMouseLeave={() => flipCard(4)}>
@@ -789,7 +785,6 @@ const About = ({ onLinkClick }) => {
                 <img
                   src={Ton_Gear_Transmission_Crimping_Machine}
                   alt="Ton_Gear_Transmission_Crimping_Machine"
-                   
                 />
               </div>
               <div className="back" onMouseLeave={() => flipCard(5)}>
@@ -823,7 +818,6 @@ const About = ({ onLinkClick }) => {
                 <img
                   src={Ton_Gear_Transmission_Crimping_Machine_1}
                   alt="Ton_Gear_Transmission_Crimping_Machine_1"
-                  
                 />
               </div>
               <div className="back" onMouseLeave={() => flipCard(6)}>
@@ -1098,7 +1092,7 @@ const About = ({ onLinkClick }) => {
               >
                 <div className="p-card-back-title mobile">
                   <div className="svg-container">
-                    <p>Ton Gear Transmission Crimping Machine</p>
+                    <p>Fully Automatic Cable Cutting and Stripping Machine</p>
                     <svg
                       className="p-arrow-down-svg"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1120,20 +1114,17 @@ const About = ({ onLinkClick }) => {
                       <div className="p-subtext-back-p ">
                         <p>Capacity</p>
                         <p>Model</p>
-                        <p>Type</p>
-                        <p>Max Crimp Cross</p>
+                        <p>Length Accuracy</p>
                       </div>
                       <div className="p-subtext-back-p ">
                         <p>:</p>
                         <p>:</p>
                         <p>:</p>
-                        <p>:</p>
                       </div>
                       <div className="p-subtext-back-p btm ">
-                        <p>16 Ton</p>
-                        <p>HF - 16 Ton </p>
-                        <p>Gear Transmission</p>
-                        <p>6.00 to 120.0 MM2 Cable</p>
+                        <p>3.00 mm2 TO 16.00 mm2</p>
+                        <p>UNISTRIP - 999 + </p>
+                        <p>+- 0.5 mm( l*0.5%) Depends on the material</p>
                       </div>
                     </div>
                   )}
@@ -1157,7 +1148,7 @@ const About = ({ onLinkClick }) => {
               >
                 <div className="p-card-back-title mobile">
                   <div className="svg-container">
-                    <p>Ton Gear Transmission Crimping Machine</p>
+                    <p>Motorized Push Pull Load Tester digital read out</p>
                     <svg
                       className="p-arrow-down-svg"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1179,20 +1170,14 @@ const About = ({ onLinkClick }) => {
                       <div className="p-subtext-back-p ">
                         <p>Capacity</p>
                         <p>Model</p>
-                        <p>Type</p>
-                        <p>Max Crimp Cross</p>
                       </div>
                       <div className="p-subtext-back-p ">
                         <p>:</p>
                         <p>:</p>
-                        <p>:</p>
-                        <p>:</p>
                       </div>
                       <div className="p-subtext-back-p btm ">
-                        <p>16 Ton</p>
-                        <p>HF - 16 Ton </p>
-                        <p>Gear Transmission</p>
-                        <p>6.00 to 120.0 MM2 Cable</p>
+                        <p>0 to 100Kg</p>
+                        <p>PPT - 100 </p>
                       </div>
                     </div>
                   )}

@@ -19,13 +19,13 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your Firebase configuration
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID",
+  apiKey: "AIzaSyDVN7QYbmu12JiVV6gxnLh3TgfColZHen8",
+  authDomain: "mr-industries-1-0.firebaseapp.com",
+  projectId: "mr-industries-1-0",
+  storageBucket: "mr-industries-1-0.appspot.com",
+  messagingSenderId: "349787262974",
+  appId: "1:349787262974:web:ed1afbe433bf799f61baaf",
+  measurementId: "G-YBDRXKF5JF"
 };
 
 // Initialize Firebase

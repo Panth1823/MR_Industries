@@ -652,7 +652,7 @@ const About = ({ onLinkClick }) => {
               <div className="back" onMouseLeave={() => flipCard(1)}>
                 <div className="p-card-back-main">
                   <div className="p-card-back-title">
-                    <p>6 Ton Gear Transmission Crimping Machine </p>
+                    <p>16 Ton Gear Transmission Crimping Machine </p>
                   </div>
                   <div className="p-card-back-subtext">
                     <div className="p-subtext-back-p">
@@ -863,7 +863,7 @@ const About = ({ onLinkClick }) => {
               >
                 <div className="p-card-back-title mobile">
                   <div className="svg-container">
-                    <p>6 Ton Gear Transmission Crimping Machine </p>
+                    <p>16 Ton Gear Transmission Crimping Machine </p>
                     <svg
                       className="p-arrow-down-svg"
                       xmlns="http://www.w3.org/2000/svg"

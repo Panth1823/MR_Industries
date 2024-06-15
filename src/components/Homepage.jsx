@@ -7,6 +7,7 @@ import HomeProcess from "./HomeProcess.jsx";
 import Testimony from "./Testimony.jsx";
 import FAQ from "./FAQ.jsx";
 import HomeNeedHelp from "./HomeNeedHelp.jsx";
+import ProductGallery1 from "./ProductGallery1.jsx";
 
 const Homepage = ({ onLinkClick }) => {
   return (
@@ -14,6 +15,7 @@ const Homepage = ({ onLinkClick }) => {
       <HomeBanner onLinkClick={onLinkClick} />
       <HomeAboutUs onLinkClick={onLinkClick} />
       <ProductGallery />
+      <ProductGallery1 />
       <HomeOurServices onLinkClick={onLinkClick} />
       <HomeProcess />
       <Testimony />

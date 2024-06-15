@@ -141,7 +141,7 @@ const About = ({ onLinkClick }) => {
     const newVisibility = !isVisible8;
     setIsVisible8(newVisibility);
     setRotateDeg8(newVisibility ? 0 : 180);
-    setMarginTop4(newVisibility ? -234 : -80);
+    setMarginTop4(newVisibility ? -244 : -80);
   };
 
   // Mobile Card Logic V6
@@ -153,7 +153,7 @@ const About = ({ onLinkClick }) => {
     const newVisibility = !isVisible9;
     setIsVisible9(newVisibility);
     setRotateDeg9(newVisibility ? 0 : 180);
-    setMarginTop5(newVisibility ? -234 : -80);
+    setMarginTop5(newVisibility ? -154 : -80);
   };
 
   const [startIndex, setStartIndex] = useState(0);

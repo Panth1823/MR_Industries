@@ -10,7 +10,9 @@ import Custom_Harness_04_MR_Industries from "../assets/serviceDetails/Custom Har
 import charger_cables_01_MR_Industries_2 from "../assets/serviceDetails/charger cables/charger cables 01 - MR Industries (2).png";
 import charger_cables_01_MR_Industries from "../assets/serviceDetails/charger cables/charger cables 01 - MR Industries.png";
 import PIGTAIL_HARNESS_ICE_Vehicle_Harness_MR_Industries from "../assets/serviceDetails/ICE Vehicle Harness/PIGTAIL HARNESS - ICE Vehicle Harness - MR Industries.png";
-
+import Automotive_Connector_Anderson_Trading_parts_MR_Industries from "../assets/Trading Parts/Automotive connector -  Anderson - trading parts- MR Industries.png";
+import EV_Grade_Wire_Trading_Parts_MR_Industries from "../assets/Trading Parts/EV Grade Wire - Trading Parts- MR Industries.png";
+import Lugs_and_Terminals from "../assets/Trading Parts/Lugs and Terminals.png";
 const ProductGallery = () => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
@@ -27,6 +29,18 @@ const ProductGallery = () => {
     {
       img: PIGTAIL_HARNESS_ICE_Vehicle_Harness_MR_Industries,
       text: "Pigtail Harness",
+    },
+    {
+      img: Automotive_Connector_Anderson_Trading_parts_MR_Industries,
+      text: "Auto Connector",
+    },
+    {
+      img: EV_Grade_Wire_Trading_Parts_MR_Industries,
+      text: "EV Grade Wire",
+    },
+    {
+      img: Lugs_and_Terminals,
+      text: "Lugs_and_Terminals",
     },
   ];
 

@@ -13,7 +13,9 @@ import Custom_Harness_10_MR_Industries from "../assets/serviceDetails/Custom Har
 import Custom_Harness_11_MR_Industries from "../assets/serviceDetails/Custom Harness/Custom Harness 11 - MR Industries.png";
 import Custom_Harness_12_MR_Industries from "../assets/serviceDetails/Custom Harness/Custom Harness 12 - MR Industries.png";
 import Custom_Harness_13_MR_Industries from "../assets/serviceDetails/Custom Harness/Custom Harness 13 - MR Industries.png";
-
+import Mid_joint_and_lug_terminal_Trading_Parts_MR_Industries from "../assets/Trading Parts/Mid joint and lug terminal - Trading Parts - MR Industries.png";
+import MR_Industries from "../assets/Trading Parts/MR Industries.png";
+import VFS_Sleeve_Lugh_Trading_Parts_MR_Industries from "../assets/Trading Parts/VFS Sleeve Lugh - Trading Parts - MR Industries.png";
 const ProductGallery1 = () => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
@@ -31,6 +33,15 @@ const ProductGallery1 = () => {
     { img: HV_Harness_07_MR_Industries, text: "HV Harness" },
     { img: HV_Harness_08_MR_Industries, text: "HV Harness" },
     { img: LV_Harness_01_MR_Industries, text: "LV Harness" },
+    {
+      img: Mid_joint_and_lug_terminal_Trading_Parts_MR_Industries,
+      text: "Mid joint and lug terminal",
+    },
+    { img: MR_Industries, text: "Heat Shrinkable Sleeve" },
+    {
+      img: VFS_Sleeve_Lugh_Trading_Parts_MR_Industries,
+      text: "VFS Sleeve Lugh",
+    },
   ];
 
   const numberOfItems = items.length;

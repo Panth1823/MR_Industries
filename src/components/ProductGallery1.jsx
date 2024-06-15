@@ -17,11 +17,6 @@ import Custom_Harness_13_MR_Industries from "../assets/serviceDetails/Custom Har
 const ProductGallery1 = () => {
   const [startIndex, setStartIndex] = useState(0);
   const items = [
-    { img: HV_Harness_05_MR_Industries, text: "HV Harness" },
-    { img: HV_Harness_06_MR_Industries, text: "HV Harness" },
-    { img: HV_Harness_07_MR_Industries, text: "HV Harness" },
-    { img: HV_Harness_08_MR_Industries, text: "HV Harness" },
-    { img: LV_Harness_01_MR_Industries, text: "LV Harness" },
     { img: Custom_Harness_05_MR_Industries, text: "Custom Harness" },
     { img: Custom_Harness_06_MR_Industries, text: "Custom Harness" },
     { img: Custom_Harness_07_MR_Industries, text: "Custom Harness" },
@@ -31,6 +26,11 @@ const ProductGallery1 = () => {
     { img: Custom_Harness_11_MR_Industries, text: "Custom Harness" },
     { img: Custom_Harness_12_MR_Industries, text: "Custom Harness" },
     { img: Custom_Harness_13_MR_Industries, text: "Custom Harness" },
+    { img: HV_Harness_05_MR_Industries, text: "HV Harness" },
+    { img: HV_Harness_06_MR_Industries, text: "HV Harness" },
+    { img: HV_Harness_07_MR_Industries, text: "HV Harness" },
+    { img: HV_Harness_08_MR_Industries, text: "HV Harness" },
+    { img: LV_Harness_01_MR_Industries, text: "LV Harness" },
   ];
 
   const numberOfItems = items.length;
